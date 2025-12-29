@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { QUESTIONS } from './data';
-import { QuizStatus, QuizState, QuizRange } from './types';
+import { QuizStatus, QuizState, QuizRange, Question, Option } from './types';
 import Button from './components/Button';
 import QuizHeader from './components/QuizHeader';
 
@@ -20,6 +20,16 @@ const VARIANTS: QuizRange[] = [
   { start: 551, end: 580, label: "12-variant" },
 ];
 
+// Helper to shuffle an array
+const shuffle = <T,>(array: T[]): T[] => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
+
 const App: React.FC = () => {
   const [quiz, setQuiz] = useState<QuizState>({
     currentQuestionIndex: 0,
@@ -29,10 +39,8 @@ const App: React.FC = () => {
     selectedRange: null,
   });
 
-  const activeQuestions = useMemo(() => {
-    if (!quiz.selectedRange) return [];
-    return QUESTIONS.filter(q => q.id >= quiz.selectedRange!.start && q.id <= quiz.selectedRange!.end);
-  }, [quiz.selectedRange]);
+  // Local state to hold the questions for the current session (with shuffled options)
+  const [sessionQuestions, setSessionQuestions] = useState<Question[]>([]);
 
   const goToVariantSelection = () => {
     setQuiz(prev => ({ ...prev, status: 'SELECT_VARIANT' }));
@@ -40,10 +48,40 @@ const App: React.FC = () => {
 
   const startQuizWithRange = (range: QuizRange) => {
     const rangeQuestions = QUESTIONS.filter(q => q.id >= range.start && q.id <= range.end);
+    
     if (rangeQuestions.length === 0) {
       alert("Hozircha ushbu variant uchun savollar qo'shilmagan.");
       return;
     }
+
+    // Process questions: shuffle options and re-assign A, B, C, D IDs
+    const processedQuestions = rangeQuestions.map(originalQ => {
+      // 1. Get the text of the correct answer first
+      const correctOptionText = originalQ.options.find(o => o.id === originalQ.correctAnswer)?.text;
+      
+      // 2. Shuffle the original options
+      const shuffledOptions = shuffle(originalQ.options);
+      
+      // 3. Re-assign standard A, B, C, D IDs to the shuffled options
+      const standardIds = ['a', 'b', 'c', 'd'];
+      let newCorrectAnswerId = 'a';
+      
+      const newOptions = shuffledOptions.map((opt, index) => {
+        const newId = standardIds[index];
+        if (opt.text === correctOptionText) {
+          newCorrectAnswerId = newId;
+        }
+        return { ...opt, id: newId };
+      });
+
+      return {
+        ...originalQ,
+        options: newOptions,
+        correctAnswer: newCorrectAnswerId
+      };
+    });
+
+    setSessionQuestions(processedQuestions);
     setQuiz({
       currentQuestionIndex: 0,
       userAnswers: {},
@@ -54,7 +92,6 @@ const App: React.FC = () => {
   };
 
   const handleAnswerSelect = (optionId: string) => {
-    // Prevent multiple selections for immediate feedback
     if (quiz.userAnswers[quiz.currentQuestionIndex]) return;
 
     setQuiz(prev => ({
@@ -67,7 +104,7 @@ const App: React.FC = () => {
   };
 
   const nextQuestion = () => {
-    if (quiz.currentQuestionIndex < activeQuestions.length - 1) {
+    if (quiz.currentQuestionIndex < sessionQuestions.length - 1) {
       setQuiz(prev => ({
         ...prev,
         currentQuestionIndex: prev.currentQuestionIndex + 1
@@ -88,7 +125,7 @@ const App: React.FC = () => {
 
   const finishQuiz = () => {
     let calculatedScore = 0;
-    activeQuestions.forEach((q, index) => {
+    sessionQuestions.forEach((q, index) => {
       if (quiz.userAnswers[index] === q.correctAnswer) {
         calculatedScore++;
       }
@@ -184,10 +221,9 @@ const App: React.FC = () => {
   }
 
   if (quiz.status === 'FINISHED') {
-    const total = activeQuestions.length;
+    const total = sessionQuestions.length;
     const percentage = Math.round((quiz.score / total) * 100);
-    
-    const incorrectAnswers = activeQuestions.filter((q, index) => quiz.userAnswers[index] !== q.correctAnswer);
+    const incorrectAnswers = sessionQuestions.filter((q, index) => quiz.userAnswers[index] !== q.correctAnswer);
 
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-4">
@@ -241,7 +277,7 @@ const App: React.FC = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-black text-slate-800 px-4">Xatolar tahlili</h3>
               <div className="space-y-4">
-                {activeQuestions.map((q, index) => {
+                {sessionQuestions.map((q, index) => {
                   const userAnswerId = quiz.userAnswers[index];
                   const isCorrect = userAnswerId === q.correctAnswer;
                   
@@ -261,7 +297,7 @@ const App: React.FC = () => {
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="p-4 rounded-2xl bg-rose-50 border border-rose-100">
                               <span className="text-xs font-black text-rose-600 uppercase tracking-widest block mb-1">Sizning javobingiz</span>
-                              <p className="text-slate-700 font-medium">({userAnswerId.toUpperCase()}) {userAnswer?.text}</p>
+                              <p className="text-slate-700 font-medium">({userAnswerId?.toUpperCase() || '?'}) {userAnswer?.text || 'Tanlanmagan'}</p>
                             </div>
                             <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
                               <span className="text-xs font-black text-emerald-600 uppercase tracking-widest block mb-1">To'g'ri javob</span>
@@ -287,7 +323,9 @@ const App: React.FC = () => {
     );
   }
 
-  const currentQuestion = activeQuestions[quiz.currentQuestionIndex];
+  const currentQuestion = sessionQuestions[quiz.currentQuestionIndex];
+  if (!currentQuestion) return null;
+
   const selectedAnswer = quiz.userAnswers[quiz.currentQuestionIndex];
 
   return (
@@ -305,7 +343,7 @@ const App: React.FC = () => {
           
           <QuizHeader 
             current={quiz.currentQuestionIndex + 1} 
-            total={activeQuestions.length} 
+            total={sessionQuestions.length} 
             score={quiz.score} 
           />
 
@@ -412,7 +450,7 @@ const App: React.FC = () => {
               disabled={!selectedAnswer}
               className="px-14 py-4 text-xl font-black rounded-2xl shadow-xl shadow-blue-200"
             >
-              {quiz.currentQuestionIndex === activeQuestions.length - 1 ? 'Tugatish' : 'Keyingisi'}
+              {quiz.currentQuestionIndex === sessionQuestions.length - 1 ? 'Tugatish' : 'Keyingisi'}
             </Button>
           </div>
         </div>

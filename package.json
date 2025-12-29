@@ -1,21 +1,18 @@
+
 {
-  "name": "uzbekistan-history-quiz",
+  "name": "uz-history-quiz",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "O'zbekiston Eng Yangi Tarixi bo'yicha interaktiv test platformasi",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "echo 'Static serve only' && exit 0"
   },
-  "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
-  }
+  "keywords": [
+    "quiz",
+    "history",
+    "uzbekistan",
+    "education"
+  ],
+  "author": "Senior Frontend Engineer",
+  "license": "MIT"
 }
