@@ -4,1730 +4,4093 @@ import { Question } from './types';
  * O'zbekistonning eng yangi tarixi fanidan 580 ta savol banki.
  */
 
-// 1-blok: 1-50 gacha bo'lgan savollar
-const BLOCK_1: Question[] = [
+    export const questions1 = [
   {
     id: 1,
-    text: "“Milliy tarixni milliy ruh bilan yaratish kerak. Aks holda uning tarbiyaviy ta’siri bo‘lmaydi. Biz yoshlarimizni tarixdan saboq olish, xulosa chiqarishga o‘rgatishimiz, ularni tarix ilmi, tarixiy tafakkur bilan qurollantirishimiz zarur”, so‘zlari kimga tegishli?",
-    options: [{id: 'a', text: "O‘zbekiston Respublikasi birinchi Prezidenti I.A.Karimov"}, {id: 'b', text: "O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev"}, {id: 'c', text: "Abdulla Avloniy"}, {id: 'd', text: "Amir Temur"}],
-    correctAnswer: 'b'
+    question: "“Milliy tarixni milliy ruh bilan yaratish kerak. Aks holda uning tarbiyaviy ta’siri bo’lmaydi. Biz yoshlarimizni tarixdan saboq olish, xulosa chiqarishga o‘rgatishimiz, ularni tarix ilmi, tarixiy tafakkur bilan qurollantirishimiz zarur”, so‘zlari kimga tegishli?",
+    options: [
+      "O‘zbekiston Respublikasi birinchi Prezidenti I.A.Karimov",
+      "O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev",
+      "Abdulla Avloniy",
+      "Amir Temur"
+    ],
+    correctAnswer: 1
   },
   {
     id: 2,
-    text: "O‘zbekiston ijtimoiy-iqtisodiy hayotining barcha sohalarida amalga oshirilayotgan keng qamrovli islohotlar, ma’naviy yangilanishlar bois mamlakatimiz XXI asrda qaysi tomon yo‘l oldi?",
-    options: [{id: 'a', text: "Demokratiya"}, {id: 'b', text: "Respublika"}, {id: 'c', text: "Milliy tiklanishdan milliy yuksalish"}, {id: 'd', text: "Korrupsiya"}],
-    correctAnswer: 'c'
+    question: "O‘zbekiston ijtimoiy-iqtisodiy hayotining barcha sohalarida amalga oshirilayotgan keng qamrovli islohotlar, ma’naviy yangilanishlar bois mamlakatimiz XXI asrda qaysi tomon yo‘l oldi?",
+    options: [
+      "Demokratiya",
+      "Respublika",
+      "Milliy tiklanishdan milliy yuksalish",
+      "Korrupsiya"
+    ],
+    correctAnswer: 2
   },
   {
     id: 3,
-    text: "Globallashuv asri qaysi qatorda ko'rsatilgan?",
-    options: [{id: 'a', text: "XVIII asr"}, {id: 'b', text: "XIX asr"}, {id: 'c', text: "XX asr"}, {id: 'd', text: "XXI asr"}],
-    correctAnswer: 'd'
+    question: "Globallashuv asri qaysi qatorda?",
+    options: ["XVIII asr", "XIX asr", "XX asr", "XXI asr"],
+    correctAnswer: 3
   },
   {
     id: 4,
-    text: "“Ommaviy madaniyat”ni keng xalq ommasi, ayniqsa, yoshlar ongiga singdirish, ta’lim-tarbiya sohasida salbiy illatlarning ildiz otishiga sabab bo‘layotgan qaysi asr hisoblanadi?",
-    options: [{id: 'a', text: "XXI asr"}, {id: 'b', text: "XX asr"}, {id: 'c', text: "XIX asr"}, {id: 'd', text: "XVIII asr"}],
-    correctAnswer: 'a'
+    question: "“Ommaviy madaniyat”ni keng xalq ommasi, ayniqsa, yoshlar ongiga singdirish, ta’lim-tarbiya sohasida salbiy illatlarning ildiz otishiga sabab bo‘layotgan qaysi asr hisoblanadi?",
+    options: ["XXI asr", "XX asr", "XIX asr", "XVIII asr"],
+    correctAnswer: 1
   },
   {
     id: 5,
-    text: "Prezident Sh.M.Mirziyoyev BMT Bosh Assambleyasining 2017-yil sentabrda bo‘lib o‘tgan 72-sessiyasidagi nutqida qaysi masalaga alohida urg‘u berdi?",
-    options: [{id: 'a', text: "ma’rifiy savodxonlik"}, {id: 'b', text: "iqtisodiy barqarorlik"}, {id: 'c', text: "harbiy salohiyat"}, {id: 'd', text: "tashqi qarz"}],
-    correctAnswer: 'a'
+    question: "Prezident Sh.M.Mirziyoyev global tarzda yondashib kelayotgan umuminsoniy qadriyatlarni oldingi o‘ringa chiqishi, intellektual salohiyat ijtimoiy hayot mezonini belgilovchi darajaga aylanishi, informatsion texnologiyalar taraqqiy etishi bilan izohlansa, ikkinchi tomondan, umumjahon miqyosidagi ma’naviy tahdidlar, “ommaviy madaniyat”ni keng xalq ommasi, ayniqsa, yoshlar ongiga singdirish, ta’lim-tarbiya sohasida salbiy illatlarning ildiz otishiga sabab bo‘layotgan asr haqida, o‘zining BMT Bosh Assambleyasining 2017-yil sentabrda bo‘lib o‘tgan qaysi sessiyasidagi nutqida alohida to‘xtalib, o‘sib kelayotgan avlodni, avvalo, ma’rifiy savodoxonlik ruhida tarbiyalash masalasiga alohida urg‘u berdi?",
+    options: ["72", "75", "77", "79"],
+    correctAnswer: 0
   },
   {
     id: 6,
-    text: "Qaysi o‘quv yilidan boshlab respublika Oliy o‘quv yurtlarining barcha ta’lim yo‘nalishlarida “O‘zbekistonning eng yangi tarixi” fani asosiy fan sifatida o‘quv rejaga kiritildi?",
-    options: [{id: 'a', text: "2018-2019"}, {id: 'b', text: "2019-2020"}, {id: 'c', text: "2020-2021"}, {id: 'd', text: "2021-2022"}],
-    correctAnswer: 'b'
+    question: "O‘quv yurtlarining barcha ta’lim yo‘nalishlarida “O‘zbekistonning eng yangi tarixi” fani asosiy fanlardan biri sifatida o‘quv rejaga kiritildi?",
+    options: [
+      "2018–2019",
+      "2019–2020",
+      "2020–2021",
+      "2021–2022"
+    ],
+    correctAnswer: 2
   },
   {
     id: 7,
-    text: "“O‘zbekistonning eng yangi tarixi” o‘quv fanining predmeti nima?",
-    options: [{id: 'a', text: "mustaqillikka erishish arafasidagi jarayonlar"}, {id: 'b', text: "mustaqil O‘zbekiston Respublikasining tashkil topishi"}, {id: 'c', text: "demokratik islohotlar va milliy yuksalish yo‘li"}, {id: 'd', text: "barcha javoblar to‘g‘ri"}],
-    correctAnswer: 'd'
+    question: "“O‘zbekistonning eng yangi tarixi” o‘quv fanining predmeti, maqsad va vazifalari qaysi javobda?",
+    options: [
+      "mustaqillikka erishish arafasida O‘zbekistondagi ijtimoiy-siyosiy jarayonlar, mustaqil O‘zbekiston Respublikasining tashkil topishi va uning tarixiy ahamiyati",
+      "O‘zbekistonning o‘ziga xos istiqlol va taraqqiyot yo‘li, respublikada demokratik, fuqarolik jamiyati asoslarining shakllanishi, amalga oshirilgan siyosiy islohotlar, ijtimoiy-iqtisodiy o‘zgarishlar",
+      "bozor munosabatlarining rivojlanishi, ma’naviy va madaniy hamda ta’lim sohasida amalga oshirilgan islohotlar, mustaqillik yillarida Qoraqalpog‘iston Respublikasidagi o‘zgarishlar, O‘zbekistonning jahon hamjamiyatiga integratsiyalashuvi hamda xalqaro reyting va indekslardagi o‘rni va nufuzining orth borishi",
+      "barcha javoblar to‘g‘ri"
+    ],
+    correctAnswer: 3
   },
   {
     id: 8,
-    text: "Jamiyat o‘tmishini o‘rganuvchi boshqa soha fanlari qatoriga qaysilar kiradi?",
-    options: [{id: 'a', text: "arxeologiya, etnologiya, geologiya, antropologiya, demografiya"}, {id: 'b', text: "matematika, fizika, kimyo"}, {id: 'c', text: "biologiya, anatomiya, zoologiya"}, {id: 'd', text: "astronomiya, mexanika, informatika"}],
-    correctAnswer: 'a'
+    question: "Jamiyat, umuman, insoniyat o‘tmishini o‘rganuvchi boshqa soha fanlari ham bor. Ular qaysi qatorda?",
+    options: [
+      "arxeologiya, etnologiya, geologiya, antropologiya, demografiya, madaniyat, iqtisodiyot",
+      "arxeologiya, etnologiya, geologiya, antropologiya, demografiya, madaniyat, algebra",
+      "glossariy, etnologiya, geologiya, antropologiya, demografiya, madaniyat, iqtisodiyot",
+      "mikroiqtisodiyot, astronomiya, geologiya, antropologiya, demografiya, madaniyat, iqtisodiyot"
+    ],
+    correctAnswer: 0
   },
   {
     id: 9,
-    text: "Tarix fani boshqa, ayniqsa, qaysi fanlar bilan mustahkam va uzviy aloqa birligida rivojlanadi?",
-    options: [{id: 'a', text: "Aniq va tabiiy"}, {id: 'b', text: "ijtimoiy-gumanitar"}, {id: 'c', text: "texnik fanlar"}, {id: 'd', text: "tasviriy san’at"}],
-    correctAnswer: 'b'
+    question: "Tarix fani boshqa, ayniqsa, qaysi fanlar bilan mustahkam va uzviy aloqa birligida rivojlanadi?",
+    options: [
+      "Aniq va tabiiy",
+      "ijtimoiy-gumanitar",
+      "mexanika va matematik modellashtirish",
+      "amaliy va tasviriy san’at"
+    ],
+    correctAnswer: 1
   },
   {
     id: 10,
-    text: "Tarix bilan boshqa ijtimoiy-gumanitar fanlarning o‘rganish ob’yekti nima?",
-    options: [{id: 'a', text: "tabiat"}, {id: 'b', text: "adabiyot"}, {id: 'c', text: "jamiyat"}, {id: 'd', text: "huquq"}],
-    correctAnswer: 'c'
+    question: "Shuni ham aytish lozimki, tarix bilan boshqa ijtimoiy-gumanitar fanlarning o‘rganish ob’yekti bitta, ya’ni qaysi hisoblanadi?",
+    options: ["tabiat", "adabiyot", "jamiyat", "huquq"],
+    correctAnswer: 2
   },
   {
     id: 11,
-    text: "Tarix bilan boshqa ijtimoiy-gumanitar fanlarning o‘rganish predmeti qaysi javobda?",
-    options: [{id: 'a', text: "texnika va texnologiya"}, {id: 'b', text: "tilshunoslik"}, {id: 'c', text: "falsafa va dinshunoslik"}, {id: 'd', text: "inson va jamiyat hayoti"}],
-    correctAnswer: 'd'
+    question: "Shuni ham aytish lozimki, tarix bilan boshqa ijtimoiy-gumanitar fanlarning o‘rganish predmeti qaysi javobda?",
+    options: [
+      "texnika va texnologiya",
+      "tilshunoslik va adabiyot",
+      "falsafa va dinshunoslik",
+      "inson va tabiat"
+    ],
+    correctAnswer: 3
   },
   {
     id: 12,
-    text: "Tarix falsafasi deganda nimani tushunamiz?",
-    options: [{id: 'a', text: "o‘tmish tajribasi va sabog‘idan to‘g‘ri xulosa chiqara olish"}, {id: 'b', text: "faqat sanalarni eslab qolish"}, {id: 'c', text: "kitoblarni ko'p o'qish"}, {id: 'd', text: "hikoyalar aytish"}],
-    correctAnswer: 'a'
+    question: "Tarix falsafasi deganda, nima ni tushunamiz?",
+    options: [
+      "tarix, ya’ni o‘tmish tajribasi va sabog‘idan to‘g‘ri xulosa chiqara olish tushuniladi",
+      "Kuch – adolatda",
+      "bugungi kundan maqsad – natija",
+      "Avval kalom – keyin salom!"
+    ],
+    correctAnswer: 0
   },
   {
     id: 13,
-    text: "Inson aql-idroki, uning tafakkur darajasi, hayotiy falsafasi nimani belgilab beradi?",
-    options: [{id: 'a', text: "metrologiyani"}, {id: 'b', text: "tarbiyani"}, {id: 'c', text: "ma’lum millat va jamiyat mentalitetini"}, {id: 'd', text: "arxeologiyani"}],
-    correctAnswer: 'c'
+    question: "Tadqiqotchilarning e‘tirof etishlaricha, insonning shaxsiy manfaat va ehtiyojlari, qolaversa, uning qobiliyati, iste‘dodi, voqelikni teran idrok etishi nimaga hizmat qiladi?",
+    options: [
+      "tezkorlik va aniqlik",
+      "tarix falsafasini anglab yetishda muhim ahamiyat kash etadi",
+      "o‘zbek modeli",
+      "Harakatlar strategiyasi, Taraqqiyot strategiyasi"
+    ],
+    correctAnswer: 1
   },
   {
     id: 14,
-    text: "Tarixning haqqoniy yozilishi nimaga xizmat qiladi?",
-    options: [{id: 'a', text: "shaxsiy manfaatga"}, {id: 'b', text: "tarixiy haqiqatni yuzaga chiqishiga"}, {id: 'c', text: "faqat siyosatga"}, {id: 'd', text: "texnik taraqqiyotga"}],
-    correctAnswer: 'b'
+    question: "Inson aql-idroki, uning tafakkur darajasi, hayotiy falsafasi, jamiyat taraqqiyoti yo‘lidagi barcha sa’y-harakatlari hamda intilishlari nimani belgilab beradi?",
+    options: [
+      "metrologiya",
+      "tarbiya",
+      "arxeologiya va antropologiya",
+      "ma’lum millat va jamiyat mentalitetini"
+    ],
+    correctAnswer: 3
   },
   {
     id: 15,
-    text: "O‘zbekistonнинг eng yangi tarixi fani metodologiyasini necha qismga bo‘lish tavsiya etiladi?",
-    options: [{id: 'a', text: "2 qismga"}, {id: 'b', text: "3 qismga"}, {id: 'c', text: "4 qismga"}, {id: 'd', text: "5 qismga"}],
-    correctAnswer: 'a'
+    question: "Tarixning haqqoniy yozilishi, nimaga xizmat qiladi?",
+    options: [
+      "tarbiya",
+      "arxeologiya va antropologiya",
+      "tarixiy haqiqatni yuzaga chiqishiga xizmat qiladi",
+      "ma’lum millat va jamiyat mentalitetini"
+    ],
+    correctAnswer: 2
   },
   {
     id: 16,
-    text: "Nazariya – bu nima?",
-    options: [{id: 'a', text: "ilmiy bilimlar yig‘indisi va aloqadorlikni bilish jarayoni"}, {id: 'b', text: "metodos va logos birikmasi"}, {id: 'c', text: "tarixiy haqiqat"}, {id: 'd', text: "oddiy taxminlar"}],
-    correctAnswer: 'a'
+    question: "Nazariya – bu nima?",
+    options: [
+      "ilmiy bilimlar yig‘indisi va boshqa fanlar bilan mavjud bo‘lgan aloqadorlikni bilish jarayonidir",
+      "tadqiqotchilar butun insoniyat, millat, xalq va o‘rganish ob’yekti evolyutsiyasi",
+      "“Metodos” va “Logos” degan ikki so‘z birikmasidan iborat",
+      "tarix fanlari doirasidagi ilmiy bilimlarning tuzilish tamoyillariga, shakli va ilmiy jihatdan O‘zbekistonning eng yangi tarixi fani doirasida qo‘llaniladigan ta’limotga aytiladi"
+    ],
+    correctAnswer: 3
   },
   {
     id: 17,
-    text: "Tarixiy o‘tmishni ilmiy va xolisona o‘rganish nima?",
-    options: [{id: 'a', text: "tezkorlik va aniqlik"}, {id: 'b', text: "zamonaviy dunyoning asosiy mezoni"}, {id: 'c', text: "faqat xotira"}, {id: 'd', text: "taraqqiyot strategiyasi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonning eng yangi tarixi fani metodologiyasini quyidagi ikki qismga bo‘lish tavsiya etiladi: bular birisi qaysi javobda?",
+    options: [
+      "“Metodos” va “Logos” degan ikki so‘z birikmasidan iborat",
+      "O‘zbekistonning eng yangi tarixi fanining metodologik ilmiy-nazariy, g‘oyaviy va falsafiy asoslari",
+      "tamoyillariga, shakli va ilmiy jihatdan O‘zbekistonning eng yangi tarixi fani doirasida qo‘llaniladigan ta’limot",
+      "ilmiy bilimlar yig‘indisi va boshqa fanlar bilan mavjud bo‘lgan aloqadorlikni bilish jarayonidir"
+    ],
+    correctAnswer: 1
   },
   {
     id: 18,
-    text: "Kim tomonidan ilgari surilgan “Ma’rifat va diniy bag‘rikenglik” tamoyili jahon hamjamiyati e’tirofiga sazovor bo‘lgan?",
-    options: [{id: 'a', text: "Amir Temur"}, {id: 'b', text: "I.A.Karimov"}, {id: 'c', text: "Sh.M.Mirziyoyev"}, {id: 'd', text: "Alisher Navoiy"}],
-    correctAnswer: 'c'
+    question: "Tarixiy o‘tmishni ilmiy va xolisona o‘rganish nima?",
+    options: [
+      "tezkorlik va aniqlik",
+      "tarix falsafasini anglab yetishda muhim ahamiyat kash etadi",
+      "zamonaviy dunyoning asosiy mezoni",
+      "Harakatlar strategiyasi, Taraqqiyot strategiyasi"
+    ],
+    correctAnswer: 1
   },
   {
     id: 19,
-    text: "O‘zbekistonning yangi tarixini tayyorlash va nashr qilish haqidagi I.A.Karimov Farmoni qachon qabul qilingan?",
-    options: [{id: 'a', text: "1996-yil 13-dekabr"}, {id: 'b', text: "1998-yil 13-dekabr"}, {id: 'c', text: "2000-yil 1-janvar"}, {id: 'd', text: "2017-yil 30-iyun"}],
-    correctAnswer: 'b'
+    question: "Kim tomonidan ilgari surilgan va jahon hamjamiyatining yuksak e‘tirofiga sazovor bo‘lgan ijtimoiy hayot bobida “Ma’rifat va diniy bag‘rikenglik” tamoyilini targ‘ib etish ulkan ahamiyat kash etadi?",
+    options: [
+      "Amir Temur",
+      "Abdulla Avloniy",
+      "O‘zbekiston Respublikasi birinchi Prezidenti I.A.Karimov",
+      "O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev"
+    ],
+    correctAnswer: 2
   },
   {
     id: 20,
-    text: "“Tarixiy xotirasiz kelajak yo‘q” risolasi qachon chop etilgan?",
-    options: [{id: 'a', text: "1997-yilda"}, {id: 'b', text: "1998-yilda"}, {id: 'c', text: "1999-yilda"}, {id: 'd', text: "2000-yilda"}],
-    correctAnswer: 'b'
+    question: "Qachon O‘zbekiston Respublikasi Birinchi Prezidenti I.A.Karimovning Farmoniga ko‘ra – O‘zbekistonning yangi tarixini tayyorlash va nashr qilish haqida qaror qabul qilindi?",
+    options: [
+      "1996-yil 13-dekabr",
+      "1998-yil 13-dekabr",
+      "2012-yil yanvar",
+      "2017-yil 30-iyun"
+    ],
+    correctAnswer: 0
   },
   {
     id: 21,
-    text: "O‘zbekistonнинг eng yangi tarixi bo‘yicha jamoatchilik kengashini tuzish to‘g‘risidagi Qaror qachon qabul qilindi?",
-    options: [{id: 'a', text: "2016-yil dekabr"}, {id: 'b', text: "2017-yil 30-iyun"}, {id: 'c', text: "2018-yil iyun"}, {id: 'd', text: "2021-yil yanvar"}],
-    correctAnswer: 'b'
+    question: "“Tarixiy xotirasiz kelajak yo‘q” risolasi qachon chop etilgan?",
+    options: ["1997-yilda", "1998-yilda", "1999-yilda", "2000-yilda"],
+    correctAnswer: 0
   },
   {
     id: 22,
-    text: "Odamzodning ilk ajdodlari bundan 2,5-3 million yil avval qaysi qit’ada yashay boshlagan?",
-    options: [{id: 'a', text: "Osiyo"}, {id: 'b', text: "Yevropa"}, {id: 'c', text: "Afrika"}, {id: 'd', text: "Amerika"}],
-    correctAnswer: 'c'
+    question: "Qachon Prezident Sh.M.Mirziyoyev imzosi ostida O‘zbekiston Respublikasi Fanlar Akademiyasi huzurida O‘zbekistonning eng yangi tarixi bo‘yicha jamoatchilik kengashini tuzish to‘g‘risida”gi Qaror qabul qilindi?",
+    options: [
+      "2016-yil dekabr",
+      "2021-yil 19-yanvarda",
+      "2017-yil 30-iyunda",
+      "2018-yil 18-dekabr"
+    ],
+    correctAnswer: 2
   },
   {
     id: 23,
-    text: "“Homo sapiyens, sapiyens” tushunchasi nimani anglatadi?",
-    options: [{id: 'a', text: "aqlli odam"}, {id: 'b', text: "ish bilarmon"}, {id: 'c', text: "dehqon"}, {id: 'd', text: "harbiy demokrat"}],
-    correctAnswer: 'a'
+    question: "Qachon ma’naviy-ma’rifiy masalalarga bag‘ishlangan yig‘ilishda, respublikamizning mustaqilligining qutlug‘ 30 yillik tantana tadbirlari, 1-oktabr O‘qituvchi va murabbiylar kuniga bag‘ishlangan tadbirda tarix ilmini chuqur va asosli o‘rganish masalasiga alohida urg‘u berildi?",
+    options: [
+      "2016-yil dekabr",
+      "2021-yil 19-yanvarda",
+      "2017-yil 30-iyunda",
+      "2021-yil 19-yanvarda"
+    ],
+    correctAnswer: 3
   },
   {
     id: 24,
-    text: "Markaziy Osiyo, jumladan O‘zbekiston tarixining beshinchi davrini nima deb atash mumkin?",
-    options: [{id: 'a', text: "Feodalizm"}, {id: 'b', text: "“Mustamlakachilik”"}, {id: 'c', text: "Mustaqillik"}, {id: 'd', text: "Sotsializm"}],
-    correctAnswer: 'b'
+    question: "O‘rta Osiyo, jumladan, O‘zbekiston tarixini zamon talablariga asoslanib davrlashtirish masalasida turlicha nuqtayi nazarlar mayjud. Bu masala yuzasidan, xususan, eng qadimgi davrlardan bugungi kunga qadar bo‘lgan tariximizni davrlashtirishda e’tibor berilishi lozim bo‘lgan tarixiy-madaniy jarayonlar, masalaga sivilizatsion yondashuv, davrlashtirishning metodologik asoslari kabi masalalarga qaysi olimlar e’tibor qaratganlar?",
+    options: [
+      "A.Asqarov, E.Riveladze, A. Sagdullayev",
+      "S.P.Tolstov, Ya. G‘ulomov, D.Alimova",
+      "Mikloha Maklay, Floro Benivini, Ottoylik Kozimbek",
+      "Chjan Szyan, Arriyan, Ktessiy, Kvin Kursi Ruf"
+    ],
+    correctAnswer: 0
   },
   {
     id: 25,
-    text: "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar davom etgan davr qaysi?",
-    options: [{id: 'a', text: "Mustamlakachilik davri"}, {id: 'b', text: "Sovet davri"}, {id: 'c', text: "Xonliklar davri"}, {id: 'd', text: "Uyg'onish davri"}],
-    correctAnswer: 'a'
+    question: "Kimming fikricha, Markaziy Osiyo tarixining eng qadimgi davri bir necha yuz ming yillarni o‘z ichiga oladi. Yevropa va Osiyo hududlarida tarixiy va madaniy jarayonlar rivojlanishining notekisligi, ayniqsa, turli davrlarda moddiy madaniyatdagi o‘zgarishlarning bir-biriga mos kelmasligi tufayli, ayrim hududlarga tegishli tarixiy sana va davrlashtirish bir-biridan farqlanadi?",
+    options: ["A.Asqarov", "A.Sagdullaev", "E.Riveladze", "D.Alimova"],
+    correctAnswer: 0
   },
   {
     id: 26,
-    text: "O‘zbekiston tarixining oltinchi davri (1917-1991) qanday ataladi?",
-    options: [{id: 'a', text: "“Sovetlar hukmronligi davri”"}, {id: 'b', text: "Mustaqillik davri"}, {id: 'c', text: "Demokratiya davri"}, {id: 'd', text: "Feodalizm davri"}],
-    correctAnswer: 'a'
+    question: "Kimming fikricha, O‘zbekiston tarixi jahon tarixining tarkibiy qismidir.",
+    options: ["A.Asqarov", "A.Sagdullaev", "E.Riveladze", "D.Alimova"],
+    correctAnswer: 2
   },
   {
     id: 27,
-    text: "Mustaqil taraqqiyot davri (1991-yildan hozirgacha) necha bosqichga bo‘linadi?",
-    options: [{id: 'a', text: "2 bosqichga"}, {id: 'b', text: "3 bosqichga"}, {id: 'c', text: "4 bosqichga"}, {id: 'd', text: "5 bosqichga"}],
-    correctAnswer: 'a'
+    question: "Jamiyatning notekis rivojlanish qonuniyati esa qadimgi zamonlarda ko‘proq nimaga bog‘liq bo‘lgan?",
+    options: [
+      "tarbiyaga",
+      "arxeologiya va antropologiyaga",
+      "tarixiy haqiqatni yuzaga chiqishiga",
+      "mintaqaning tabiiy-geografik va ekologik imkoniyatlariga"
+    ],
+    correctAnswer: 3
   },
   {
     id: 28,
-    text: "Prezident Shavkat Mirziyoyevning Oliy Majlisga Murojaatnomasida milliy o‘zligimizni anglash haqidagi fikrlari qachon bayon qilingan?",
-    options: [{id: 'a', text: "2017-yil dekabr"}, {id: 'b', text: "2018-yil 18-dekabr"}, {id: 'c', text: "2019-yil avgust"}, {id: 'd', text: "2020-yil yanvar"}],
-    correctAnswer: 'b'
+    question: "Kimming “O‘zbek xalqining kelib chiqish tarixi” monografiyasida ham keng yoritilgan va unda tarixni davrlashtirishda nimalarga e’tibor berish lozimligi ta’kidlanib, O‘zbekiston tarixini 7 ta davrga bo‘lib o‘rganish maqsadga muvofiqligi ilgari surilgan.",
+    options: ["Sagdullaev", "A.Asqarov", "E.Riveladze", "D.Alimova"],
+    correctAnswer: 1
   },
   {
     id: 29,
-    text: "“G‘aflatda yotgan xalqni uyg‘otish uchun, avvalo, uning tarixini uyg‘ot”! so‘zlari kimga tegishli?",
-    options: [{id: 'a', text: "Gerodot"}, {id: 'b', text: "Shahobiddin Muhammad an-Nasaviy"}, {id: 'c', text: "Beruniy"}, {id: 'd', text: "Ibn Sino"}],
-    correctAnswer: 'b'
+    question: "Odamzodning ilk ajdodlari bundan 2,5–3 million yil avval qaysi qit’ada yashay boshlagan?",
+    options: ["Osiyo", "Yevropa", "Afrika", "Amerika"],
+    correctAnswer: 2
   },
   {
     id: 30,
-    text: "“Tarix-hayotning muallimidir” degan yozuv qayerdagi peshtoqlarga yozilgan edi?",
-    options: [{id: 'a', text: "Rimda"}, {id: 'b', text: "Greziviyada"}, {id: 'c', text: "Xivada"}, {id: 'd', text: "Buxoroda"}],
-    correctAnswer: 'a'
+    question: "“Homo sapiens, sapiens”–…?",
+    options: ["aqlli odam", "ish bilarmon", "dehqon", "harbiy demokrat"],
+    correctAnswer: 0
   },
   {
     id: 31,
-    text: "“Erkin va farovon, demokratik O‘zbekiston davlatini birgalikda barpo etamiz” asari muallifi kim?",
-    options: [{id: 'a', text: "I.A.Karimov"}, {id: 'b', text: "Sh.M.Mirziyoyev"}, {id: 'c', text: "Abdulla Oripov"}, {id: 'd', text: "Erkin Vohidov"}],
-    correctAnswer: 'b'
+    question: "Odamzodning ilk ajdodlari qachon yashay boshlagan?",
+    options: [
+      "bundan 3,5–4 million yil avval",
+      "bundan 2,5–3 million yil avval",
+      "bundan 100–1 million yil avval",
+      "bundan 12–7 ming yil avval"
+    ],
+    correctAnswer: 1
   },
   {
     id: 32,
-    text: "“Milliy taraqqiyot yo‘limizni qat’iyat bilan davom ettirib yangi bosqichga ko‘taramiz” asari kimga tegishli?",
-    options: [{id: 'a', text: "I.A.Karimov"}, {id: 'b', text: "Sh.M.Mirziyoyev"}, {id: 'c', text: "S.Xolboyev"}, {id: 'd', text: "A.Isoqboyev"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda “Ilk o‘rta asrlar davri”. “O‘rta asrlar davri. Markaziy Osiyo, jumladan, O‘zbekiston tarixining beshinchi davrini nima deb atash mumkin?",
+    options: ["Feodalizm", "demokratiya", "“Mustamlakachilik”", "Kommunizm va sotsializm"],
+    correctAnswer: 0
   },
   {
     id: 33,
-    text: "“Buyuk kelajagimizni mard va oliyjanob xalqimiz bilan birga quramiz” asari muallifi kim?",
-    options: [{id: 'a', text: "I.A.Karimov"}, {id: 'b', text: "Sh.M.Mirziyoyev"}, {id: 'c', text: "A.Rasulov"}, {id: 'd', text: "Sh.Xolboyev"}],
-    correctAnswer: 'b'
+    question: "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar davom etgan davrni ko‘rsating?",
+    options: ["Feodalizm", "demokratiya", "Kommunizm va sotsializm", "“Mustamlakachilik”"],
+    correctAnswer: 3
   },
   {
     id: 34,
-    text: "“Yuksak ma’naviyat - yengilmas kuch” asari muallifi kim?",
-    options: [{id: 'a', text: "I.A.Karimov"}, {id: 'b', text: "Sh.M.Mirziyoyev"}, {id: 'c', text: "A.Asqarov"}, {id: 'd', text: "E.Rtveladze"}],
-    correctAnswer: 'a'
+    question: "O‘zbekiston tarixining oltinchi davri qanday davr bo‘lib, bu davr 1917-yildan 1991-yilgacha davom etgan?",
+    options: ["“Sovetlar hukmronligi davri”", "demokratiya", "5 – respublika", "netral davr"],
+    correctAnswer: 0
   },
   {
     id: 35,
-    text: "“Milliy mustaqillik va taraqqiyotning o‘zbek modeli” asari kimga tegishli?",
-    options: [{id: 'a', text: "I.A.Karimov"}, {id: 'b', text: "Sh.M.Mirziyoyev"}, {id: 'c', text: "B.Eshov"}, {id: 'd', text: "A.Sagdullayev"}],
-    correctAnswer: 'a'
+    question: "Mustaqillik davrida mamlakatimiz hayotining barcha sohalarida amalga oshirilgan tub o‘zgarishlar, respublika aholisining fidokorona mehnati tufayli qo‘lga kiritilgan katta yutuq va natijalarni, ularning mohiyati va ahamiyatini hisobga olib mustaqil taraqqiyot davrining necha bosqichga bo‘linishini ko‘rish mumkin?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 1
   },
   {
     id: 36,
-    text: "2017-yildan boshlab O‘zbekiston qaysi tamoyil asosida yo‘l oldi?",
-    options: [{id: 'a', text: "Axborot asri"}, {id: 'b', text: "milliy tiklanishdan - milliy yuksalish tomon"}, {id: 'c', text: "bozor iqtisodiyoti"}, {id: 'd', text: "harbiy qudrat"}],
-    correctAnswer: 'b'
+    question: "Prezidenti Shavkat Mirziyoyevning qachon “O‘zbekiston Respublikasi Fanlar akademiyasi huzurida O‘zbekistonning eng yangi tarixi bo‘yicha Jamoatchilik kengashi faoliyatini tashkil etish to‘g‘risida”gi qarori ham O‘zbekistonning eng yangi tarixini yaratishda muhim burilish bo‘lib xizmat qildi.",
+    options: [
+      "2016-yil dekabr",
+      "2017-yil 30-iyun",
+      "2018-yil 18-dekabr",
+      "2021-yil 19-yanvarda"
+    ],
+    correctAnswer: 2
   },
   {
     id: 37,
-    text: "Tarixiy davr, makon va geografik mintaqani bir butunlikda o‘z ichiga oladigan tushuncha?",
-    options: [{id: 'a', text: "predmet"}, {id: 'b', text: "Subyekt"}, {id: 'c', text: "Ob’yekt"}, {id: 'd', text: "Metod"}],
-    correctAnswer: 'c'
+    question: "O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyevning qachon Oliy Majlisga Murojaatnomasida “...milliy o‘zligimizni anglash, Vatanimizning qadimiy va boy tarixini o‘rganish, bu borada ilmiy tadqiqot ishlarini kuchaytirish, gumanitar soha olimlari faoliyatini har tomonlama qo‘llab-quvvatlash lozim”, degan fikrlari bayon qilingan va yuqorida ta’kidlangan masalah sohaning oldiga ko‘plab ilmiy masalalarni ko‘ndalang qo‘yadi?",
+    options: [
+      "2016-yil dekabr",
+      "2017-yil 30-iyun",
+      "2018-yil 18-dekabr",
+      "2021-yil 19-yanvarda"
+    ],
+    correctAnswer: 1
   },
   {
     id: 38,
-    text: "Dunyoga kelgan boy madaniyatli o‘zbek xalqi necha ming yillik tarixga ega?",
-    options: [{id: 'a', text: "2,5 ming"}, {id: 'b', text: "3,5 ming"}, {id: 'c', text: "4,5 ming"}, {id: 'd', text: "5 ming"}],
-    correctAnswer: 'b'
+    question: "Qaysi javobda globallashuv asri ko‘rsatilgan?",
+    options: ["XVIII", "XIX", "XX", "XXI"],
+    correctAnswer: 3
   },
   {
     id: 39,
-    text: "Harakatlar strategiyasi (2017-2021) kim tomonidan ilgari surilgan?",
-    options: [{id: 'a', text: "Sh.M.Mirziyoyev"}, {id: 'b', text: "I.A.Karimov"}, {id: 'c', text: "Oliy Majlis"}, {id: 'd', text: "Vazirlar Mahkamasi"}],
-    correctAnswer: 'a'
+    question: "3,5 mingdan ziyod xalqlarning faqat qanchasi o‘z davlatchiligiga ega.",
+    options: [
+      "84 tadan ziyodi",
+      "140 tadan ziyodi",
+      "180 tadan ziyodi",
+      "200 tadan ziyodi"
+    ],
+    correctAnswer: 3
   },
   {
     id: 40,
-    text: "“Kamolot” yoshlar ijtimoiy harakatining IV qurultoyi qachon bo‘lib o‘tdi?",
-    options: [{id: 'a', text: "2016-yil oktabr"}, {id: 'b', text: "2017-yil 30-iyun"}, {id: 'c', text: "2018-yil iyun"}, {id: 'd', text: "2019-yil may"}],
-    correctAnswer: 'b'
+    question: "“G‘aflatda yotgan xalqni uyg‘otish uchun, avvalo, uning tarixini uyg‘ot”! Ushbu so‘zlar kimga tegishli?",
+    options: ["Geradod", "Palien", "A.Avgustian", "Shahobiddin Muhammad an-Nasaviy"],
+    correctAnswer: 1
   },
   {
     id: 41,
-    text: "“Korrupsiyaga qarshi kurashish to‘g‘risida”gi Qonun qachon qabul qilindi?",
-    options: [{id: 'a', text: "2016-yil noyabr"}, {id: 'b', text: "2017-yil 3-yanvar"}, {id: 'c', text: "2018-yil yanvar"}, {id: 'd', text: "2019-yil may"}],
-    correctAnswer: 'b'
+    question: "Qayerda “Tarix–hayotning muallimidir” degan yozuv shior sifatida shahardagi peshtoqlardan biriga yozib qo‘yilgan edi.",
+    options: ["Rimda", "Yunonistonda", "Chor Rossiyasida", "O‘rta Osiyoda"],
+    correctAnswer: 0
   },
   {
     id: 42,
-    text: "BMTning Korrupsiyaga qarshi Konvensiyasi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1999-yil"}, {id: 'b', text: "2003-yil 31-oktabr"}, {id: 'c', text: "2005-yil"}, {id: 'd', text: "2010-yil"}],
-    correctAnswer: 'b'
+    question: "XIII asrda kim o‘zining quyidagi to‘rtligida yanada teran ma’noda mana bunday bayon etadi: “Kimki tutmas qalbida tarixini, U inson ham emas, olim ham emas. Biroq kimki ugsa o‘tmishini, Ko‘p boyitar o‘z turmushini.”",
+    options: ["Ibn Battuta", "Ibn Sino", "Abu Rayhon Beruniy", "Shahobiddin Muhammad an-Nasaviy"],
+    correctAnswer: 3
   },
   {
     id: 43,
-    text: "“Korrupsiyani qabul qilish indeksi”da O‘zbekiston 2019-yilda nechanchi o‘rinni egalladi?",
-    options: [{id: 'a', text: "157"}, {id: 'b', text: "153"}, {id: 'c', text: "159"}, {id: 'd', text: "160"}],
-    correctAnswer: 'b'
+    question: "2021-yil oxirlaridan strategiya – qaysi nomini oldi?",
+    options: ["globallashuv", "Kreativ iqtisod", "Taraqqiyot strategiyasi", "Besh tashabbus"],
+    correctAnswer: 2
   },
   {
     id: 44,
-    text: "“Ma’naviyat va ma’rifat” jamoatchilik markazi qachon tashkil etildi?",
-    options: [{id: 'a', text: "1990-yil"}, {id: 'b', text: "1994-yil 23-aprelda"}, {id: 'c', text: "1996-yil"}, {id: 'd', text: "2000-yil"}],
-    correctAnswer: 'b'
+    question: "“Erkin va farovon, demokratik O‘zbekiston davlatini birgalikda barpo etamiz” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Rasulov A., Isoqboyev A."],
+    correctAnswer: 0
   },
   {
     id: 45,
-    text: "O‘zbekiston mustaqilligini birinchi bo‘lib tan olgan davlat?",
-    options: [{id: 'a', text: "Rossiya"}, {id: 'b', text: "Turkiya"}, {id: 'c', text: "AQSH"}, {id: 'd', text: "Germaniya"}],
-    correctAnswer: 'b'
+    question: "“Tarixiy xotirasiz kelajak yo‘q” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Rasulov A., Isoqboyev A."],
+    correctAnswer: 0
   },
   {
     id: 46,
-    text: "O‘zbekiston mustaqilligining birinchi yili qachon nishonlandi?",
-    options: [{id: 'a', text: "1991-yil 31-avgust"}, {id: 'b', text: "1992-yil 1-sentabr"}, {id: 'c', text: "1991-yil 1-sentabr"}, {id: 'd', text: "1992-yil 31-avgust"}],
-    correctAnswer: 'b'
+    question: "“Milliy taraqqiyot yo‘limizni qat’iyat bilan davom ettirib yangi bosqichga ko‘taramiz” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Rasulov A., Isoqboyev A."],
+    correctAnswer: 1
   },
   {
     id: 47,
-    text: "O‘zbekiston Respublikasi Davlat bayrog‘i qachon qabul qilingan?",
-    options: [{id: 'a', text: "1991-yil 31-avgust"}, {id: 'b', text: "1991-yil 18-noyabr"}, {id: 'c', text: "1992-yil 2-iyul"}, {id: 'd', text: "1992-yil 8-dekabr"}],
-    correctAnswer: 'b'
+    question: "“Buyuk kelajagimizni mard va oliyjanob xalqimiz bilan birga quramiz” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Rasulov A., Isoqboyev A."],
+    correctAnswer: 1
   },
   {
     id: 48,
-    text: "O‘zbekiston Respublikai Davlat gerbi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1991-yil 18-noyabr"}, {id: 'b', text: "1992-yil 2-iyul"}, {id: 'c', text: "1992-yil 8-dekabr"}, {id: 'd', text: "1993-yil 1-janvar"}],
-    correctAnswer: 'b'
+    question: "“Yuksak ma’naviyat – yengilmas kuch” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Rasulov A., Isoqboyev A."],
+    correctAnswer: 0
   },
   {
     id: 49,
-    text: "O‘zbekiston Respublikasi Davlat madhiyasi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1992-yil 2-iyul"}, {id: 'b', text: "1992-yil 10-dekabr"}, {id: 'c', text: "1993-yil 8-dekabr"}, {id: 'd', text: "1991-yil 18-noyabr"}],
-    correctAnswer: 'b'
+    question: "“O‘zbekiston tarixini davrlashtirish masalahari” asari kimga tegishli?",
+    options: ["Karimov I.A.", "Mirziyoyev Sh.M.", "Holid Malik", "Eshov B."],
+    correctAnswer: 3
   },
   {
     id: 50,
-    text: "O‘zbekiston Respublikasi Konstitutsiyasi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1991-yil 31-avgust"}, {id: 'b', text: "1992-yil 8-dekabr"}, {id: 'c', text: "1993-yil 1-sentabr"}, {id: 'd', text: "1992-yil 1-sentabr"}],
-    correctAnswer: 'b'
+    question: "Shamsutdinov R.T., Mo‘minov X. asari qaysi javobda?",
+    options: [
+      "“O‘zbekiston tarixi”",
+      "“Milliy mustaqillik va taraqqiyotning o‘zbek modeli”",
+      "“Tarix o‘qitish metodikasi”",
+      "“Vatan tarixi”"
+    ],
+    correctAnswer: 2
   }
 ];
 
-// 2-blok: 51-100 gacha bo'lgan savollar
-const BLOCK_2: Question[] = [
+  export const questions2 = [
   {
     id: 51,
-    text: "Mustaqillik yillarida O‘zbekistonda amalga oshirilgan islohotlarning bosh maqsadi nima?",
-    options: [{id: 'a', text: "Harbiy qudratni oshirish"}, {id: 'b', text: "Inson manfaatlari va huquqlarini ta'minlash"}, {id: 'c', text: "Sanoatni rivojlantirish"}, {id: 'd', text: "Tashqi qarzni kamaytirish"}],
-    correctAnswer: 'b'
+    question: "“Milliy mustaqillik va taraqqiyotning o‘zbek modeli” asari kimga tegishli?",
+    options: [
+      "Rasulov A., Isoqboyev A.",
+      "Eshov B.",
+      "Kolboyev S.",
+      "A.S.Sagdullayev"
+    ],
+    correctAnswer: 3
   },
   {
     id: 52,
-    text: "Nimani o‘rganish u soxta tarixiy tushuncha va tarixiy xotirasizlikka barham beradi, milliy g‘oya va mafkuraning takomillashuvini tezlashtiradi?",
-    options: [{id: 'a', text: "Astranomiya"}, {id: 'b', text: "Vatan tarixi"}, {id: 'c', text: "Sotsiolizm"}, {id: 'd', text: "Dinshunoslik"}],
-    correctAnswer: 'b'
+    question: "Nimani o‘rganish va o‘qitish u soxta tarixiy tushuncha va tarixiy xotirasizlikka barham beradi, milliy g‘oya va mafkuraning takomillashuvini tezlashtiradi?",
+    options: ["Astronomiya", "Vatan tarixi", "Sotsializm", "Dinshunoslik"],
+    correctAnswer: 1
   },
   {
     id: 53,
-    text: "2017-yildan boshlab O‘zbekiston qanday strategik yo'nalishga o'tdi?",
-    options: [{id: 'a', text: "Axborot asriga"}, {id: 'b', text: "Yangi O'zbekiston - milliy yuksalish"}, {id: 'c', text: "Korrupsiyaga qarshi keskin kurash"}, {id: 'd', text: "milliy tiklanishdan - milliy yuksalish tomon"}],
-    correctAnswer: 'd'
+    question: "2017-yildan boshlab O‘zbekiston?",
+    options: [
+      "Axborot asriga o‘tdi",
+      "Kambag‘allik tugatildi",
+      "Joylarda “Biz Korrupsiyaga qarshimiz”! shiori ostida kurashga o‘tdi",
+      "milliy tiklanishdan – milliy yuksalish tomon yo‘l oldi"
+    ],
+    correctAnswer: 3
   },
   {
     id: 54,
-    text: "O'zbekiston Respublikasi Oliy Majlisi necha palatadan iborat?",
-    options: [{id: 'a', text: "1 ta"}, {id: 'b', text: "2 ta (Qonunchilik palatasi va Senat)"}, {id: 'c', text: "3 ta"}, {id: 'd', text: "4 ta"}],
-    correctAnswer: 'b'
+    question: "Nima tarixiy davr, makon, zamon va geografik mintaqaviy chegaralar, ma’lum bir xalq, millat, mamlakat tarixi bilan bog‘liq bo‘lib, ma’lum hudud doirasidagi voqea va hodisalarning bir butun va yaxlitlikda o‘z ichiga oladi?",
+    options: ["predmet", "Subyekt", "Ob’yekt", "barcha javoblar to‘g‘ri"],
+    correctAnswer: 2
   },
   {
     id: 55,
-    text: "O'zbekiston Respublikasi Qonunchilik palatasi deputatlari necha yil muddatga saylanadi?",
-    options: [{id: 'a', text: "3 yil"}, {id: 'b', text: "4 yil"}, {id: 'c', text: "5 yil"}, {id: 'd', text: "7 yil"}],
-    correctAnswer: 'c'
+    question: "Prezident Sh.M.Mirziyoyev … global tarzda yondashib, o‘zining BMT Bosh Assambleyasining qachon bo‘lib o‘tgan 72-sessiyasidagi nutqida alohida to‘xtalib, o‘sib kelayotgan avlodni, avvalo, ma’rifiy savodoxonlik ruhida tarbiyalash masalasiga alohida urg‘u berdi.",
+    options: [
+      "2017-yil sentabrda",
+      "2017-yil 30-iyunda",
+      "2021-yil 19-yanvarda",
+      "2016-yil dekabr oyida"
+    ],
+    correctAnswer: 0
   },
   {
     id: 56,
-    text: "O'zbekiston Respublikasi Senati a'zolari soni (yangi tahrirdagi konstitutsiyaga ko'ra) qancha qilib belgilandi?",
-    options: [{id: 'a', text: "100 ta"}, {id: 'b', text: "65 ta"}, {id: 'c', text: "80 ta"}, {id: 'd', text: "150 ta"}],
-    correctAnswer: 'b'
+    question: "Dunyoda navjud qancha xalqlar bor?",
+    options: [
+      "2,5 mingdan ziyod",
+      "3,5 mingdan ziyod",
+      "4,5 mingdan ziyod",
+      "5,5 mingdan ziyod"
+    ],
+    correctAnswer: 1
   },
   {
     id: 57,
-    text: "O'zbekiston Respublikasi Prezidenti necha yil muddatga saylanadi?",
-    options: [{id: 'a', text: "5 yil"}, {id: 'b', text: "7 yil"}, {id: 'c', text: "4 yil"}, {id: 'd', text: "10 yil"}],
-    correctAnswer: 'b'
+    question: "Qaysi asrga rivojlanishning zamonaviy taraqqiyot yo‘li bilan kirib kelgan, boy madaniyati va bebaho ma’naviyatiga ega bo‘lgan o‘zbek xalqi o‘zining ming yilliklar qa’riga kirib borgan tarixiy o‘tmishi bilan alohida o‘rin egallaydi?",
+    options: ["XVIII asr", "XIX asr", "XX asr", "XXI asr"],
+    correctAnswer: 3
   },
   {
     id: 58,
-    text: "O'zbekiston Respublikasi Vazirlar Mahkamasi qaysi hokimiyat organiga kiradi?",
-    options: [{id: 'a', text: "Qonun chiqaruvchi"}, {id: 'b', text: "Sud"}, {id: 'c', text: "Ijro etuvchi"}, {id: 'd', text: "Nazorat qiluvchi"}],
-    correctAnswer: 'c'
+    question: "Xalqning fikr hamda tafakkurining hosilasi nima?",
+    options: ["Astronomiya", "Tarix", "Diniy agidaparastlik", "Globallashuv"],
+    correctAnswer: 1
   },
   {
     id: 59,
-    text: "Davlat ramzlari - bu milliy nima hisoblanadi?",
-    options: [{id: 'a', text: "Boylik"}, {id: 'b', text: "G'urur va iftixor"}, {id: 'c', text: "Belgi"}, {id: 'd', text: "Qonun"}],
-    correctAnswer: 'b'
+    question: "Kim tomonidan ilgari surilgan, mamlakatni zamonaviy asnoda rivojlantirishga qaratilgan Harakatlar strategiyasi?",
+    options: ["Sh.M.Mirziyoyev", "A.Asqarov", "A.Sagdullaev", "E.Riveladze"],
+    correctAnswer: 0
   },
   {
     id: 60,
-    text: "O'zbekiston qachon Mustaqil Davlatlar Hamdo'stligi (MDH) a'zoligiga qabul qilindi?",
-    options: [{id: 'a', text: "1991-yil 21-dekabr"}, {id: 'b', text: "1992-yil 1-janvar"}, {id: 'c', text: "1991-yil 31-avgust"}, {id: 'd', text: "1993-yil"}],
-    correctAnswer: 'a'
+    question: "Markaziy Osiyo mintaqasi…?",
+    options: [
+      "Globallashuv",
+      "Jahon sivilizatsiyasining ajralmas qismi",
+      "odamzodning ilk ajdodlari yashay boshladi",
+      "“Mustamlakachilik”"
+    ],
+    correctAnswer: 1
   },
   {
     id: 61,
-    text: "1991-yil 29-dekabrda O'zbekistonda qanday muhim voqea yuz berdi?",
-    options: [{id: 'a', text: "Konstitutsiya qabul qilindi"}, {id: 'b', text: "Referendum va Prezidentlik saylovi"}, {id: 'c', text: "Bayroq tasdiqlandi"}, {id: 'd', text: "Gerb tasdiqlandi"}],
-    correctAnswer: 'b'
+    question: "“Sovetlar hukmronligi davri” bo‘lib, bu davr qachongacha davom etgan?",
+    options: [
+      "2,5–3 million yil avval",
+      "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar",
+      "1917-yildan 1991-yilgacha",
+      "1991-yil 31-avgustdan to bugungi kungacha"
+    ],
+    correctAnswer: 2
   },
   {
     id: 62,
-    text: "Referendumda qatnashganlarning necha foizi O'zbekiston mustaqilligini yoqlab ovoz berdi?",
-    options: [{id: 'a', text: "80%"}, {id: 'b', text: "98.2%"}, {id: 'c', text: "95%"}, {id: 'd', text: "100%"}],
-    correctAnswer: 'b'
+    question: "Jahon fanida Shimoliy-Sharqiy Afrikaning Olduvay darasida olib borilgan qanday izlanishlarga ko‘ra, odamzodning ilk ajdodlari topildi?",
+    options: [
+      "tilshunoslik va adabiyotshunoslik",
+      "arxeologik va antropologik",
+      "mexanik va matematik",
+      "diniy agidaparastlik"
+    ],
+    correctAnswer: 1
   },
   {
     id: 63,
-    text: "O'zbekistonda birinchi davlat mukofoti qaysi?",
-    options: [{id: 'a', text: "“O'zbekiston Qahramoni”"}, {id: 'b', text: "“Mustaqillik” ordeni"}, {id: 'c', text: "“Shuhrat” medali"}, {id: 'd', text: "“Amir Temur” ordeni"}],
-    correctAnswer: 'b'
+    question: "“Homo sapiens, sapiens” (aqlli odam) esa, yer kurrasida qachondan boshlab yashay boshlagan?",
+    options: [
+      "2,5–3 million yil avval",
+      "mil. avv. II million yildan",
+      "1917-yil oktabr to‘ntarishiga qadar",
+      "1991-yil 31-avgustdan to bugungi kungacha"
+    ],
+    correctAnswer: 1
   },
   {
     id: 64,
-    text: "O'zbekistonda milliy valyuta - Sum qachon muomalaga kiritildi?",
-    options: [{id: 'a', text: "1992-yil"}, {id: 'b', text: "1993-yil 15-noyabr"}, {id: 'c', text: "1994-yil 1-iyul"}, {id: 'd', text: "1991-yil"}],
-    correctAnswer: 'c'
+    question: "O‘zbekiston tarixini nechta davrga bo‘lib o‘rganish maqsadga muvofiqligi ilgari surilgan?",
+    options: ["3 ta", "4 ta", "5 ta", "7 ta"],
+    correctAnswer: 3
   },
   {
     id: 65,
-    text: "Mustaqillikning darslabki yillarida qaysi mashhur xalqaro tashkilot bilan aloqalar o'rnatildi?",
-    options: [{id: 'a', text: "NATO"}, {id: 'b', text: "BMT"}, {id: 'c', text: "YUNESKO"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "Qachon ma’naviy-ma’rifiy masalalarga bag‘ishlangan yig‘ilishda, respublikamizning mustaqilligining qutlug‘ 30 yillik tantana tadbirlari, 1-oktabr O‘qituvchi va murabbiylar kuniga bag‘ishlangan tadbirda tarix ilmini chuqur va asosli o‘rganish masalasiga alohida urg‘u berildi?",
+    options: [
+      "2017-yil 30-iyun",
+      "2018-yil 18-dekabr",
+      "2021-yil 19-yanvardagi",
+      "2021-yil oxirlari"
+    ],
+    correctAnswer: 2
   },
   {
     id: 66,
-    text: "1992-yil 2-martda O'zbekiston qaysi tashkilotga a'zo bo'ldi?",
-    options: [{id: 'a', text: "MDH"}, {id: 'b', text: "BMT"}, {id: 'c', text: "YEXHT"}, {id: 'd', text: "SHHT"}],
-    correctAnswer: 'b'
+    question: "Kristianlik falsafasi asoschisi qaysi qatorda?",
+    options: [
+      "Shahobiddin Muhammad an-Nasaviy",
+      "A.Avgustian",
+      "Yuliy Sezar",
+      "Pompey Trog"
+    ],
+    correctAnswer: 1
   },
   {
     id: 67,
-    text: "Mustaqillik yillarida O'zbekistonda sud hokimiyati qanday isloh qilindi?",
-    options: [{id: 'a', text: "Uch bosqichli tizimga o'tildi"}, {id: 'b', text: "Mustaqilligi ta'minlandi"}, {id: 'c', text: "Sud-huquq islohotlari o'tkazildi"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "O‘zbekiston tarixining “Mustamlakachilik” davri qaysi javobda?",
+    options: [
+      "bundan 2,5–3 million yil avval",
+      "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar",
+      "1917-yildan 1991-yilgacha",
+      "1991-yil 31-avgustdan to bugungi kungacha"
+    ],
+    correctAnswer: 1
   },
   {
     id: 68,
-    text: "O'zbekistonda “Inson huquqlari bo'yicha milliy markaz” qachon tashkil etildi?",
-    options: [{id: 'a', text: "1994-yil"}, {id: 'b', text: "1996-yil 31-oktabr"}, {id: 'c', text: "1998-yil"}, {id: 'd', text: "2000-yil"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston tarixining yetinchi davri eng yangi deb nomlanib, bu davr qaysi javobda?",
+    options: [
+      "bundan 2,5–3 million yil avval",
+      "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar",
+      "1917-yildan 1991-yilgacha",
+      "1991-yil 31-avgustdan to bugungi kungacha"
+    ],
+    correctAnswer: 3
   },
   {
     id: 69,
-    text: "Fuqarolarning o'zini o'zi boshqarish organi nima deb ataladi?",
-    options: [{id: 'a', text: "Hokimlik"}, {id: 'b', text: "Mahalla"}, {id: 'c', text: "Partiya"}, {id: 'd', text: "Kengash"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston tarixining 3-bosqich urug‘ jamoalarining harbiy demokratiya bosqichi qaysi javobda?",
+    options: [
+      "bundan 2,5–3 million yil avval",
+      "harbiy demokratiya",
+      "Rossiya imperiyasi bosqinidan to 1917-yil oktabr to‘ntarishiga qadar",
+      "1917-yildan 1991-yilgacha"
+    ],
+    correctAnswer: 1
   },
   {
     id: 70,
-    text: "O'zbekistonning birinchi konstitutsiyaviy sudi qachon tuzilgan?",
-    options: [{id: 'a', text: "1993-yil"}, {id: 'b', text: "1995-yil avgust"}, {id: 'c', text: "1991-yil"}, {id: 'd', text: "1992-yil"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda “Ibtidoiy urug‘chilik jamoasi va mulk egaligining shakllanish davri” necha bosqichga bo‘linadi?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 1
   },
   {
     id: 71,
-    text: "O'zbekiston Respublikasi Oliy sudi raisi kim tomonidan tayinlanadi?",
-    options: [{id: 'a', text: "Prezident"}, {id: 'b', text: "Senat"}, {id: 'c', text: "Qonunchilik palatasi"}, {id: 'd', text: "Referendum orqali"}],
-    correctAnswer: 'b'
+    question: "Kimning O‘zbekiston tarixining yetti davrga bo‘linishi mulohazasi bo‘yicha guruhlar ma’lum juz’iy o‘zgarishlar asosida qabul qilindi?",
+    options: [
+      "Rasulov A., Isoqboyev A.",
+      "A.Asqarov",
+      "A.Sagdullaev",
+      "E.Riveladze"
+    ],
+    correctAnswer: 2
   },
   {
     id: 72,
-    text: "Mustaqillik yillarida qaysi xalqaro bayram O'zbekistonda keng nishonlanadigan bo'ldi?",
-    options: [{id: 'a', text: "Navro'z"}, {id: 'b', text: "8-mart"}, {id: 'c', text: "Yangi yil"}, {id: 'd', text: "1-may"}],
-    correctAnswer: 'a'
+    question: "Qachon “Kamolot” yoshlar ijtimoiy harakatining IV qurultoyi bo‘lib o‘tdi. Unda O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev qatnashib, nutq so‘zladi. Davlatimiz rahbari yoshlar siyosatini chuqur tahli etib, bu borada yangicha ishlash prinsiplarini bayon qilib berdi. “Kamolot” yoshlar ijtimoiy harakati Yoshlar ittifogiga aylantirildi?",
+    options: [
+      "2017-yil 30-iyun",
+      "2019-yil 28-may",
+      "2016-yil oktabr",
+      "2020-yil 29-iyun"
+    ],
+    correctAnswer: 0
   },
   {
     id: 73,
-    text: "Navro'z bayrami qachon rasman bayram deb e'lon qilindi?",
-    options: [{id: 'a', text: "1991-yil"}, {id: 'b', text: "1990-yil 3-may"}, {id: 'c', text: "1989-yil"}, {id: 'd', text: "1992-yil"}],
-    correctAnswer: 'b'
+    question: "Qachondan O‘zbekiston Respublikasi Oliy majlisi Qonunchilik palatasi tomonidan “Korrupsiyaga qarshi kurashish to‘g‘risida”gi Qonun qabul qilindi?",
+    options: [
+      "2016-yil oktabr",
+      "2016-yil noyabr",
+      "2019-yil 28 may",
+      "2017-yil 30-iyun"
+    ],
+    correctAnswer: 1
   },
   {
     id: 74,
-    text: "O'zbekiston Respublikasi Mudofaa vazirligi qachon tashkil etilgan?",
-    options: [{id: 'a', text: "1991-yil 6-sentabr"}, {id: 'b', text: "1991-yil 31-avgust"}, {id: 'c', text: "1992-yil 1-janvar"}, {id: 'd', text: "1990-yil"}],
-    correctAnswer: 'a'
+    question: "BMTning Korrupsiyaga qarshi Konvensiyasi qachon qabul qilingan?",
+    options: [
+      "1999–yil 27–yanvar",
+      "1999–yil 4–noyabr",
+      "2000–yil 15–noyabr",
+      "2003–yil 31–oktabr"
+    ],
+    correctAnswer: 3
   },
   {
     id: 75,
-    text: "O'zbekiston Respublikasining harbiy doktrinasi qachon qabul qilingan (birinchi marta)?",
-    options: [{id: 'a', text: "1993-yil"}, {id: 'b', text: "1995-yil avgust"}, {id: 'c', text: "2000-yil"}, {id: 'd', text: "1991-yil"}],
-    correctAnswer: 'b'
+    question: "“Korrupsiyani qabul qilish indeksi”da O‘zbekiston 180 ta davlat orasida 2019-yilda 25 ball bilan nechanchi o‘rinni egallab 5 pog‘onaga ko‘tarildi?",
+    options: ["157", "158", "159", "153"],
+    correctAnswer: 3
   },
   {
     id: 76,
-    text: "Yangi tahrirdagi O'zbekiston Respublikasi harbiy doktrinasi qachon tasdiqlandi?",
-    options: [{id: 'a', text: "2017-yil"}, {id: 'b', text: "2018-yil 9-janvar"}, {id: 'c', text: "2020-yil"}, {id: 'd', text: "2015-yil"}],
-    correctAnswer: 'b'
+    question: "Qachon O‘zbekiston Respublikasining Birinchi Prezidenti I.Karimovning farmoniga asosan “Ma’naviyat va ma’rifat” jamoatchilik markazi tashkil etildi?",
+    options: [
+      "1990–yil 20–yanvarda",
+      "1994–yil 23–aprelda",
+      "2000–yil 2–iyunda",
+      "2016–yil 18–oktabrda"
+    ],
+    correctAnswer: 0
   },
   {
     id: 77,
-    text: "O'zbekistonнинг eng yangi tarixi fanining asosiy predmeti nima?",
-    options: [{id: 'a', text: "Qadimgi arxeologik tadqiqotlar"}, {id: 'b', text: "Mustaqillikdan keyingi ijtimoiy-siyosiy jarayonlar"}, {id: 'c', text: "Diniy oqimlar"}, {id: 'd', text: "Dunyo tarixi"}],
-    correctAnswer: 'b'
+    question: "“O‘zbekistonning eng yangi tarixi” fanining asosiy predmeti nima?",
+    options: [
+      "Qadimgi davrlardagi arxeologik tadqiqotlar",
+      "Mustaqillikdan keyingi ijtimoiy-siyosiy jarayonlar",
+      "Diniy oqimlarning rivojlanishi",
+      "Dunyo tarixining umumiy hodisalari"
+    ],
+    correctAnswer: 1
   },
   {
     id: 78,
-    text: "1990-yil 24-martda O'zbekiston tarixida qanday o'zgarish bo'ldi?",
-    options: [{id: 'a', text: "Mustaqillik e'lon qilindi"}, {id: 'b', text: "Prezidentlik lavozimi joriy etildi"}, {id: 'c', text: "Bayroq qabul qilindi"}, {id: 'd', text: "Partiya tugatildi"}],
-    correctAnswer: 'b'
+    question: "“O‘zbekistonning eng yangi tarixi” fani qaysi yildan boshlab oliy o‘quv yurtlarida asosiy fan sifatida o‘qitila boshlandi?",
+    options: ["1991", "2020", "2017", "2000"],
+    correctAnswer: 1
   },
   {
     id: 79,
-    text: "Prezidentlik lavozimi joriy etilgandan so'ng birinchi Prezident etib kim saylandi?",
-    options: [{id: 'a', text: "Sh.Mirziyoyev"}, {id: 'b', text: "I.Karimov"}, {id: 'c', text: "N.Yo'ldoshev"}, {id: 'd', text: "A.Oripov"}],
-    correctAnswer: 'b'
+    question: "“O‘zbekistonning eng yangi tarixi” fanini o‘rganishda qaysi tamoyil asosiy ahamiyatga ega?",
+    options: [
+      "Faoliyatga asoslangan yondashuv",
+      "Ilmiy xolislik va tarixiylik tamoyillari",
+      "Faqat qiyosiy tahlil",
+      "Voqealilik tahlili"
+    ],
+    correctAnswer: 1
   },
   {
     id: 80,
-    text: "1990-yil 20-iyunda qabul qilingan muhim hujjat qaysi?",
-    options: [{id: 'a', text: "Mustaqillik deklaratsiyasi"}, {id: 'b', text: "Mustaqillik to'g'risida qonun"}, {id: 'c', text: "Suverenitet deklaratsiyasi"}, {id: 'd', text: "Tillar haqida qonun"}],
-    correctAnswer: 'c'
+    question: "“O‘zbekistonning eng yangi tarixi” fanining asosiy maqsadi nima?",
+    options: [
+      "O‘zbekistonning geografik rivojlanishini o‘rganish",
+      "Mustaqillikdan keyingi tarixiy jarayonlarni yoritish",
+      "Sovet davrini tahlil qilish",
+      "Xalqaro aloqalarni chuqurroq o‘rganish"
+    ],
+    correctAnswer: 1
   },
   {
     id: 81,
-    text: "“Mustaqillik deklaratsiyasi” qaysi hujjat asosida qabul qilingan?",
-    options: [{id: 'a', text: "Konstitutsiya"}, {id: 'b', text: "Suverenitet deklaratsiyasi"}, {id: 'c', text: "Referendum natijasi"}, {id: 'd', text: "BMT qarori"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonning mustaqillik davridagi tarixini o‘rganish necha bosqichdan iborat?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 1
   },
   {
     id: 82,
-    text: "O‘zbekiston mustaqillikni qachon qo‘lga kiritdi?",
-    options: [{id: 'a', text: "1991-yil 1-sentabr"}, {id: 'b', text: "1991-yil 31-avgust"}, {id: 'c', text: "1990-yil 1-sentabr"}, {id: 'd', text: "1991-yil 29-dekabr"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston mustaqillikni qachon qo‘lga kiritdi?",
+    options: [
+      "1991-yil 1-sentabr",
+      "1991-yil 31-avgust",
+      "1990-yil 1-sentabr",
+      "1991-yil 29-dekabr"
+    ],
+    correctAnswer: 1
   },
   {
     id: 83,
-    text: "O'zbekistonning mustaqilligi to'g'risidagi qonun qachon qabul qilindi?",
-    options: [{id: 'a', text: "1991-yil 31-avgust"}, {id: 'b', text: "1991-yil 1-sentabr"}, {id: 'c', text: "1992-year 8-dekabr"}, {id: 'd', text: "1990-year 20-iyun"}],
-    correctAnswer: 'a'
+    question: "Mustaqillikka erishishdan oldin qanday siyosiy tizim hukmron edi?",
+    options: [
+      "Monarxiya",
+      "Sotsialistik boshqaruv",
+      "Federal boshqaruv",
+      "Liberal demokratiya"
+    ],
+    correctAnswer: 1
   },
   {
     id: 84,
-    text: "O'zbekistonning davlat mustaqilligi asoslari to'g'risidagi qonun necha moddadan iborat?",
-    options: [{id: 'a', text: "15 ta"}, {id: 'b', text: "17 ta"}, {id: 'c', text: "20 ta"}, {id: 'd', text: "12 ta"}],
-    correctAnswer: 'b'
+    question: "Mustaqillikka erishish yo‘lida qanday omillar muhim rol o‘ynadi?",
+    options: [
+      "Madaniy yangilanishlar",
+      "Ekologik muammolar",
+      "Iqtisodiy va siyosiy bosimlar",
+      "Ichki islohotlar"
+    ],
+    correctAnswer: 3
   },
   {
     id: 85,
-    text: "1989-yilda O‘zbekistonda qabul qilingan muhim qaror nima edi?",
-    options: [{id: 'a', text: "Mustaqillik e’lon qilinishi"}, {id: 'b', text: "Davlat ramzlari"}, {id: 'c', text: "Davlat tilining o‘zbek tili deb e’lon qilinishi"}, {id: 'd', text: "Sotsialistik boshqaruvning tugatilishi"}],
-    correctAnswer: 'c'
+    question: "1989-yilda O‘zbekistonda qabul qilingan muhim qaror nima edi?",
+    options: [
+      "Mustaqillikning e’lon qilinishi",
+      "Davlat ramzlari qabul qilinishi",
+      "Davlat tilining o‘zbek tili deb e’lon qilinishi",
+      "Sotsialistik boshqaruvning tugatilishi"
+    ],
+    correctAnswer: 2
   },
   {
     id: 86,
-    text: "Mustaqillik yillarida o'zbek tiliga qanday maqom berildi?",
-    options: [{id: 'a', text: "Milliy til"}, {id: 'b', text: "Davlat tili"}, {id: 'c', text: "Xalqaro til"}, {id: 'd', text: "Mintaqaviy til"}],
-    correctAnswer: 'b'
+    question: "Mustaqillikka erishish arafasida iqtisodiyot qaysi holatda edi?",
+    options: [
+      "Barqaror rivojlangan",
+      "O‘tish davrida",
+      "To‘liq ingirozga uchragan",
+      "Tez rivojlanayotgan"
+    ],
+    correctAnswer: 2
   },
   {
     id: 87,
-    text: "O'zbekiston Respublikasi Konstitutsiyasining nechanchi moddasida o'zbek tili davlat tili ekanligi belgilangan?",
-    options: [{id: 'a', text: "1-modda"}, {id: 'b', text: "4-modda"}, {id: 'c', text: "8-modda"}, {id: 'd', text: "12-modda"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonning davlat ramzlari qachon qabul qilindi?",
+    options: ["1991-yilda", "1992-yilda", "1995-yilda", "1994-yilda"],
+    correctAnswer: 0
   },
   {
     id: 88,
-    text: "O'zbekistonda lotin yozuviga asoslangan o'zbek alifbosini joriy etish to'g'risidagi qonun qachon qabul qilindi?",
-    options: [{id: 'a', text: "1991-yil"}, {id: 'b', text: "1993-yil 2-sentabr"}, {id: 'c', text: "1995-yil"}, {id: 'd', text: "1992-yil"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston Respublikasining birinchi Prezidenti kim edi?",
+    options: [
+      "Islam Karimov",
+      "Shavkat Mirziyoyev",
+      "Abdulla Oripov",
+      "Muhammad Solih"
+    ],
+    correctAnswer: 0
   },
   {
     id: 89,
-    text: "O‘zbekiston Respublikasining birinchi Prezidenti kim edi?",
-    options: [{id: 'a', text: "Islom Karimov"}, {id: 'b', text: "Shavkat Mirziyoyev"}, {id: 'c', text: "Abdulla Oripov"}, {id: 'd', text: "Muhammad Solih"}],
-    correctAnswer: 'a'
+    question: "“O‘zbek modeli” qanday tushunchaga asoslangan?",
+    options: [
+      "Rivojlanishning mustaqil va bosqichma-bosqich strategiyasi",
+      "Faqat iqtisodiy islohotlar",
+      "Xalqaro tashkilotlarga kirish tamoyili",
+      "Qonun va nizomlarni tartibga solish"
+    ],
+    correctAnswer: 0
   },
   {
     id: 90,
-    text: "Mustaqillikdan so'ng O'zbekiston qaysi iqtisodiy modelni tanladi?",
-    options: [{id: 'a', text: "Sotsialistik iqtisodiyot"}, {id: 'b', text: "Ma'muriy buyruqbozlik"}, {id: 'c', text: "Bozor iqtisodiyoti (O'zbek modeli)"}, {id: 'd', text: "Liberal iqtisodiyot"}],
-    correctAnswer: 'c'
+    question: "O‘zbekistonning birinchi Konstitutsiyasi qachon qabul qilingan?",
+    options: [
+      "1992-yil 8-dekabr",
+      "1991-yil 8-dekabr",
+      "1990-yil 8-dekabr",
+      "1993-yil 8-dekabr"
+    ],
+    correctAnswer: 0
   },
   {
     id: 91,
-    text: "O‘zbekistonнинг birinchi Konstitutsiyasi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1992-yil 8-dekabr"}, {id: 'b', text: "1991-yil 8-dekabr"}, {id: 'c', text: "1990-yil 8-dekabr"}, {id: 'd', text: "1993-yil 8-dekabr"}],
-    correctAnswer: 'a'
+    question: "1991-yilda qaysi muhim hujjat qabul qilindi?",
+    options: [
+      "Davlat mustaqilligi deklaratsiyasi",
+      "Milliy gvardiya tashkiloti nizomi",
+      "Davlat tiliga oid qonun",
+      "O‘zbekistonning davlat ramzlari"
+    ],
+    correctAnswer: 0
   },
   {
     id: 92,
-    text: "Konstitutsiyaning asosiy prinsiplari nimalardan iborat?",
-    options: [{id: 'a', text: "Suverenitet"}, {id: 'b', text: "Demokratiya"}, {id: 'c', text: "Inson huquqlari"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "O‘zbekiston bozor iqtisodiyotiga o‘tishni qachon boshladi?",
+    options: ["1990-yilda", "1991-yilda", "1992-yilda", "1995-yilda"],
+    correctAnswer: 1
   },
   {
     id: 93,
-    text: "Mustaqillik yillarida O'zbekistonda ta'lim sohasida qanday muhim hujjat qabul qilindi?",
-    options: [{id: 'a', text: "Ta'lim to'g'risidagi qonun"}, {id: 'b', text: "Kadrlar tayyorlash milliy dasturi"}, {id: 'c', text: "Maktab islohoti"}, {id: 'd', text: "A va B javoblar"}],
-    correctAnswer: 'd'
+    question: "“Xususiylashtirish to‘g‘risida”gi qonun qachon qabul qilindi?",
+    options: ["1992-yilda", "1991-yilda", "1995-yilda", "2000-yilda"],
+    correctAnswer: 0
   },
   {
     id: 94,
-    text: "Kadrlar tayyorlash milliy dasturi qachon qabul qilingan?",
-    options: [{id: 'a', text: "1991-yil"}, {id: 'b', text: "1997-yil 29-avgust"}, {id: 'c', text: "2000-yil"}, {id: 'd', text: "1992-yil"}],
-    correctAnswer: 'b'
+    question: "Iqtisodiy rivojlanishda “O‘zbek modeli”ning asosiy tamoyili nima edi?",
+    options: [
+      "Tashqi sarmoyalarga bog‘liqlik",
+      "O‘tish davrini bosqichma-bosqich amalga oshirish",
+      "Davlatning iqtisodiyotga aralashmasligi",
+      "Faqat xususiy mulkni rivojlantirish"
+    ],
+    correctAnswer: 1
   },
   {
     id: 95,
-    text: "O'zbekistonda 12 yillik majburiy ta'lim tizimi qachon joriy etildi (keyinchalik 11 yillik bo'ldi)?",
-    options: [{id: 'a', text: "1992-yil"}, {id: 'b', text: "1997-yil"}, {id: 'c', text: "2010-yil"}, {id: 'd', text: "1991-yil"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston iqtisodiy taraqqiyotining birinchi bosqichi necha yil davom etdi?",
+    options: ["5 yil", "10 yil", "7 yil", "3 yil"],
+    correctAnswer: 2
   },
   {
     id: 96,
-    text: "Mustaqillik yillarida O'zbekistonda qancha yangi oliy o'quv yurtlari ochildi?",
-    options: [{id: 'a', text: "10 ta"}, {id: 'b', text: "50 tadan ortiq"}, {id: 'c', text: "100 tadan ortiq"}, {id: 'd', text: "O'zgarish bo'lmadi"}],
-    correctAnswer: 'c'
+    question: "Mustaqillik yillarida O‘zbekiston iqtisodiy siyosatida qaysi sohalarga alohida e’tibor qaratildi?",
+    options: [
+      "Faqat qishloq xo‘jaligi",
+      "Qishloq xo‘jaligi va sanoat",
+      "Sanoat va xizmat ko‘rsatish sohasi",
+      "Faqat transport va logistika"
+    ],
+    correctAnswer: 1
   },
   {
     id: 97,
-    text: "1992-yilda O'zbekistonda qaysi mashhur xalqaro universitet filiali ochildi?",
-    options: [{id: 'a', text: "Vestminster"}, {id: 'b', text: "Turin"}, {id: 'c', text: "Inha"}, {id: 'd', text: "JIDU (Jahon iqtisodiyoti va diplomatiya universiteti) tashkil etildi"}],
-    correctAnswer: 'd'
+    question: "“Kadrlar tayyorlash milliy dasturi” qachon qabul qilingan?",
+    options: ["1995-yilda", "1997-yilda", "2000-yilda", "1991-yilda"],
+    correctAnswer: 1
   },
   {
     id: 98,
-    text: "Jahon iqtisodiyoti va diplomatiya universiteti qachon tashkil etilgan?",
-    options: [{id: 'a', text: "1991-yil"}, {id: 'b', text: "1992-yil 23-sentabr"}, {id: 'c', text: "1994-yil"}, {id: 'd', text: "1990-yil"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda nechta bosqichli ta’lim tizimi joriy etildi?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 1
   },
   {
     id: 99,
-    text: "O'zbekistonнинг yangi tarixi nechanchi yildan boshlanadi?",
-    options: [{id: 'a', text: "1917-yil"}, {id: 'b', text: "1991-yil"}, {id: 'c', text: "1989-yil"}, {id: 'd', text: "2000-yil"}],
-    correctAnswer: 'b'
+    question: "Milliy universitetlar sonini oshirish dasturi qaysi yillarda amalga oshirildi?",
+    options: [
+      "1991–1995 yillar",
+      "1997–2000 yillar",
+      "2005–2010 yillar",
+      "2010–2017 yillar"
+    ],
+    correctAnswer: 0
   },
   {
     id: 100,
-    text: "Mustaqillik yillarida O'zbekistonda milliy qadriyatlarni tiklash bo'yicha qanday ishlar qilindi?",
-    options: [{id: 'a', text: "Tarixiy obidalar tiklandi"}, {id: 'b', text: "Buyuk ajdodlar yubileylari nishonlandi"}, {id: 'c', text: "Milliy bayramlar tiklandi"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev ta’lim tizimini rivojlantirishda qanday tamoyilni ilgari surdi?",
+    options: [
+      "Raqobarbardosh kadr tayyorlash",
+      "Xalqaro tajribalarni inkor qilish",
+      "Faqat an’anaviy ta’limga asoslanish",
+      "Qishloq joylarda ta’limni qisqartirish"
+    ],
+    correctAnswer: 0
   }
 ];
-
-// 9-blok: 401-450 gacha bo'lgan savollar
-const BLOCK_9: Question[] = [
+export const questions3 = [
+  {
+    id: 101,
+    question: "Ta’lim sohasidagi islohotlarning maqsadi nima edi?",
+    options: [
+      "Kadrlarni xorijiy davlatlarga tayyorlash",
+      "Yangi avlod uchun raqobarbardosh ta’lim tizimi yaratish",
+      "Ta’limni faqat shahar joylarda rivojlantirish",
+      "Faqat madaniy-ma’rifiy loyihalarni amalga oshirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 102,
+    question: "Fuqarolik jamiyati shakllanishida qaysi hujjat qabul qilindi?",
+    options: ["1991-yilda", "1992-yilda", "1993-yilda", "1994-yilda"],
+    correctAnswer: 1
+  },
+  {
+    id: 103,
+    question: "Fuqarolik jamiyatining asosiy tamoyillari qaysilar?",
+    options: [
+      "Iqtisodiy islohotlar va rivojlanish",
+      "Demokratik qadriyatlar va inson huquqlarining ta’minlanishi",
+      "Davlatning iqtisodiyotdagi roli",
+      "Mahalliy boshqaruvning cheklanishi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 104,
+    question: "Fuqarolik jamiyatining rivojlanishiga qanday islohotlar ta’sir qildi?",
+    options: [
+      "Siyosiy barqarorlikni ta’minlash",
+      "Davlat boshqaruvini cheklash",
+      "Milliy xavfsizlikni mustahkamlash",
+      "Ijtimoiy-siyosiy islohotlar"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 105,
+    question: "Fuqarolik jamiyatini rivojlantirishda “mahalla” institutining o‘rni qanday?",
+    options: [
+      "Faoliyatni cheklash",
+      "Aholi bilan bevostita ishlash va ijtimoiy masalalarni hal qilish",
+      "Faqat diniy faoliyatni nazorat qilish",
+      "Davlatning iqtisodiy siyosatini o‘zgartirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 106,
+    question: "“Fuqarolik jamiyati” atamasi qaysi jarayon bilan bog‘liq?",
+    options: [
+      "Mustamlakachilik davri",
+      "Mustaqillik yillaridagi demokratik islohotlar",
+      "Sovet davridagi boshqaruv tizimi",
+      "Xalqaro tashkilotlarning faoliyati"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 107,
+    question: "Mustaqillik yillarida O‘zbekistonda qanday madaniy yangilanishlar amalga oshirildi?",
+    options: [
+      "Qadimiy obidalarni tiklash",
+      "Mahalliy madaniyatni inkor qilish",
+      "Faqat yangi binolar qurish",
+      "Madaniyat sohasini davlat nazoratidan chiqarish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 108,
+    question: "Mustaqillik yillarida qaysi milliy bayram davlat darajasida nishonlana boshlandi?",
+    options: ["Mehnat kuni", "Navro‘z bayrami", "Yangi yil", "Konstitutsiya kuni"],
+    correctAnswer: 1
+  },
+  {
+    id: 109,
+    question: "Madaniyat va ma’naviyat sohasidagi islohotlarning asosiy maqsadi nima edi?",
+    options: [
+      "Milliy qadriyatlarni tiklash va targ‘ib qilish",
+      "Faqat xalqaro tadbirlarni o‘tkazish",
+      "San’atni davlatdan ajratish",
+      "Madaniy muassasalarni yopish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 110,
+    question: "Mustaqillik yillarida O‘zbekistonda qayta tiklangan tarixiy obidalardan biri qaysi?",
+    options: ["Registon majmuasi", "Toshkent metropoliteni", "Amudaryo ko‘prigi", "Nukus muzeyi"],
+    correctAnswer: 0
+  },
+  {
+    id: 111,
+    question: "O‘zbekistonning qaysi shahrida Jahon Tamadduni xalqaro markazi tashkil etilgan?",
+    options: ["Samarqand", "Toshkent", "Buxoro", "Xiva"],
+    correctAnswer: 0
+  },
+  {
+    id: 112,
+    question: "O‘zbekiston qachon BMTga a’zo bo‘ldi?",
+    options: ["1991-yil", "1992-yil", "1993-yil", "1994-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 113,
+    question: "O‘zbekistonning xalqaro tashkilotlarga a’zolik maqsadi nima edi?",
+    options: [
+      "Iqtisodiy va siyosiy aloqalarni mustahkamlash",
+      "Yagona iqtisodiy model joriy qilish",
+      "Faqat rivojlanish yordamini olish",
+      "Tashqi siyosatni cheklash"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 114,
+    question: "O‘zbekistonning Yevropa davlatlari bilan hamkorligi asosan qaysi sohalarni qamrab oladi?",
+    options: [
+      "Qishloq xo‘jaligi va ta’lim",
+      "Energetika va sanoat",
+      "Faqat siyosiy islohotlar",
+      "Diniy tashkilotlar faoliyati"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 115,
+    question: "O‘zbekiston qaysi yil Shanxay Hamkorlik Tashkilotiga a’zo bo‘ldi?",
+    options: ["2000-yil", "2001-yil", "2005-yil", "1999-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 116,
+    question: "O‘zbekistonning Markaziy Osiyoda lider sifatida tan olinishi qaysi yo‘nalish bilan bog‘liq?",
+    options: [
+      "Suv resurslarini boshqarish",
+      "Tinchlik va xavfsizlikni ta’minlash",
+      "Energetika sohasidagi hamkorlik",
+      "Faqat transport tizimlarini rivojlantirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 117,
+    question: "O‘zbekiston Respublikasida saylov qonunchiligi qachon qabul qilindi?",
+    options: ["1992-yil", "1993-yil", "1994-yil", "1995-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 118,
+    question: "Mustaqillik davrida qabul qilingan Konstitutsiyada nechta bo‘lim mavjud?",
+    options: ["6", "7", "8", "9"],
+    correctAnswer: 0
+  },
+  {
+    id: 119,
+    question: "O‘zbekiston Respublikasi Oliy Majlisi qaysi yilda tashkil etildi?",
+    options: ["1992-yilda", "1994-yilda", "1996-yilda", "2000-yilda"],
+    correctAnswer: 1
+  },
+  {
+    id: 120,
+    question: "Fuqarolik jamiyatining shakllanishida qaysi islohot muhim rol o‘ynadi?",
+    options: [
+      "Sud-huquq islohotlari",
+      "Davlat xizmatchilari sonini oshirish",
+      "Qishloq xo‘jaligini rivojlantirish",
+      "Energiya sohasini liberallashtirish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 121,
+    question: "Demokratik islohotlarning asosiy tamoyillaridan biri nima edi?",
+    options: [
+      "Fuqarolar huquq va erkinliklarini kengaytirish",
+      "Ijtimoiy sinflarni kuchaytirish",
+      "Mahalliy boshqaruvni qisqartirish",
+      "Xalqaro hamkorlikni cheklash"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 122,
+    question: "2017–2021-yillarga mo‘ljallangan Harakatlar strategiyasi nechta ustuvor yo‘nalishni o‘z ichiga oladi?",
+    options: ["4", "5", "6", "7"],
+    correctAnswer: 1
+  },
+  {
+    id: 123,
+    question: "Harakatlar strategiyasining asosiy maqsadi nima?",
+    options: [
+      "Davlat boshqaruvini markazlashtirish",
+      "O‘zbekistonni rivojlangan davlatlar qatoriga qo‘shish",
+      "Faqat iqtisodiyotni rivojlantirish",
+      "Tashqi qarzlarni oshirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 124,
+    question: "Strategiyada qaysi sohalarga alohida e’tibor qaratilgan?",
+    options: [
+      "Ijtimoiy soha va iqtisodiyot",
+      "Xalqaro munosabatlar va qishloq xo‘jaligi",
+      "Transport va logistika",
+      "Faqat energetika"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 125,
+    question: "Harakatlar strategiyasi doirasida qaysi yil “Fuqarolik investitsiyalari va ijtimoiy rivojlanish yili” deb e’lon qilingan?",
+    options: ["2019-yil", "2020-yil", "2018-yil", "2021-yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 126,
+    question: "Harakatlar strategiyasi qanday bosqichda amalga oshirilmogda?",
+    options: [
+      "Yillik rejalarga asoslangan",
+      "Besh yillik rejalarga asoslangan",
+      "Faoliyatni to‘xtatib turish",
+      "Qonun chiqarishni cheklash"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 127,
+    question: "O‘zbekiston BMTga a’zo bo‘lgan yili?",
+    options: ["1991-yil", "1992-yil", "1993-yil", "1994-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 128,
+    question: "O‘zbekistonning xalqaro tashkilotlarga a’zo bo‘lishi asosiy qanday maqsadni ko‘zlagan?",
+    options: [
+      "Faqat iqtisodiy yordam olish",
+      "Jahon hamjamiyatida o‘z o‘rnini topish",
+      "Madaniyat aloqalarini cheklash",
+      "Faqat siyosiy integratsiya"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 129,
+    question: "O‘zbekiston 1992-yilda qanday xalqaro tashkilotga a’zo bo‘ldi?",
+    options: ["BMT", "Osiyo taraqqiyot banki", "Turkish Council", "Iqtisodiy hamkorlik tashkiloti"],
+    correctAnswer: 3
+  },
+  {
+    id: 130,
+    question: "O‘zbekiston qaysi yili Yevropada xavfsizlik va hamkorlik tashkilotiga (YEXHT) a’zo bo‘ldi?",
+    options: ["1991", "1992", "1994", "1995"],
+    correctAnswer: 1
+  },
+  {
+    id: 131,
+    question: "O‘zbekiston qanday xalqaro tashkilot bilan aloqalarini mustahkamlashga alohida e’tibor qaratmogda?",
+    options: [
+      "Yevropa ittifogi",
+      "Osiyo taraqqiyot banki",
+      "Global iqtisodiy forum",
+      "Mustaqil davlatlar hamdo‘stligi"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 132,
+    question: "O‘zbekistonning xalqaro reytingda o‘rni qanday?",
+    options: [
+      "Past darajadagi iqtisodiy ko‘rsatkichlar",
+      "O‘rta darajadagi iqtisodiy ko‘rsatkichlar",
+      "Yuqori darajadagi iqtisodiy va siyosiy barqarorlik",
+      "Faqat madaniyat bilan bog‘liq reytinglar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 133,
+    question: "O‘zbekiston xalqaro iqtisodiy reytingda qanday o‘rinni egalladi?",
+    options: ["50-o‘rin", "70-o‘rin", "100-o‘rin", "140-o‘rin"],
+    correctAnswer: 2
+  },
+  {
+    id: 134,
+    question: "Qaysi xalqaro reyting O‘zbekistonning iqtisodiy ko‘rsatkichlari uchun asosiy hisoblanadi?",
+    options: [
+      "Global innovation reyting",
+      "Jahon bankining biznes muhit reytingi",
+      "Xalqaro iqtisodiy forum reytingi",
+      "UNDP inson taraqqiyoti indeksi"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 135,
+    question: "O‘zbekistonning xalqaro iqtisodiy reytinglarda ortib borayotgan o‘rni qanday ta’sir qilmogda?",
+    options: [
+      "Xalqaro tan olinish va sarmoyalar kelishi",
+      "Faoliyatni cheklash",
+      "Faqat ichki ishlab chiqarishning rivojlanishi",
+      "Aholi sonining o‘sishi"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 136,
+    question: "O‘zbekistonning xalqaro reytinglarda o‘rni qanday mezonlarga asoslanadi?",
+    options: [
+      "Xalqaro siyosiy tizimlar",
+      "Xalqaro iqtisodiy va ijtimoiy barqarorlik",
+      "Madaniyat va ilmiy aloqalar",
+      "Qishloq xo‘jaligidagi o‘zgarishlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 137,
+    question: "O‘zbekiston tarixini o‘rganishning muhim maqsadi nima?",
+    options: [
+      "O‘zbekistonni xalqaro miqyosda tanitish",
+      "Faqat iqtisodiy taraqqiyotning tarixini yoritish",
+      "Jamiyatdagi madaniy o‘zgarishlarni tahlil qilish",
+      "Mustaqillikning tarixiy ahamiyatini tushuntirish"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 138,
+    question: "O‘zbekiston tarixini tadqiq etishda ilmiy asosni tashkil etgan ilmiy metod nima?",
+    options: [
+      "Xronologik yondashuv",
+      "Faoliyatga asoslangan tahlil",
+      "Statistikaning o‘rni",
+      "Tarixiy va madaniy tahlil"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 139,
+    question: "Tarixiy tadqiqotlarda O‘zbekistonning siyosiy mustaqilligi qanday yoritildi?",
+    options: [
+      "Xalqaro hamkorlikni rivojlantirish orqali",
+      "Mustaqillikning ijtimoiy, siyosiy va iqtisodiy aspektlarini tahlil qilish orqali",
+      "Faqat iqtisodiy soha bilan bog‘liq ravishda",
+      "Ta’lim sohasidagi islohotlar asosida"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 140,
+    question: "O‘zbekiston tarixini o‘rganishda qanday tamoyillarga rioya etiladi?",
+    options: [
+      "Xulosalar chiqarish va nazariy yondashuv",
+      "Faqat voqealilik tahlil qilish",
+      "Xalqaro aloqalarga e’tibor qaratish",
+      "Ekologik va iqtisodiy tahlil qilish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 141,
+    question: "O‘zbekiston tarixini o‘rganishda qanday arxiv materiallari ishlatiladi?",
+    options: [
+      "Mahalliy tarixiy manbalar",
+      "Xalqaro ilmiy maqolalar",
+      "Qator o‘quv qo‘llanmalari",
+      "Arxiv hujjatlari va ilmiy tadqiqotlar"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 142,
+    question: "O‘zbekiston tarixida qaysi davr madaniy ingiroz bilan bog‘liq?",
+    options: ["Sovet davri", "Mustaqillik davri", "O‘rta asrlar davri", "Antik davr"],
+    correctAnswer: 0
+  },
+  {
+    id: 143,
+    question: "O‘zbekiston tarixida qaysi milliy qadriyatlar ko‘p rivojlanishga erishdi?",
+    options: [
+      "Ekinchilik va chorvachilik",
+      "Madaniyat, adabiyot va san’at",
+      "Qishloq xo‘jaligi",
+      "Savdo va hunarmandchilik"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 144,
+    question: "O‘zbek xalqining qadriyatlari asosida qanday taraqqiyotga erishildi?",
+    options: [
+      "Faqat siyosiy islohotlar",
+      "Ijtimoiy, siyosiy va iqtisodiy ingiroz",
+      "Madaniyat, ta’lim va ilm-fanda yuksalish",
+      "Davlat xavfsizligi va iqtisodiy samaradorlik"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 145,
+    question: "O‘zbekistonning tarixiy merosi nimani o‘z ichiga oladi?",
+    options: [
+      "Faqat ilm-fan va ta’lim tizimi",
+      "Madaniyat, arxitektura, san’at va adabiyot",
+      "Faqat qishloq xo‘jaligini rivojlantirish",
+      "Sanoat va iqtisodiy o‘zgarishlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 146,
+    question: "O‘zbekiston tarixida eng mashhur madaniy yodgorliklardan biri nima?",
+    options: ["Registon", "Tashkent metro", "Nukus muzeyi", "Amudaryo ko‘prigi"],
+    correctAnswer: 0
+  },
+  {
+    id: 147,
+    question: "O‘zbekistonning xalqaro siyosatida qaysi yondashuv asosiy o‘rin tutadi?",
+    options: [
+      "Mustamlakachilikka qarshi kurashish",
+      "Xalqaro hamkorlikni rivojlantirish",
+      "Harbiy ittifoglarga kirish",
+      "Faqat iqtisodiy yordamlarga bog‘lanish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 148,
+    question: "Xalqaro tashkilotlarda O‘zbekistonning ishtiroki qanday ijobiy ta’sir ko‘rsatdi?",
+    options: [
+      "Sanoatni rivojlantirish",
+      "Ijtimoiy xavfsizlikni ta’minlash",
+      "Davlat xavfsizligini mustahkamlash",
+      "Yashash darajasini oshirish"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 149,
+    question: "O‘zbekistonning demokratik islohotlari qanday bosqichda amalga oshirildi?",
+    options: [
+      "Faqat ta’lim tizimini isloh qilish orqali",
+      "Ijtimoiy sohada ingiroz orqali",
+      "Siyosiy erkinliklar va fuqarolar huquqlarini kengaytirish orqali",
+      "Qishloq xo‘jaligida islohotlar orqali"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 150,
+    question: "O‘zbekistonning xalqaro hamjamiyatda roli qanday belgilandi?",
+    options: [
+      "Faqat iqtisodiy rivojlanish bilan",
+      "Inson huquqlari va xavfsizlikni ta’minlash orqali",
+      "Faqat madaniy aloqalar bilan",
+      "Faqat turizmni rivojlantirish bilan"
+    ],
+    correctAnswer: 1
+  }
+];
+export const questions4 = [
+  {
+    id: 151,
+    question: "O‘zbekiston qaysi xalqaro tashkilotga qo‘shilishga alohida e’tibor qaratdi?",
+    options: [
+      "Yevropa ittifogi",
+      "Osiyo taraqqiyot banki",
+      "Xalqaro savdo tashkiloti",
+      "Yevrosiyo iqtisodiy ittifogi"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 152,
+    question: "O‘zbekiston Respublikasi Konstitutsiyasi necha bo‘limdan iborat?",
+    options: ["6", "7", "8", "9"],
+    correctAnswer: 0
+  },
+  {
+    id: 153,
+    question: "O‘zbekistonning davlat tuzumi qanday asosda tashkil topgan?",
+    options: [
+      "Tinchlik va xavfsizlikni ta’minlash",
+      "Fuqarolik jamiyatining rivoji",
+      "Demokratik boshqaruv asosida",
+      "Madaniy va ilmiy rivojlanish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 154,
+    question: "O‘zbekistonning davlat tuzumida qaysi organning alohida roli bor?",
+    options: [
+      "Xalq ta’limi vazirligi",
+      "Mahalla instituti",
+      "Oliy Majlis",
+      "O‘zbekiston Respublikasi Markaziy banki"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 155,
+    question: "O‘zbekistonning mustaqillik yillaridagi siyosiy boshqaruv tizimi qanday bo‘ldi?",
+    options: [
+      "O‘zgarishsiz qolgan",
+      "Markazlashtirilgan",
+      "Faqat hukumat tomonidan boshqariladigan",
+      "Demokratik islohotlar asosida tashkil etilgan"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 156,
+    question: "O‘zbekiston Respublikasining davlat ramzlarida nimalar tasvirlangan?",
+    options: [
+      "O‘zbekistonning iqtisodiy resurslari",
+      "Diniy an’analarning ramzlari",
+      "Mustaqillik, bayroq va gerb",
+      "Faqat xalqaro aloqalar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 157,
+    question: "O‘zbekistonning 2021-yilda amalga oshirilgan strategiyasi nima?",
+    options: [
+      "10 yillik iqtisodiy reja",
+      "“Yangi O‘zbekiston” rivojlanish strategiyasi",
+      "5 yillik ishga tushirish rejasi",
+      "Ijtimoiy rivojlanish strategiyasi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 158,
+    question: "“Yangi O‘zbekiston” strategiyasining asosiy maqsadi nima edi?",
+    options: [
+      "Yalpi ichki mahsulotni oshirish",
+      "Sanoatni modernizatsiya qilish",
+      "Demokratik islohotlarni chuqurlashtirish",
+      "Fuqarolar huquqlarini cheklash"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 159,
+    question: "O‘zbekistonning 2021-yildan keyingi strategiyasida qaysi sohalarga e’tibor qaratilgan?",
+    options: [
+      "Faqat qishloq xo‘jaligi va energetika",
+      "Ta’lim, sog‘ligni saqlash va iqtisodiy islohotlar",
+      "Xalqaro aloqalar va madaniyat",
+      "Mahalliy hukumat tizimini kuchaytirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 160,
+    question: "O‘zbekistonning yangi strategiyasida qanday iqtisodiy tamoyillar ko‘zda tutilgan?",
+    options: [
+      "Davlat sektorini kengaytirish",
+      "Bozor iqtisodiyotiga o‘tish",
+      "Faqat ishlab chiqarishni kengaytirish",
+      "Importni kamaytirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 161,
+    question: "“Yangi O‘zbekiston” strategiyasida qanday ijtimoiy islohotlar amalga oshirilgan?",
+    options: [
+      "Ta’lim tizimining takomillashtirilishi",
+      "Faqat sanoat islohotlari",
+      "Davlat xizmatchilarini ko‘paytirish",
+      "Fuqarolik jamiyatini qisqartirish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 162,
+    question: "O‘zbekiston tarixini o‘rganishda eng muhim yondashuv nima edi?",
+    options: [
+      "Faqat iqtisodiy sohani tahlil qilish",
+      "Tarixiy haqiqatni mustahkamlash",
+      "Davlat tizimini kengaytirish",
+      "Xalqaro hamkorlikni rivojlantirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 163,
+    question: "O‘zbekiston tarixining xalqaro ahamiyati nima?",
+    options: [
+      "Ijtimoiy islohotlar va iqtisodiy barqarorlik",
+      "Madaniy meros va xalqaro aloqalar",
+      "Faqat ichki ishlab chiqarishning rivojlanishi",
+      "Xalqaro tan olish va yuksalish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 164,
+    question: "O‘zbekistonning tarixiy merosi qanday saqlanib kelinmoqda?",
+    options: [
+      "Faqat yodgorliklar orqali",
+      "Madaniyat va ta’lim orqali",
+      "Faqat ilmiy tadqiqotlar bilan",
+      "O‘zbekistonning iqtisodiy rivojlanishi orqali"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 165,
+    question: "O‘zbekistonning xalqaro hamjamiyatdagi ahamiyatini qanday baholash mumkin?",
+    options: [
+      "Faqat siyosiy qo‘llab-quvvatlash bilan",
+      "Faqat iqtisodiy o‘sish bilan",
+      "Jahon tamadduni rivojiga qo‘shgan hissa bilan",
+      "Xalqaro yordamni jalb qilish bilan"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 166,
+    question: "O‘zbekiston tarixining kelajakka qanday ta’siri bor?",
+    options: [
+      "Faqat siyosiy barqarorlikni ta’minlash",
+      "Milliy mustaqillikni mustahkamlash",
+      "Faqat iqtisodiy yuksalishni oshirish",
+      "Qishloq xo‘jaligini rivojlantirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 167,
+    question: "O‘zbekistonning mustaqillik davri tarixida qanday yuksalish kuzatilgan?",
+    options: [
+      "Faqat iqtisodiy barqarorlik",
+      "Demokratik islohotlar va fuqarolar huquqlari",
+      "Xalqaro aloqalarni kengaytirish",
+      "Xalqaro sanksiyalarni olib tashlash"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 168,
+    question: "Mustaqillik davrida O‘zbekistonning iqtisodiy tizimida qanday o‘zgarishlar bo‘lgan?",
+    options: [
+      "Rivojlangan sanoat tizimi",
+      "Bozor iqtisodiyotiga o‘tish",
+      "Faqat qishloq xo‘jaligiga asoslanish",
+      "Sanoatni qisqartirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 169,
+    question: "Mustaqillik yillarida O‘zbekistonda amalga oshirilgan iqtisodiy islohotlarning asosiy yo‘nalishi nima edi?",
+    options: [
+      "Xalqaro hamkorlikni rivojlantirish",
+      "O‘zaro iqtisodiy yordam ko‘rsatish",
+      "Iqtisodiy va siyosiy erkinliklarni kengaytirish",
+      "Davlatning iqtisodiyotdagi rolini cheklash"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 170,
+    question: "O‘zbekiston tarixining eng yirik yutuqlaridan biri nima?",
+    options: [
+      "Mustaqillikni qo‘lga kiritish",
+      "Faqat iqtisodiy islohotlarni amalga oshirish",
+      "Xalqaro tan olinishi",
+      "Madaniy merosni saqlash"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 171,
+    question: "O‘zbekistonning mustaqillik tarixini o‘rganish nega muhim?",
+    options: [
+      "O‘zbekistonning xalqaro aloqalari bilan",
+      "Iqtisodiy islohotlar asosida",
+      "Milliy o‘zligini anglash va tarixiy haqiqatni tiklash uchun",
+      "Faqat siyosiy islohotlarni yoritish uchun"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 172,
+    question: "O‘zbekiston Respublikasida ijtimoiy islohotlarning asosiy maqsadi nima?",
+    options: [
+      "Mamlakat mudofaa tizimini kuchaytirish",
+      "Investitsiyalarni oshirish",
+      "Aholi turmush darajasini yaxshilash",
+      "Davlat boshqaruvini markazlashtirish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 173,
+    question: "2017–2021 yillarga mo‘ljallangan Harakatlar strategiyasining nechanchi yo‘nalishi ijtimoiy sohani rivojlantirishga qaratilgan edi?",
+    options: ["1-yo‘nalish", "2-yo‘nalish", "4-yo‘nalish", "5-yo‘nalish"],
+    correctAnswer: 2
+  },
+  {
+    id: 174,
+    question: "“Yoshlar kelajagimiz” davlat dasturi qachon qabul qilingan?",
+    options: ["2015-yil", "2018-yil", "2020-yil", "2021-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 175,
+    question: "2020-yilda pandemiya davrida O‘zbekiston hukumati qaysi sohalarga alohida e’tibor qaratdi?",
+    options: [
+      "Energetika va transport",
+      "Sog‘ligni saqlash va ijtimoiy himoya",
+      "Ta’lim va madaniyat",
+      "Turizm va eksport"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 176,
+    question: "O‘zbekiston Respublikasida ijtimoiy sohani rivojlantirishda qanday xalqaro tashkilotlar bilan hamkorlik qilinmoqda?",
+    options: ["NATO", "ASEAN", "BMT va Jahon banki", "OPEC"],
+    correctAnswer: 2
+  },
+  {
+    id: 177,
+    question: "Prezident Shavkat Mirziyoyevning 2022-yilda qabul qilgan “Yangi O‘zbekiston strategiyasi”da ijtimoiy sohaga oid qanday maqsadlar belgilangan?",
+    options: [
+      "Faqat iqtisodiy islohotlarni kuchaytirish",
+      "Davlat organlarining samaradorligini oshirish",
+      "Ta’lim, sog‘ligni saqlash va ijtimoiy himoya tizimini takomillashtirish",
+      "Hududiy investitsiyalarni oshirish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 178,
+    question: "“Obod qishloq” va “Obod mahalla” dasturlari qanday maqsadda qabul qilingan?",
+    options: [
+      "Aholi turmush sharoitini yaxshilash uchun infratuzilmani rivojlantirish",
+      "Mahalliy saylov tizimini rivojlantirish",
+      "Hududiy byudjetlarni mustahkamlash",
+      "Yoshlarni qo‘llab-quvvatlash"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 179,
+    question: "Ta’lim sohasidagi islohotlar doirasida O‘zbekistonda qaysi yilda xalqaro maktablar tashkil etila boshlandi?",
+    options: ["2015-yil", "2017-yil", "2018-yil", "2020-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 180,
+    question: "Aholining ijtimoiy himoyasini kuchaytirish maqsadida “Temir daftar” tizimi qachon joriy etildi?",
+    options: ["2017-yil", "2018-yil", "2020-yil", "2021-yil"],
+    correctAnswer: 3
+  },
+  {
+    id: 181,
+    question: "O‘zbekistonda mehnat migrantlarini qo‘llab-quvvatlash uchun tashkil etilgan “Mehr” operatsiyasi qaysi yilda amalga oshirildi?",
+    options: ["2018-yil", "2019-yil", "2020-yil", "2021-yil"],
+    correctAnswer: 3
+  },
+  {
+    id: 182,
+    question: "2021-yilda O‘zbekiston hukumati tomonidan “Ayollar daftari” tizimi qaysi maqsadda joriy qilindi?",
+    options: [
+      "Ayollar uchun yangi ish o‘rinlari yaratish",
+      "Ijtimoiy himoyaga muhtoj ayollarni qo‘llab-quvvatlash",
+      "Ayollarni tadbirkorlikka jalb qilish",
+      "Ta’lim sohasidagi ayollar ulushini oshirish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 183,
+    question: "O‘zbekistonda maktabgacha ta’lim tizimini rivojlantirish bo‘yicha 2017-yilda qanday qaror qabul qilindi?",
+    options: [
+      "Maktabgacha ta’lim tashkilotlari sonini oshirish va sifatini yaxshilash",
+      "Xususiy ta’lim muassasalarini qo‘llab-quvvatlash",
+      "Faqat qishloq joylarda bog‘chalar qurish",
+      "Faoliyatsiz bog‘chalarni yopish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 184,
+    question: "2019-yilda O‘zbekiston hukumati tomonidan tashkil etilgan “Bir million dasturchi” loyihasining asosiy maqsadi nima?",
+    options: [
+      "IT kompaniyalar sonini oshirish",
+      "Xalqaro IT investorni jalb qilish",
+      "Yoshlarni axborot texnologiyalari bo‘yicha malakali kadr sifatida tayyorlash",
+      "Dasturlash bo‘yicha xalqaro mukofotlarni olish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 185,
+    question: "O‘zbekistonda sog‘ligni saqlash sohasida 2019-yilda qanday yangi tizim joriy etildi?",
+    options: [
+      "Xususiy shifoxonalarni ko‘paytirish",
+      "Tibbiyot xodimlarini xorijda tayyorlash",
+      "Elektron tibbiy kartalar tizimi",
+      "Kasalliklarning yagona boshqaruv tizimi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 186,
+    question: "Ijtimoiy himoya sohasida “Ijtimoiy xizmatlar to‘g‘risida”gi qonun qachon qabul qilindi?",
+    options: ["2018-yil", "2019-yil", "2020-yil", "2021-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 187,
+    question: "O‘zbekiston Respublikasi Prezidenti tomonidan 2022-yilda yoshlarga qanday maxsus dastur e’lon qilindi?",
+    options: [
+      "“Kelajak avlod” dasturi",
+      "“Yoshlar daftari”",
+      "“Yoshlar va fan”",
+      "“Yoshlar siyosati”"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 188,
+    question: "Aholi bandligini ta’minlash maqsadida tashkil etilgan “Ishga marhamat” monomarkazlari qaysi yilda faoliyatini boshladi?",
+    options: ["2018-yil", "2019-yil", "2020-yil", "2021-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 189,
+    question: "2023-yilgacha bo‘lgan ta’lim tizimini isloh qilish rejasida necha yilga mo‘ljallangan umumiy majburiy ta’lim belgilangan?",
+    options: ["9 yil", "11 yil", "12 yil", "13 yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 190,
+    question: "O‘zbekistonda qaysi dastur orqali ijtimoiy xizmatlar elektron shaklda taqdim etila boshlandi?",
+    options: [
+      "Davlat xizmatlari markazi",
+      "Milliy portal",
+      "“E-ijro aukston” va “my.gov.uz”",
+      "“Temir daftar”"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 191,
+    question: "“Sog‘lom avlod uchun” davlat dasturining asosiy maqsadi nima?",
+    options: [
+      "Aholi sog‘lig‘ini saqlash va avlodlarning sog‘lom o‘sishini ta’minlash",
+      "Ayollarni tibbiyotga jalb qilish",
+      "Qishloq joylarda sportni rivojlantirish",
+      "Shaxsiy gigiyenaga e’tibor qaratish"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 192,
+    question: "Qachon O‘zbekistonda “Imom Buxoriy xalqaro ilmiy-tadqiqot markazi” tashkil etildi?",
+    options: ["2015-yil", "2016-yil", "2017-yil", "2018-yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 193,
+    question: "Ijtimoiy sohani rivojlantirishda “Yashil makon” loyihasining asosiy maqsadi nima?",
+    options: [
+      "Atrof-muhitni muhofaza qilish uchun daraxtlar ekish",
+      "Shahar va qishloqlarni yashil hududlarga aylantirish",
+      "Suv resurslarini tejash",
+      "Milliy bog‘lar tashkil etish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 194,
+    question: "O‘zbekistonda qaysi yildan boshlab kam ta’minlangan oilalarga “Elektron yordam” tizimi orqali yordam ko‘rsatilmogda?",
+    options: ["2018-yil", "2021-yil", "2019-yil", "2020-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 195,
+    question: "Yoshlar uchun davlat stipendiyalari va grantlar qaysi yildan boshlab kengaytirildi?",
+    options: ["2016-yil", "2019-yil", "2020-yil", "2022-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 196,
+    question: "Prezident tashabbusi bilan 2020-yilda qabul qilingan “Obod qishloq” dasturining birinchi bosqichida nechta qishloq qayta tiklandi?",
+    options: ["500 ta", "250 ta", "1000 ta", "478 ta"],
+    correctAnswer: 3
+  },
+  {
+    id: 197,
+    question: "O‘zbekiston Respublikasida mehnat migrantlarini himoya qilish maqsadida qaysi xalqaro shartnoma imzolandi?",
+    options: [
+      "Yevropa Ittifoqi bilan",
+      "Rossiya Federatsiyasi bilan",
+      "MDH doirasida ishchi migratsiya bitimi",
+      "Xalqaro Mehnat Tashkiloti"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 198,
+    question: "O‘zbekistonda ta’lim sifatini oshirish maqsadida qaysi xalqaro tashkilot bilan shartnoma tuzilgan?",
+    options: ["BMT", "NATO", "UNICEF va UNESCO", "Islom Hamkorlik Tashkiloti"],
+    correctAnswer: 2
+  },
+  {
+    id: 199,
+    question: "Nogironligi bor shaxslarni qo‘llab-quvvatlash maqsadida qanday yangi tizim joriy etildi?",
+    options: [
+      "Nogironlikka oid xizmatlar yagona elektron bazasi",
+      "Reabilitatsiya markazlari sonini oshirish",
+      "Davlat grantlarini kengaytirish",
+      "Kasb-hunar ta’limi"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 200,
+    question: "“Obod mahalla” dasturi orqali nechta mahallada infratuzilma qayta tiklandi?",
+    options: ["2000 ta", "3500 ta", "4000 ta", "2900 ta"],
+    correctAnswer: 3
+  }
+];
+export const questions5 = [
+  {
+    id: 201,
+    question: "O‘zbekistonda 2021-yilda yoshlarga bag‘ishlangan maxsus davlat mukofoti qanday nomlangan?",
+    options: [
+      "Yoshlar mukofoti",
+      "Milliy iste’dod mukofoti",
+      "“Mard o‘g‘lon” mukofoti",
+      "Kelajak mukofoti"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 202,
+    question: "Davlat xizmatlaridan foydalanish qulayligini oshirish maqsadida qaysi tizim joriy etildi?",
+    options: [
+      "Notarius xizmatlari",
+      "Davlat xizmatlari agentligi",
+      "Kadastr markazi",
+      "Monopoliyaga qarshi tizim"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 203,
+    question: "“Temir daftar”da qayd etilgan oilalar qaysi asosda qo‘llab-quvvatlanadi?",
+    options: [
+      "Ijtimoiy muhtojlik darajasi bo‘yicha",
+      "Aholi yashash joyi bo‘yicha",
+      "Davlat ro‘yxati bo‘yicha",
+      "Yosh oilalar rejasi bo‘yicha"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 204,
+    question: "Qaysi dastur orqali qishloq joylarda maktablar yangidan qurilmogda?",
+    options: [
+      "“Obod qishloq” dasturi",
+      "“Yashil makon” loyihasi",
+      "“Ijtimoiy infratuzilma” dasturi",
+      "“Yoshlar kelajagi” loyihasi"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 205,
+    question: "2021-yilda O‘zbekistonda “Ayollarni qo‘llab-quvvatlash” dasturi natijasida qancha ish o‘rinlari yaratildi?",
+    options: ["50 ming", "70 ming", "100 ming", "120 ming"],
+    correctAnswer: 2
+  },
+  {
+    id: 206,
+    question: "Qaysi dastur orqali O‘zbekistonda oliy ta’lim muassasalari soni oshirildi?",
+    options: [
+      "“Yoshlar siyosati”",
+      "“Ijtimoiy rivojlanish strategiyasi”",
+      "Oliy ta’limni modernizatsiyalash dasturi",
+      "“Ta’lim islohotlari rejasi”"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 207,
+    question: "Qaysi yildan boshlab sog‘ligni saqlash tizimida xususiy sektor faoliyati kengaytirildi?",
+    options: ["2016-yil", "2018-yil", "2019-yil", "2020-yil"],
+    correctAnswer: 3
+  },
+  {
+    id: 208,
+    question: "O‘zbekiston Respublikasida yoshlarga oid davlat siyosatini amalga oshirishda qaysi organ yetakchi hisoblanadi?",
+    options: [
+      "Yoshlar ittifoqi",
+      "Yoshlar ishlari agentligi",
+      "Yoshlar ishlari bo‘yicha davlat qo‘mitasi",
+      "Ta’lim vazirligi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 209,
+    question: "“Yoshlar kelajagimiz” jamg‘armasi tomonidan qaysi sohalarda moliyaviy ko‘mak ko‘rsatiladi?",
+    options: [
+      "Faqat qishloq xo‘jaligi",
+      "Sport sohalariga",
+      "Biznes va tadbirkorlik faoliyatiga",
+      "Madaniyat va san’at"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 210,
+    question: "Aholi o‘rtasida sog‘lom turmush tarzini targ‘ib qilish maqsadida qanday dastur amalga oshirildi?",
+    options: [
+      "“Sog‘lom hayot” dasturi",
+      "“Milliy sport” loyihasi",
+      "“Yashil yo‘l” loyihasi",
+      "“Sport va madaniyat”"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 211,
+    question: "O‘zbekistonda ijtimoiy xizmatlarning yangi turlarini yo‘lga qo‘yish bo‘yicha 2020-yilda qanday hujjat qabul qilindi?",
+    options: [
+      "Prezident qarori",
+      "Vazirlar Mahkamasi farmoni",
+      "“Ijtimoiy xizmatlar to‘g‘risida”gi qonun",
+      "Xalqaro bitim"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 212,
+    question: "O‘zbekistonda ijtimoiy xizmatlar ko‘rsatuvchi tashkilotlarning faoliyati qanday boshqariladi?",
+    options: [
+      "Faqat davlat tomonidan",
+      "Davlat va xususiy sektor tomonidan hamkorlikda",
+      "Xususiy sektor tomonidan boshqariladi",
+      "Jamoat tashkilotlari tomonidan boshqariladi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 213,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday guruhlar ko‘proq yordam oladi?",
+    options: [
+      "Faqat yoshlarga yordam beriladi",
+      "Faqat nogironlarga yordam beriladi",
+      "Barcha ijtimoiy guruhlar, jumladan, keksalar, nogironlar va kambag‘allar",
+      "Faqat kambag‘allarga yordam beriladi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 214,
+    question: "O‘zbekistonda sog‘ligni saqlash sohasida qanday yutuqlar mavjud?",
+    options: [
+      "Faqat yangi poliklinikalar qurildi",
+      "Yangi tibbiyot muassasalarini yaratish",
+      "Tibbiy yordam sifatini oshdi",
+      "Faqat davlat tibbiy xizmatlari ko‘rsatilmogda"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 215,
+    question: "O‘zbekistonda ijtimoiy yordamni ko‘rsatishda qanday asosiy tamoyillar qo‘llaniladi?",
+    options: [
+      "Faqat sog‘ligni saqlashni qo‘llab-quvvatlash",
+      "Faqat iqtisodiy yordam ko‘rsatish",
+      "Tenglik, adolat va ijtimoiy himoya",
+      "Faqat bandlikni ta’minlash"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 216,
+    question: "O‘zbekistonda ijtimoiy himoya tizimida qanday yangi dasturlar kiritildi?",
+    options: [
+      "Faqat sog‘ligni saqlash dasturlari",
+      "Aholi turmush darajasini yaxshilashga qaratilgan dasturlar",
+      "Faqat ta’lim dasturlari",
+      "Faqat bandlik dasturlari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 217,
+    question: "O‘zbekistonda ijtimoiy sohada qanday yangi texnologiyalar joriy qilindi?",
+    options: [
+      "Yangi ishlab chiqarish texnologiyalari",
+      "Raqamli xizmatlar va elektron tizimlar",
+      "Sog‘ligni saqlashda genetik texnologiyalar",
+      "Faoliyatni faqat sanoat texnologiyalari bilan bog‘lash"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 218,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday ijtimoiy guruhlarga yordam beradi?",
+    options: [
+      "Faqat yoshlar",
+      "Faqat mehnat qilmaydiganlar",
+      "Keksalar, nogironlar, kambag‘allar, va oilaviy muammolar bilan yashovchilar",
+      "Faqat mehnatga layogatli fuqarolar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 219,
+    question: "O‘zbekistonda ijtimoiy sohada ish o‘rinlarini yaratish maqsadida qaysi dastur amalga oshirilmogda?",
+    options: [
+      "Yalpi bandlik dasturi",
+      "Faol bandlik dasturi",
+      "Yangi sanoat bandlik dasturi",
+      "Ta’lim va kasb-hunar bandlik dasturi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 220,
+    question: "O‘zbekistonda ijtimoiy xizmatlarni takomillashtirishda qanday asosiy muammolar mavjud?",
+    options: [
+      "Faqat xususiy sektorda xizmatlarning oshishi",
+      "Sifatli xizmatlarni ta’minlashda davlat va xususiy sektor o‘rtasida hamkorlikni kuchaytirish zarurati",
+      "Aholining ta’lim darajasining pasayishi",
+      "Aholining iqtisodiy o‘sishdagiy qiyinchiliklar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 221,
+    question: "O‘zbekistonda davlat xizmatlarini raqamlashtirish bo‘yicha qaysi dastur amalga oshirilmogda?",
+    options: [
+      "“Yoshlar siyosati”",
+      "“Sog‘lom hayot”",
+      "“Raqamli O‘zbekiston – 2030”",
+      "“Kelajak avlod”"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 222,
+    question: "Aholi turmush darajasini oshirish uchun qaysi davlat dasturi amalga oshirilmogda?",
+    options: [
+      "“Yashil makon”",
+      "“Obod qishloq”",
+      "“Ayollar daftari”",
+      "“Temir daftar”"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 223,
+    question: "“Yashil makon” loyihasi doirasida 2023-yilda necha million daraxt ekilishi rejalashtirilgan?",
+    options: ["1 million", "200 million", "500 million", "1 milliard"],
+    correctAnswer: 1
+  },
+  {
+    id: 224,
+    question: "O‘zbekistonda ijtimoiy sohada davlat-xususiy sheriklikni rivojlantirishga oid qonun qachon qabul qilingan?",
+    options: ["2015-yil", "2017-yil", "2019-yil", "2021-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 225,
+    question: "“Obod qishloq” va “Obod mahalla” dasturlarida qaysi sohalarga ko‘proq e’tibor qaratilgan?",
+    options: [
+      "Tibbiyot va ta’lim",
+      "Turizm va madaniyat",
+      "Infratuzilma va uy-joylar",
+      "Energetika va sanoat"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 226,
+    question: "O‘zbekistonda yoshlarni qo‘llab-quvvatlash maqsadida qaysi yil “Yoshlar yili” deb e’lon qilingan edi?",
+    options: ["2008-yil", "2010-yil", "2015-yil", "2017-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 227,
+    question: "“Sog‘lom ona va bola” dasturining asosiy maqsadi nima?",
+    options: [
+      "Aholi o‘rtasida sog‘lom turmush tarzini targ‘ib qilish",
+      "Ona va bolalar salomatligini yaxshilash",
+      "Ayollar uchun yangi ish o‘rinlari yaratish",
+      "Yosh oilalarga yordam berish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 228,
+    question: "“Yoshlar daftari” orqali qanday ishlar amalga oshiriladi?",
+    options: [
+      "Yoshlar uchun sport inshootlari quriladi",
+      "Yosh tadbirkorlar uchun grantlar taqdim etiladi",
+      "Muhtoj yoshlarni aniqlash va ularga yordam ko‘rsatish",
+      "Oliy ta‘limga qabul kvotalari oshiriladi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 229,
+    question: "2021-yilda amalga oshirilgan “ijro.gov.uz” platformasi qanday maqsadga xizmat qiladi?",
+    options: [
+      "Davlat moliyaviy hisobotlarini taqdim etish",
+      "Fuqarolar shikoyatlarini qabul qilish",
+      "Vazirliklar va idoralar faoliyatini nazorat qilish",
+      "Aholi sog‘lig‘ini monitoring qilish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 230,
+    question: "Qaysi yilda O‘zbekistonda “Obod qishloq” dasturi qabul qilingan?",
+    options: ["2016-yil", "2018-yil", "2019-yil", "2020-yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 231,
+    question: "“Raqamli iqtisodiyot” konsepsiyasi doirasida qaysi sohalarda eng katta islohotlar amalga oshirilmogda?",
+    options: [
+      "Bank-moliya va davlat xizmatlari",
+      "Qishloq xo‘jaligi va sanoat",
+      "Turizm va madaniyat",
+      "Tibbiyot va ta’lim"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 232,
+    question: "O‘zbekistonda ijtimoiy xizmatlarni yaxshilash uchun qaysi yondashuvlar qo‘llanilmogda?",
+    options: [
+      "Faqat davlat tizimi asosida",
+      "Faqat xususiy sektor yordamida",
+      "Davlat va xususiy sektorning hamkorlik tizimi",
+      "Faqat xalqaro yordam asosida"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 233,
+    question: "O‘zbekistonda ijtimoiy himoya tizimining asosiy maqsadi nima?",
+    options: [
+      "Faqat iqtisodiy rivojlanishni ta’minlash",
+      "Yalpi davlat barqarorligini oshirish",
+      "Aholining turmush darajasini yaxshilash",
+      "Davlat tomonidan texnologiyalarni joriy qilish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 234,
+    question: "O‘zbekistonda ijtimoiy sohada qanday yangi muassasalar ochildi?",
+    options: [
+      "Faqat xususiy sektorga oid muassasalar",
+      "Faqat ta’lim sohasida muassasalar",
+      "Ijtimoiy xizmatlarni taqdim etuvchi yangi davlat va xususiy muassasalar",
+      "Sanoat va ishlab chiqarish muassasalari"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 235,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali kimgacha yordam ko‘rsatiladi?",
+    options: [
+      "Faqat ijtimoiy guruhlar",
+      "Kambag‘allar, nogironlar, keksalar, va mehnatga layogatli fuqarolar",
+      "Faqat sog‘ligni saqlash xodimlari",
+      "Faqat yoshlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 236,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday ijtimoiy guruhlar qo‘llab-quvvatlanadi?",
+    options: [
+      "Faqat keksalar",
+      "Faqat sog‘ligni saqlash xodimlari",
+      "Barcha ijtimoiy guruhlar, jumladan, kambag‘allar va nogironlar",
+      "Faqat yoshlar va ayollar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 237,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar qaysi maqsadni ko‘zlaydi?",
+    options: [
+      "Faqat iqtisodiy o‘sishni ta’minlash",
+      "Faqat sanoatni rivojlantirish",
+      "Aholining turmush darajasini yaxshilash",
+      "Faqat siyosiy islohotlarni amalga oshirish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 238,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar asosida qaysi yangi xizmatlar taqdim etiladi?",
+    options: [
+      "Faqat iqtisodiy yordam",
+      "Sog‘ligni saqlash, ta’lim va bandlik xizmatlari",
+      "Faqat mehnat bozoriga oid xizmatlar",
+      "Faqat yangi sanoat xizmatlari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 239,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday yangi texnologiyalarni joriy qilgan?",
+    options: [
+      "Faqat yangi ishlab chiqarish texnologiyalari",
+      "Faqat moliya sohasiga oid texnologiyalar",
+      "Raqamli xizmatlar va elektron tizimlar",
+      "Faqat sog‘ligni saqlash texnologiyalar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 240,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar asosida qanday muammolar hal qilinadi?",
+    options: [
+      "Iqtisodiy o‘sishni tezlashtirish",
+      "Aholining kambag‘allik darajasini kamaytirish",
+      "Sanoat va ishlab chiqarishni rivojlantirish",
+      "Yangi turizm tarmoqlarini yaratish"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 241,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday ijtimoiy guruhlar qo‘llab-quvvatlanadi?",
+    options: [
+      "Faqat sog‘ligni saqlash xodimlari",
+      "Keksalar, nogironlar, kambag‘allar, va yoshlar",
+      "Faqat ayollar",
+      "Faqat iqtisodiy faol guruhlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 242,
+    question: "O‘zbekistonda ijtimoiy xizmatlarni ta’minlashda qanday yangi usullar qo‘llanilmogda?",
+    options: [
+      "Faqat davlat xodimlari yordamida",
+      "Davlat va xususiy sektor hamkorligi asosida",
+      "Faqat xalqaro tashkilotlar orqali",
+      "Faqat jamoat tashkilotlari orqali"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 243,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar qanday natijalarga olib kelmogda?",
+    options: [
+      "Yalpi iqtisodiy o‘sishni oshirish",
+      "Davlat tomonidan xizmatlar ko‘rsatish",
+      "Aholining turmush darajasi yaxshilandi",
+      "Yangi sanoat tarmoqlari yaratildi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 244,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlaridan qanday guruhlar foydalanadi?",
+    options: [
+      "Faqat yirik sanoat ishchilari",
+      "Faqat ijtimoiy xizmatlar sohasida ishlovchilar",
+      "Kambag‘allar, nogironlar, va ijtimoiy yordamga muhtoj guruhlar",
+      "Faqat o‘qituvchilar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 245,
+    question: "O‘zbekistonda ijtimoiy xizmatlar qanday tizimda ko‘rsatiladi?",
+    options: [
+      "Faqat davlat tomonidan",
+      "Davlat va xususiy sektorning hamkorligi orqali",
+      "Xalqaro yordam ko‘rsatuvchi tashkilotlar yordamida",
+      "Faqat jamoat tashkilotlari yordamida"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 246,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar orqali qanday ijtimoiy xizmatlar ko‘rsatilmogda?",
+    options: [
+      "Faqat sog‘ligni saqlash xizmatlari",
+      "Sog‘ligni saqlash, ta’lim va bandlik xizmatlari",
+      "Faqat iqtisodiy yizmatlar",
+      "Faqat ta’lim xizmatlari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 247,
+    question: "O‘zbekistonda ijtimoiy yordamni ko‘rsatuvchi tashkilotlar qanday faoliyatni amalga oshiradi?",
+    options: [
+      "Yalpi iqtisodiy yizmatlar",
+      "Ijtimoiy himoya, ta’lim va sog‘ligni saqlash xizmatlari",
+      "Faqat iqtisodiy rivojlanish xizmatlari",
+      "Faqat siyosiy islohotlarni qo‘llash"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 248,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday islohotlar amalga oshirildi?",
+    options: [
+      "Faqat iqtisodiy islohotlar",
+      "Aholining turmush darajasini yaxshilashga qaratilgan islohotlar",
+      "Yangi sanoat tarmoqlari yaratish",
+      "Faqat bandlikni ta’minlash"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 249,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday xizmatlar ko‘rsatilmogda?",
+    options: [
+      "Faqat tibbiy xizmatlar",
+      "Sog‘ligni saqlash, ta’lim va bandlik xizmatlari",
+      "Faqat iqtisodiy yizmatlar",
+      "Faqat ta’lim xizmatlari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 250,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar qanday ijtimoiy guruhlarni qo‘llab-quvvatlashni maqsad qilgan?",
+    options: [
+      "Faqat ta’lim oluvchilar",
+      "Faqat sog‘ligni saqlash xodimlari",
+      "Kambag‘allar, nogironlar, keksalar, va yoshlar",
+      "Faqat mehnat bozoriga yangi kiryorganlar"
+    ],
+    correctAnswer: 2
+  }
+];
+export const questions6 = [
+  {
+    id: 251,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlaridan kimlar foydalana olmaydi?",
+    options: [
+      "Yalpi iqtisodiy faol guruhlar",
+      "Faqat iqtisodiy faol bo‘lmaganlar",
+      "Faqat o‘ziga xos ehtiyojlarga ega bo‘lmaganlar",
+      "Faqat sog‘ligni saqlash xizmatlardan foydalanadiganlar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 252,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday asosiy dasturlarini amalga oshirmogda?",
+    options: [
+      "Sanoat va ishlab chiqarishni rivojlantirish",
+      "Ta’lim tizimini yangilash",
+      "Sog‘ligni saqlash, ta‘lim va bandlikni ta’minlash dasturlari",
+      "Yangi turizm tarmoqlari yaratish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 253,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlari qanday asosiy maqsadlarni ko‘zlaydi?",
+    options: [
+      "Faqat iqtisodiy o‘sishni ta‘minlash",
+      "Aholining turmush darajasini yaxshilash va ijtimoiy tenglikni ta’minlash",
+      "Sanoatni rivojlantirish",
+      "Ta’lim tizimini yaxshilash"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 254,
+    question: "O‘zbekistonda ijtimoiy himoya dasturlarining samaradorligini baholashda qanday mezonlardan foydalaniladi?",
+    options: [
+      "Faqat iqtisodiy rivojlanish",
+      "Davlat xizmatlarining ko‘rsatilish tezligi",
+      "Aholining ijtimoiy farovonlik darajasi",
+      "Yalpi ichki mahsulotning o‘sish darajasi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 255,
+    question: "O‘zbekistonda ijtimoiy himoya tizimida qanday xizmatlar kengaytirildi?",
+    options: [
+      "Faqat ta’lim va sog‘ligni saqlash xizmatlari",
+      "Faqat mehnat bozoriga oid xizmatlar",
+      "Sog‘ligni saqlash, ta‘lim va bandlik xizmatlari",
+      "Faqat iqtisodiy yizmatlar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 256,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qaysi guruhlar uchun yangi imkoniyatlar yaratildi?",
+    options: [
+      "Yalpi iqtisodiy faol guruhlar",
+      "Kambag‘allar, nogironlar, keksalar va yoshlar",
+      "Faqat yuqori malakali mutaxassislar",
+      "Faqat davlat xizmatchilari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 257,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlarining asosiy yo‘nalishlari qanday?",
+    options: [
+      "Sanoatni rivojlantirish",
+      "Faqat iqtisodiy barqarorlikni ta’minlash",
+      "Aholining turmush darajasini yaxshilash, bandlikni ta’minlash va ijtimoiy xizmatlar ko‘rsatish",
+      "Davlatni iqtisodiy rivojlantirish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 258,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlari orqali qanday ijtimoiy muammolarni hal qilish maqsad qilinmoqda?",
+    options: [
+      "Faqat sanoat muammolarini hal qilish",
+      "Faqat ta’lim tizimidagi muammolarni hal qilish",
+      "Aholining kambag‘allik, nogironlik va keksalik muammolarini hal qilish",
+      "Faqat iqtisodiy barqarorlikni ta’minlash"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 259,
+    question: "O‘zbekistonda ijtimoiy xizmatlarning samarali ishlashi uchun qanday yondashuvlar qo‘llaniladi?",
+    options: [
+      "Faqat davlat sektori asosida",
+      "Davlat va xususiy sektorning hamkorligi orqali",
+      "Faqat jamoat tashkilotlari yordamida",
+      "Faqat xalqaro tashkilotlar yordamida"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 260,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday metodlar yordamida samaradorligini oshirishni maqsad qilinmoqda?",
+    options: [
+      "Sanoat sohasidagi yangi texnologiyalar",
+      "Faqat mehnat bozoriga oid islohotlar",
+      "Raqamli texnologiyalar va elektron tizimlar yordamida",
+      "Faqat iqtisodiy xizmatlar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 261,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlaridan kimlar ko‘proq foydalana olmaydi?",
+    options: [
+      "Faqat yoshlar",
+      "Faqat yuqori malakali mutaxassislar",
+      "Aholining faol bo‘lmagan qismlari (masalan, harbiy xizmatchilar yoki davlat xizmatchilari)",
+      "Faqat davlat xizmatchilari"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 262,
+    question: "O‘zbekistonda ijtimoiy yordam dasturlarini amalga oshirishda qanday asosiy muammolar yuzaga kelmoqda?",
+    options: [
+      "Sanoat rivojlanishidagi muammolar",
+      "Ijtimoiy yordamga bo‘lgan talabning ortishi",
+      "Faqat ta’lim tizimidagi muammolar",
+      "Mehnat bozorining yomonlashuvi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 263,
+    question: "O‘zbekistonda ijtimoiy himoya tizimida mehnat bozorini rivojlantirish uchun qanday chora-tadbirlar ko‘rilmoqda?",
+    options: [
+      "Faqat yangi sanoat tarmoqlarini rivojlantirish",
+      "Bandlikni oshirish, kasb-hunar ta’limini rivojlantirish",
+      "Faqat iqtisodiy yordam dasturlari",
+      "Faqat davlat xizmatchilari uchun ta’lim"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 264,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qaysi xizmatlar kengaytirilmoqda?",
+    options: [
+      "Faqat sog‘ligni saqlash xizmatlari",
+      "Sog‘ligni saqlash, ta‘lim, va bandlikni ta’minlash xizmatlari",
+      "Faqat ta’lim xizmatlari",
+      "Faqat iqtisodiy xizmatlari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 265,
+    question: "O‘zbekistonda ijtimoiy himoya tizimida qanday yangi texnologiyalar joriy qilindi?",
+    options: [
+      "Faqat ishlab chiqarish texnologiyalari",
+      "Raqamli xizmatlar va elektron tizimlar",
+      "Faqat sog‘ligni saqlash texnologiyalari",
+      "Faqat ta’lim texnologiyalari"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 266,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday muammolarni hal qilishni maqsad qilinmoqda?",
+    options: [
+      "Faqat iqtisodiy o‘sish va rivojlanish",
+      "Faqat sanoat sohasidagi muammolar",
+      "Aholining kambag‘allik, nogironlik va keksalik muammolarini hal qilish",
+      "Faqat yangi sanoat tarmoqlarini yaratish"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 267,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi orqali qanday ijtimoiy guruhlar qo‘llab-quvvatlanadi?",
+    options: [
+      "Faqat yuqori malakali mutaxassislar",
+      "Keksalar, nogironlar, kambag‘allar va yoshlar",
+      "Faqat davlat xizmatchilari",
+      "Faqat iqtisodiy faol guruhlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 268,
+    question: "O‘zbekistonda ijtimoiy sohadagi islohotlar qanday natijalarga olib kelmoqda?",
+    options: [
+      "Faqat sanoatni rivojlantirish",
+      "Aholining turmush darajasini yaxshilash va ijtimoiy tenglikni ta’minlash",
+      "Yangi turizm tarmoqlarini rivojlantirish",
+      "Faqat siyosiy islohotlar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 269,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday dasturlarni amalga oshirmoqda?",
+    options: [
+      "Faqat iqtisodiy rivojlanish dasturlari",
+      "Faqat mehnat bozoriga oid dasturlar",
+      "Bandlik, ta‘lim va sog‘ligni saqlash dasturlari",
+      "Faqat ta’lim tizimiga oid dasturlari"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 270,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday o‘zgarishlarga olib keldi?",
+    options: [
+      "Faqat yangi texnologiyalar joriy etildi",
+      "Faqat iqtisodiy o‘sish ta’minlandi",
+      "Aholining farovonligi va ijtimoiy adolatni oshirishga qaratilgan o‘zgarishlar",
+      "Yalpi ishlab chiqarishning oshishi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 271,
+    question: "O‘zbekistonda ijtimoiy himoya tizimi qanday metodlar yordamida samaradorligini oshirishni maqsad qilmoqda?",
+    options: [
+      "Sanoat sohasidagi yangi texnologiyalar",
+      "Faqat mehnat bozoriga oid islohotlar",
+      "Raqamli texnologiyalar va elektron tizimlar yordamida",
+      "Faqat iqtisodiy xizmatlar"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 272,
+    question: "Qachon “Qishloqda yashovchi har bir oilani tomorqa bilan ta’minlash, ularga yakka tartibda uy-joy qurish uchun barcha sharoitlarni yaratib berish haqida” qaror qabul qilindi?",
+    options: [
+      "1990–yil 18–sentabr",
+      "1989–yil 17–avgust",
+      "1990–yil 18–avgust",
+      "1989–yil 17–sentabr"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 273,
+    question: "Qachon o‘zbek tilining asosiy imlo qoidalarini tasdiqlash haqida”gi Vazirlar Mahkamasining qarori e’lon qilindi?",
+    options: [
+      "1995–yil 24–avgust",
+      "1996–yil 22–avgust",
+      "1994–yil 24–avgust",
+      "1995–yil 22–avgust"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 274,
+    question: "“O‘zbekiston Respublikasining Davlat mustaqilligi to‘g‘risida”gi qonun nechta moddadan iborat?",
+    options: [
+      "12–moddadan",
+      "17 moddadan",
+      "19 moddadan",
+      "18 moddadan"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 275,
+    question: "Qachon O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev tomonidan “O‘zbekiston Respublikasining Birinchi Prezidenti, buyuk davlat va siyosat arbobi Islom Abdug‘aniyevich Karimov tavalludining 80 yilligini nishonlash to‘g‘risida”gi qaror qabul qilindi?",
+    options: [
+      "2017–yil 26–oktabr",
+      "2018–yil 27–noyabr",
+      "2017–yil 27–oktabr",
+      "2017–yil 27–noyabr"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 276,
+    question: "Qaysi viloyatlarda O‘zbekiston Respublikasining Birinchi Prezidenti Islom Karimov haykali o‘rnatilgan?",
+    options: [
+      "Toshkent, Shahrisabz, Qarshi",
+      "Toshkent, Shahrisabz, Jizzax",
+      "Toshkent, Samarqand, Qarshi",
+      "Toshkent, Samarqand, Shahrisabz"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 277,
+    question: "Qachon “O‘zbekiston SSRning Davlat tili haqida” Qonuni qabul qilindi?",
+    options: [
+      "1988–yil 21–oktabr",
+      "1989–yil 21–oktabr",
+      "1990–yil 21–oktabr",
+      "1991–yil 21–oktabr"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 278,
+    question: "Qachon Oliy Sovetning 12–chaqiriq uchinchi sessiyasida O‘zbekiston Birinchi Prezidenti tavsiyasi bilan respublika prokurorining ittifoq prokuroriga qaramligiga barham berish va bu tizimning mustaqilligini mustahkamlash maqsadida O‘zbekiston Prokurori Respublika oliy organi tomonidan tayinlandi?",
+    options: [
+      "1990–yil 31–oktabr",
+      "1990–yil 30–noyabr",
+      "1991–yil 31–oktabr",
+      "1991–yil 30–noyabr"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 279,
+    question: "Qachon O‘zbekiston Kompartiyasi MK birinchi kotibi Islom Abdug‘aniyevich Karimov O‘zbekiston SSR Prezidenti etib saylandi?",
+    options: [
+      "1991–yil 29–dekabr",
+      "1989–yil 24–mart",
+      "1991–yil 24–aprel",
+      "1990–yil 24–mart"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 280,
+    question: "Markaziy saylov komissiyasi O‘zbekiston Respublikasi Prezidenti saylovi to‘g‘risidagi qonunning 35–moddasiga asoslanib Islom Abdug‘aniyevich Karimovni qachondan O‘zbekiston Respublikasi Prezidenti lavozimiga saylangan deb hisoblashga qaror qildi?",
+    options: [
+      "1990–yil 29–dekabr",
+      "1991–yil 29–dekabr",
+      "1991–yil 24–dekabr",
+      "1990–yil 24–mart"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 281,
+    question: "Qachon o‘tkazilgan umumxalq ovozi (referendumi) bilan I.Karimovning Prezidentlik vakolati 1997–yildan 2000–yligacha uzaytirildi?",
+    options: [
+      "1995–yil 26–mart",
+      "1996–yil 26–mart",
+      "1994–yil 26–mart",
+      "1997–yil 26–mart"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 282,
+    question: "O‘zbekiston Respublikasining Birinchi Prezidenti Islom Abdug‘aniyevich Karimov qachon Samarqand shahrida dafn etildi?",
+    options: [
+      "2016–yil 4–sentabr",
+      "2016–yil 2–sentabr",
+      "2016–yil 3–sentabr",
+      "2016–yil 1–sentabr"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 283,
+    question: "“O‘zbekistonning o‘z istiqlol va taraqqiyot yo‘li” asari qachon nashr etilgan?",
+    options: [
+      "1992–yil avgust",
+      "1993–yil avgust",
+      "1994–yil sentabr",
+      "1993–yil sentabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 284,
+    question: "“O‘zbekiston – bozor munosabatlariga o‘tishning o‘ziga xos yo‘li” asari qachon nashr etilgan?",
+    options: ["1994–yilda", "1992–yilda", "1995–yilda", "1993–yilda"],
+    correctAnswer: 3
+  },
+  {
+    id: 285,
+    question: "Qachon o‘tkazilgan O‘zbekiston Respublikasi Oliy Kengashining II sessiyasida yangi Konstitutsiya ishlab chiqish lozim, degan xulosaga kelindi?",
+    options: [
+      "1992–yil 20–iyun",
+      "1990–yil 20–iyun",
+      "1991–yil 20–iyul",
+      "1990–yil 20–iyul"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 286,
+    question: "Konstitutsiyaviy komissiya O‘zbekiston Respublikasining Konstitutsiyasini ishlab chiqish ustida necha yil ishladi?",
+    options: [
+      "qariyb 2,5 yil",
+      "qariyb 3,5 yil",
+      "qariyb 1,5 yil",
+      "qariyb 2 yil"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 287,
+    question: "Konstitutsiyaviy komissiyaning 1991–yil 12–aprelda bo‘lib o‘tgan yig‘ilishida komissiya a’zolari hamda yetakchi mutaxassislar va olimlardan iborat necha kishilik ishchi guruhi tuzildi?",
+    options: ["30", "31", "32", "33"],
+    correctAnswer: 2
+  },
+  {
+    id: 288,
+    question: "Qachon O‘zbekiston Respublikasi Konstitutsiyasining loyihasi umumxalq muhokamasi uchun matbuotda e’lon qilindi?",
+    options: [
+      "1991–yil 26–sentabr",
+      "1992–yil 26–oktabr",
+      "1990–yil 20–iyun",
+      "1992–yil 26–sentabr"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 289,
+    question: "“O‘zbekiston Respublikasining davlat gerbi to‘g‘risida”gi Qonun qachon qabul qilingan?",
+    options: [
+      "1992–yil 2–iyun",
+      "1992–yil 2–iyulda",
+      "1992–yil 4–iyul",
+      "1992–yil 2–avgust"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 290,
+    question: "“O‘zbekiston Respublikasi davlat madhiyasi to‘g‘risida”gi Qonun qachon qabul qilindi?",
+    options: [
+      "1992–yil 10–dekabr",
+      "1991–yil 10–dekabr",
+      "1992–yil 12–dekabr",
+      "1991–yil 12–dekabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 291,
+    question: "Qachon Moskvada davlat to‘ntarishi sodir etildi?",
+    options: [
+      "1991–yil 18–23–avgust",
+      "1990–yil 19–23–avgust",
+      "1991–yil 19–21–avgust",
+      "1990–yil 19–21–avgust"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 292,
+    question: "1987–yilda O‘zbekistonda milliy daromad kishi boshiga 1985–yildagiga nisbatan foizni tashkil qildi?",
+    options: ["94,5 %", "90,5%", "95,4%", "96,4%"],
+    correctAnswer: 0
+  },
+  {
+    id: 293,
+    question: "“Qishloqda yashovchi har bir oilani tomorqa bilan ta’minlash, ularga yakka tartibda uy-joy qurish uchun barcha sharoitlarni yaratib berish haqida” qaror qabul qilinganidan so‘ng o‘tgan bir yil mobaynida qancha oilaga yer uchastkalari ajratib berildi?",
+    options: [
+      "40 mingdan ziyod",
+      "50 mingdan ziyod",
+      "60 mingdan ziyod",
+      "70 mingdan ziyod"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 294,
+    question: "Respublikada mavjud bo‘lgan tomorqalar butun ekin maydonlarining necha foizini tashkil etgan?",
+    options: ["6%", "5 %", "10%", "7%"],
+    correctAnswer: 0
+  },
+  {
+    id: 295,
+    question: "Qachon O‘zbekiston SSR Oliy Sovetining XII chaqiriq 1–sessiyasida SSSR doirasida birinchi bo‘lgan siyosiy hujjatni – “O‘zbekistonda Prezidentlik boshqaruvini ta’sis etish to‘g‘risida”gi qaror qabul qilindi?",
+    options: [
+      "1990–yil 24–mart",
+      "1990– yil 29–dekabr",
+      "1991–yil 24–mart",
+      "1991–yil 29–dekabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 296,
+    question: "1991–yil 29–dekabrda o‘tkazilgan O‘zbekiston Respublikasining referendumida saylov ro‘yxatiga kiritilganlarning necha foizi qatnashdi?",
+    options: ["95,1%", "90,1", "94,1%", "96,4%"],
+    correctAnswer: 2
+  },
+  {
+    id: 297,
+    question: "1991–yil 29–dekabrdagi saylovlar yakuniga ko‘ra, ovoz berishda qatnashganlarning necha foizi I.Karimov nomzodini yoqlab ovoz berdi?",
+    options: ["88,1%", "90,39%", "90,1%", "86%"],
+    correctAnswer: 3
+  },
+  {
+    id: 298,
+    question: "Markaziy saylov komissiyasi O‘zbekiston Respublikasi Prezidenti saylovi to‘g‘risidagi qonunning nechanchi moddasiga asoslanib Islom Abdug‘aniyevich Karimovni 1991–yil 29–dekabrdan O‘zbekiston Respublikasi Prezidenti lavozimiga saylangan deb hisoblashga qaror qildi?",
+    options: ["35–modda", "30–modda", "32–modda", "33–modda"],
+    correctAnswer: 0
+  },
+  {
+    id: 299,
+    question: "O‘zbekiston Respublikasi Oliy Majlisining 1999–yil 19–20–avgust kunlari bo‘lib o‘tgan XI sessiyasi qachon O‘zbekiston Respublikasi Prezidenti saylovini o‘tkazishga qaror qildi?",
+    options: [
+      "2000–yil 11–yanvar",
+      "2000–yil 9–yanvar",
+      "2001–yil 11–yanvar",
+      "2000–yil 10–yanvar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 300,
+    question: "2015–yil 29–mart kumidagi prezident saylovida Islom Karimov necha foiz ovoz bilan g‘alaba qozondi?",
+    options: ["86%", "88,1%", "90,39%", "91,39%"],
+    correctAnswer: 2
+  }
+];
+export const questions7 = [
+  {
+    id: 301,
+    question: "O‘zbekiston Respublikasining Birinchi Prezidenti Islom Abdug‘aniyevich Karimov qachon vafot etdi?",
+    options: [
+      "2016–yil 2–sentabr",
+      "2016–yil 3–sentabr",
+      "2016–yil 4–sentabr",
+      "2016–yil 5–sentabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 302,
+    question: "Samarqand shahridagi qaysi majmuada Islom Karimov nomiga atab maqbara bunyod etildi?",
+    options: [
+      "Go‘ri Amir maqbarasida",
+      "Hasti imom majmuasi",
+      "Shohizinda me‘moriy majmuasida",
+      "Zangiota maqbarasiga"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 303,
+    question: "Qachon O‘zbekiston SSR Oliy Kengashining II sessiyasida O‘zbekiston SSRning Mustaqillik Deklaratsiyasi qabul qilindi?",
+    options: [
+      "1990–yil 20–iyun",
+      "1991–yil 20–iyul",
+      "1990–yil 20–avgust",
+      "1991–yil 20–avgust"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 304,
+    question: "O‘zbekiston Respublikasi Konstitutsiyasining loyihasi umumxalq muhokamasi jarayonida bildirilgan takliflar asosida tuzatishlar kiritilgan loyiha qachon matbuotda ikkinchi marta e’lon qilindi?",
+    options: [
+      "1993–yil 26–noyabr",
+      "1992–yil 26–noyabr",
+      "1993–yil 26–oktabr",
+      "1992–yil 26–oktabr"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 305,
+    question: "Qachon O‘zbekiston Respublikasining Konstitutsiyasi qabul qilindi va Konstitutsiya qabul qilingan sana umumxalq bayrami – O‘zbekiston Respublikasining Konstitutsiyasi kuni deb e’lon qilindi?",
+    options: [
+      "1991–yil 8–dekabr",
+      "1992–yil 8–dekabr",
+      "1992–yil 10–dekabr",
+      "1992–yil 2–iyun"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 306,
+    question: "Qachon “O‘zbekiston Respublikasining davlat bayrog‘i to‘g‘risida”gi qonun qabul qilindi?",
+    options: [
+      "1990–yil 18–noyabr",
+      "1991–yil 18–dekabr",
+      "1991–yil 18–noyabr",
+      "1990–yil 18–oktabr"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 307,
+    question: "Birlashgan Millatlar Tashkiloti qarorgohi qaysi shaharda joylashgan?",
+    options: ["Nyu–York", "Vashington", "Parij", "London"],
+    correctAnswer: 0
+  },
+  {
+    id: 308,
+    question: "O‘zbekiston Respublikasi davlat madhiyasining kimlar tomonidan tayyorlangan varianti tasdiqlandi?",
+    options: [
+      "Abdulla Oripov va Erkin Vohidov",
+      "Abdulla Oripov va Mutal Burhonov",
+      "Abdulla Oripov va Said Ahmad",
+      "Erkin Vohidov va Mutal Burhonov"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 309,
+    question: "“O‘zbekiston Respublikasining davlat gerbi to‘g‘risida”gi Qonun O‘zbekiston Respublikasi Oliy Kengashining nechanchi sessiyasida qabul qilingan?",
+    options: ["X sessiya", "XI sessiya", "XII sessiya", "IX sessiya"],
+    correctAnswer: 1
+  },
+  {
+    id: 310,
+    question: "2015–yil 29–mart kumidagi O‘zbekiston Respublikasi Prezidenti sayloviga tayyorgarlik ko‘rish va uni o‘tkazish bilan bog‘liq qancha maqola va axborot materiallari, ko‘rsatuv hamda eshitirishlar e’lon qilindi?",
+    options: [
+      "12 700 ga yaqin",
+      "12 750 dan ziyod",
+      "12 950 dan ziyod",
+      "12 750 ga yaqin"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 311,
+    question: "O‘zbekiston Oliy Kengashining 1990–yil 20–iyunda bo‘lgan ikkinchi sessiyasida yangi Konstitutsiya ishlab chiqish lozim, degan xulosaga kelingan edi. Sessiya O‘zbekiston Prezidenti Islom Karimov boshchiligida necha kishidan iborat Konstitutsiya loyihasini tayyorlash bo‘yicha komissiya tuzish to‘g‘risida qaror qabul qiladi?",
+    options: ["34 kishi", "32 kishi", "64 kishi", "60 kishi"],
+    correctAnswer: 2
+  },
+  {
+    id: 312,
+    question: "Konstitutsiyaning nechanchi moddalarida Oliy Majlisning tuzilishi, vakolatlari, qonunlarni ishlab chiqish va qabul qilish qoidalari belgilab berilgan?",
+    options: [
+      "76–88–moddalarida",
+      "88–98–moddalar",
+      "106–116–moddalar",
+      "65–69–moddalar"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 313,
+    question: "Konstitutsiyaning nechanchi moddalarida O‘zbekiston Respublikasi Prezidenti davlat va ijro etuvchi hokimiyat boshlig‘i ekanligi, uning vakolatlari va vazifalari, Vazirlar Mahkamasining faoliyat yuritish qoidalari qonunlashtirilgan?",
+    options: [
+      "76–88–moddalar",
+      "106–116–moddalar",
+      "88–98–moddalarida",
+      "18–52–moddalar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 314,
+    question: "Konstitutsiyaning nechanchi moddalarida O‘zbekistonda sud tizimi va ularning vazifalari belgilab berilgan. Konstitutsiyada sudya deputatlikka saylana olmasligi, siyosiy partiyalar va harakatlarning a’zosi bo‘la olmasligi qonuniylashtirilgan?",
+    options: [
+      "106–116–moddalar",
+      "76–88–moddalar",
+      "88–98–moddalar",
+      "18–52–moddalar"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 315,
+    question: "Konstitutsiyaning nechanchi moddasida “O‘zbekiston Respublikasida O‘zbekiston Respublikasining Konstitutsiyasi va qonunlarining ustunligi so‘zsiz tan olinadi. Davlat, uning organlari, mansabdor shaxslar, jamoat birlashmalari, fuqarolar Konstitutsiya va qonunlarga muvofiq ish ko‘radilar”, deb belgilab qo‘yilgan?",
+    options: ["14–modda", "15–modda", "16–modda", "17–modda"],
+    correctAnswer: 1
+  },
+  {
+    id: 316,
+    question: "1991–yil 29–dekabrdagi saylovlar yakuniga ko‘ra, ovoz berishda qatnashganlarning necha foizi Saloy Madaminov nomzodini yoqlab ovoz berdi?",
+    options: ["4,9%", "3,93%", "2,92%", "12,3%"],
+    correctAnswer: 2
+  },
+  {
+    id: 317,
+    question: "Mustaqillikdan so‘ng birinchi prezidentlik saylovlari qachon o‘tkazilgan?",
+    options: [
+      "1991–yil 29–dekabr",
+      "1992–yil 1–yanvar",
+      "1991–yil 30–dekabr",
+      "1992–yil 1–fevral"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 318,
+    question: "O‘zbekiston Respublikasi Mustaqillik deklaratsiyasi nechta moddadan iborat?",
+    options: ["12", "20", "10", "13"],
+    correctAnswer: 0
+  },
+  {
+    id: 319,
+    question: "O‘zbekiston Respublikasi “Davlat mustaqilligi to‘g‘risidagi” qonun nechta moddadan iborat?",
+    options: ["17", "24", "18", "21"],
+    correctAnswer: 2
+  },
+  {
+    id: 320,
+    question: "O‘zbekiston Respublikasi qachon MDH tashkiloti a’zosiga aylandi?",
+    options: [
+      "1991–yil 21–dekabr",
+      "1992–yil 8–dekabr",
+      "1991–yil 20–dekabr",
+      "1992–yil 10–dekabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 321,
+    question: "O‘zbekiston Respublikasi qachon SHHT ga to‘liq a’zo bo‘lgan?",
+    options: ["2001–yil", "2004–yil", "2002–yil", "2003–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 322,
+    question: "Qachon Oliy Kengash VI sessiyasi “Mustaqillik haqidagi Bayonot”ni qabul qildi?",
+    options: [
+      "1991–yil 18 noyabr",
+      "1991–yil 31–avgust",
+      "1992–yil 8 dekabr",
+      "1993–yil 10–may"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 323,
+    question: "Konstitutsiyamizning qaysi moddasida O‘zbekiston Respublikasi tashqi siyosatining asosiy ustuvor tamoyillari bayon qilingan?",
+    options: ["10", "15", "20", "17"],
+    correctAnswer: 3
+  },
+  {
+    id: 324,
+    question: "1991–yil dekabrdan 1992–yil iyul oyigacha bo‘lgan davr ichida O‘zbekistonni qancha davlat tan oldi?",
+    options: ["111", "181", "197", "210"],
+    correctAnswer: 2
+  },
+  {
+    id: 325,
+    question: "2015–yilga qadar esa O‘zbekiston mustaqilligini qanchadan dan ortig davlat tan oldi?",
+    options: ["140", "170", "180", "100"],
+    correctAnswer: 0
+  },
+  {
+    id: 326,
+    question: "Poytaxtda qancha davlat diplomatik missiyasi akkreditatsiyadan o‘tgan?",
+    options: ["44", "150", "101", "80"],
+    correctAnswer: 0
+  },
+  {
+    id: 327,
+    question: "O‘zbekistonning elchilari dunyodagi qancha davlatda faoliyat ko‘rsatmokdalar?",
+    options: ["100", "140", "44", "46"],
+    correctAnswer: 3
+  },
+  {
+    id: 328,
+    question: "O‘zbekiston qachon xalqaro munosabatlarning to‘la huquqli sub’yekti sifatida Birlashgan Millatlar Tashkilotiga a’zo bo‘ladi?",
+    options: [
+      "1992–yil 2–martda",
+      "1993–yil sentabr",
+      "1994–yil 5 may",
+      "1990–yil avgust"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 329,
+    question: "Qachon Toshkentda BMT vakolatxonasi ochildi?",
+    options: [
+      "1992–yil 2–martda",
+      "1993–yil fevral",
+      "1994–yil 5 may",
+      "1990–yil avgust"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 330,
+    question: "BMTning 1993–yilda O‘zbekistondagi vakili etib kim tayinlandi?",
+    options: ["Kofe Annan", "Holid Malik", "Pan Gi Mun", "Antonio Guterres"],
+    correctAnswer: 1
+  },
+  {
+    id: 331,
+    question: "O‘zbekiston Respublikasining Birinchi Prezidenti I.A.Karimov qachon BMTning 48–sessiyasida qatnashdi?",
+    options: [
+      "1992–yil 2–martda",
+      "1993–yil sentabr",
+      "1994–yil 5 may",
+      "1990–yil avgust"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 332,
+    question: "O‘zbekiston Respublikasining Birinchi Prezidenti I.A.Karimov qachon BMTning ellik yilligi munosabati bilan Bosh Assambleyaning maxsus tantanali yig‘ilishida nutq so‘zladi?",
+    options: ["1995–yil", "1994–yil", "1996–yil", "1997–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 333,
+    question: "1995–yil 16–sentabrda qaysi shaharda BMTning Markaziy Osiyoda xavfsizlik va hamkorlik masalalariga bag‘ishlangan seminar–kengashi ish boshladi?",
+    options: ["Ostona", "Toshkent", "Bishkek", "Urganch"],
+    correctAnswer: 1
+  },
+  {
+    id: 334,
+    question: "Qachon Shavkat Mirziyoyevning ilk bor O‘zbekiston Respublikasi Prezidenti sifatida BMT Bosh assambleyasining 72–sessiyasida nutq so‘zladi?",
+    options: ["2017–yilda", "2019–yil", "2018–yil", "2020–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 335,
+    question: "Prezident Sh.M.Mirziyoyev tomonidan “Ma’rifat va diniy bag‘rikenglik” tamoyilini xalqaro tashkilot tomonidan qabul qilinishi to‘g‘risidagi taklif davlat rahbarlari va delegatsiyalari o‘rtasida yuksak e’tirofga sazovor bo‘ldi. Ushbu tamoyil 50 dan ziyod davlatning qo‘llab–quvvatlashi natijasida qachon BMT tomonidan qabul qilindi?",
+    options: [
+      "2018–yil 12–dekabr",
+      "2019–14 fevral",
+      "2020–yil dekabr",
+      "2017–sentabr"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 336,
+    question: "BMT Bosh kotibi A.Guterres bilan O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyevning Samarqand shahridagi uchrashuvi qachon bo‘ldi?",
+    options: [
+      "2017–yil 10–iyunda",
+      "2022–yil fevral",
+      "2019–yil fevral",
+      "2020–yil avgust"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 337,
+    question: "Qachon O‘zbekiston Respublikasi Prezidentining tashabbusi bilan BMT Bosh Assambleyasining maxsus “Ma’rifiy va diniy bag‘rikenglik” rezolyutsiyasi qabul qilindi?",
+    options: [
+      "2018–yil 12–dekabr",
+      "2022–yil fevral",
+      "2019–yil fevral",
+      "2020–yil avgust"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 338,
+    question: "O‘zbekiston qachon YuNESKOga a’zo bo‘lgan edi?",
+    options: ["1993–yil", "1994–yil", "1995–yil", "1996–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 339,
+    question: "Qachonga kelib esa O‘zbekiston Respublikasining YuNESKO ishlari bo‘yicha Milliy komissiyasi tashkil etildi?",
+    options: ["1994–yil", "1995–yil", "1996–yil", "1999–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 340,
+    question: "1996–yilga kelib ……….. da YuNESKOning vakolatxonasi ochildi?",
+    options: ["Urganch", "Toshkent", "Samarqand", "Buxoro"],
+    correctAnswer: 1
+  },
+  {
+    id: 341,
+    question: "O‘zbekistonning Birinchi Prezidenti I.A.Karimov qachon YuNESKO qarorgohiga rasmiy tashrif bilan bordi?",
+    options: ["1996–yil", "1993–yil", "1994–yil", "1995–yil"],
+    correctAnswer: 3
+  },
+  {
+    id: 342,
+    question: "2000–yil 28–dekabrda qaysi shahar YuNESKO ro‘yxatiga kiritildi?",
+    options: ["Shahrisabz", "Marg‘ilon", "Xiva", "Toshkent"],
+    correctAnswer: 2
+  },
+  {
+    id: 343,
+    question: "2018–yil 8–oktabr kuni O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyev Fransiya davlatiga bo‘lgan rasmiy tashrifi chog‘ida YuNESKO Bosh direktori bo‘lgan kim bilan uchrashdi?",
+    options: [
+      "Odri Azule",
+      "Fransua Rodri",
+      "Fediriko Mayor",
+      "Kofe Annan"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 344,
+    question: "1997–yilda qaysi shaharda “Markaziy Osiyo – yadro qurolidan xoli zona” mavzusida xalqaro konferensiya bo‘lib o‘tdi?",
+    options: ["Toshkentda", "Bishkekda", "Ostonada", "Dushanbeda"],
+    correctAnswer: 0
+  },
+  {
+    id: 345,
+    question: "O‘zbekiston Iqtisodiy hamkorlik tashkiloti (EKO)ga qachon a’zo bo‘ldi?",
+    options: ["1992–yilda", "1994–yilda", "1995–yilda", "1991–yilda"],
+    correctAnswer: 0
+  },
+  {
+    id: 346,
+    question: "BMT kuni dunyoda har yili qaysi paytda nishonlanadi?",
+    options: ["24–oktyabrda", "1–yanvarda", "1–mayda", "1–sentyabrda"],
+    correctAnswer: 0
+  },
+  {
+    id: 347,
+    question: "MDH davlatlari rahbarlarining 1992–yil may oyida Toshkentda bo‘lib o‘tgan uchrashuvida O‘zbekiston Prezidentining tashabbusi bilan ...",
+    options: [
+      "O‘zbekiston BMTga a’zo bo‘ldi",
+      "O‘zbekiston qurolli kuchlari tuzildi",
+      "O‘zbekistonning davlat chegaralari belgilab berildi",
+      "Kollektiv xavfsizlik to‘g‘risida shartnoma tuzildi"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 348,
+    question: "1997–yilda qaysi shaharda “Markaziy Osiyo – yadro qurolidan xoli zona” mavzusida xalqaro konferensiya bo‘lib o‘tdi?",
+    options: ["Dushanbeda", "Bishkekda", "Ostonada", "Toshkentda"],
+    correctAnswer: 3
+  },
+  {
+    id: 349,
+    question: "Qaysi shaharda mustaqil O‘zbekiston va Yevropa Ittifogi o‘rtasida sheriklik va hamkorlik shartnomasi imzolandi?",
+    options: ["Rimda", "Synrixda", "Parijda", "Florensiyada"],
+    correctAnswer: 3
+  },
+  {
+    id: 350,
+    question: "O‘zbekiston Respublikasi NATOning “Tinchlik yo‘lidagi hamkorlik” dasturiga qachon qo‘shilgan?",
+    options: [
+      "1995–ylining avgustida",
+      "1992–ylining noyabrida",
+      "1993–ylining yanvarida",
+      "1994–ylining iyulida"
+    ],
+    correctAnswer: 1
+  }
+];
+export const questions8 = [
+  {
+    id: 351,
+    question: "O‘zbekiston Respublikasi nechta davlat bilan chegaradosh?",
+    options: [
+      "5 davlat bilan",
+      "6 ta qo‘shni respublika bilan",
+      "3 ta davlat bilan",
+      "faqat Afg‘oniston bilan"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 352,
+    question: "Qachon “Shanxay beshligi” deb yuritilgan xalqaro tashkilotning XXXni Shanxay shahrida chaqirilgan Sammitida bu tashkilotning to‘liq huquqli a’zosi bo‘ldi?",
+    options: [
+      "2001–ylining iyun",
+      "2002–yil sentabr",
+      "1997–yil mart",
+      "1999–aprel"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 353,
+    question: "SHHTning Terrorizmga qarshi kurash qarorgohi (shtabi) Bishkekdan qayerga ko‘chirildi?",
+    options: ["Shanxay", "Moskva", "Toshkent", "Astana"],
+    correctAnswer: 2
+  },
+  {
+    id: 354,
+    question: "2005–ylining 2–iyul kuni qaysi davlatda “Shanxay hamkorligi tashkiloti”ning o‘ninchi marta uchrashuvi o‘tkazildi?",
+    options: ["O‘zbekiston", "Qozog‘iston", "Turkmaniston", "Xitoy"],
+    correctAnswer: 1
+  },
+  {
+    id: 355,
+    question: "Hindiston, Pokiston va Eron davlatlari SHHTga qachon kuzatuuchi sifatida qabul qilindi?",
+    options: ["2005–yil", "2002–yil", "1997–yil", "1999–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 356,
+    question: "2016–yil iyun oyida Toshkent shahrida bo‘lib o‘tgan SHHTning yig‘ilishida qaysi davlatlar tashkilot tarkibiga kiritildi?",
+    options: [
+      "Pokiston va Hindiston",
+      "Turkmaniston va Ozarbayjon",
+      "Turkiya va Armaniston",
+      "Pokiston va Qatar"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 357,
+    question: "Prezidentimiz farmoni bilan qaysi shaharda SHHT Xalq diplomatiyasi markazi ochildi?",
+    options: ["Samarqand", "Toshkent", "Nukus", "Andijon"],
+    correctAnswer: 0
+  },
+  {
+    id: 358,
+    question: "2018–yil 9–10–iyun kunlari Xitoyning Sindao shahrida Shanxay hamkorlik tashkiloti Davlat rahbarlari kengashining majlisi bo‘lib o‘tdi?",
+    options: ["Pekin", "Nankin", "Sindao", "Siam"],
+    correctAnswer: 2
+  },
+  {
+    id: 359,
+    question: "SHHTning 2021–yil 16–17–sentabr kunlari qaysi shaharda bo‘lib o‘tgan yubiley sammitida SHHTning 20 yillik faoliyatining asosiy natijalari, tashkilot doirasidagi ko‘p tomonlama hamkorlikning holati va istiqbollari atroflicha muhokama qilinib, O‘zbekiston Prezidenti tomonidan tashkilot samaradorligini oshirish maqsadida 10 ta ustuvor vazifa ilgari surildi?",
+    options: ["Bishkek", "Dushanbe", "Pekin", "Moskva"],
+    correctAnswer: 1
+  },
+  {
+    id: 360,
+    question: "1991–yil 8–dekabrda qaysi shahar yaqinida sovet ittifogining barham topishi munosabati bilan Mustaqil Davlatlar Hamdo‘stligiga asos solindi?",
+    options: ["Minsk", "Moskva", "Ostana", "Almati"],
+    correctAnswer: 0
+  },
+  {
+    id: 361,
+    question: "Qachon O‘zbekiston ilk bor Mustaqil Davlatlar Hamdo‘stligi tashkilotiga raislik qildi va pandemiyaga qaramasdan, ko‘zda tutilgan 60 dan ziyod barcha xalqaro tadbirlar muvaffaqiyatli o‘tkazildi?",
+    options: ["2020–yil", "1999–yil", "2017–yil", "2023–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 362,
+    question: "Birlashgan Millatlar Tashkilotining maorif, fan va madaniyat masalahari bilan shug‘ullanadigan tashkilotini aniqlang?",
+    options: ["YUNESKO", "YUNICEF", "EKO", "GATT"],
+    correctAnswer: 0
+  },
+  {
+    id: 363,
+    question: "“O‘zbekiston Respublikasi davlatning, xalqning oliy manfaatlaridan, uning farovonligi va xavfsizligidan kelib chiqqan holda ittifoqlar tuzishi, hamdo‘stliklarga va boshqa davlatlararo tuzilmalarga kirishi hamda ulardan chiqishi mumkin” Konstitutsiyanning qaysi moddasidan olingan?",
+    options: ["18–modda", "15–modda", "14–modda", "16–modda"],
+    correctAnswer: 0
+  },
+  {
+    id: 364,
+    question: "Hozirda Shanxay hamkorlik tashkiloti nomi bilan tanilgan tashkilot dastlab qanday nom bilan atalgan?",
+    options: [
+      "«Shanxay forumi»",
+      "Shanxay iqtisodiy ittifogi",
+      "Shanxay savdo forumi",
+      "Shanxay ekologik ittifogi"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 365,
+    question: "Bugungi kunda BMTga qancha davlat a’zo?",
+    options: ["193 ta", "180", "155", "170"],
+    correctAnswer: 0
+  },
+  {
+    id: 366,
+    question: "Shanxay Hamkorlik Tashkilotining rasmiy tillari qaysi?",
+    options: [
+      "rus va xitoy",
+      "o‘zbek va tojik",
+      "qirg‘iz va rus",
+      "Xitoy va qozoq"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 367,
+    question: "YUNESKO qaroriga binoan qaysi shaharda Markaziy Osiyo tadqiqotlari xalqaro instituti tashkil etilgan?",
+    options: ["Toshkent", "Samarqand", "Almati", "Bishkek"],
+    correctAnswer: 0
+  },
+  {
+    id: 368,
+    question: "O‘zbekiston Respublikasida qaysi organ xalqaro shartnomalarni ratifikasiya qilish huquqiga ega?",
+    options: [
+      "Oliy Majlis",
+      "Vazirlar Mahkamasi",
+      "Oliy Sud",
+      "Tashqi ishlar vazirligi"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 369,
+    question: "Qaysi tashkilot Submintaqaviy xalqaro tashkilot bo‘lib, Yevroosiyo hududining 61% ni egallaydi?",
+    options: ["SHHT", "YEXHT", "YEI", "MDH"],
+    correctAnswer: 3
+  },
+  {
+    id: 370,
+    question: "Qachondan boshlab Toshkent islom madaniyatining poytaxti, deb e’lon qilindi hamda YUNESKOning «Butunjahon ahamiyatga molik yodgorliklar ro‘yxati»ga kiritildi?",
+    options: [
+      "2007–yil yanvardan",
+      "2002–yildan",
+      "2001–yildan",
+      "2005–yildan"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 371,
+    question: "Qaysi davlatning «Shanxay forumi»ga kirishi munosabati bilan uning nomi «Shanxay Hamkorlik Tashkiloti – SHHT», deb o‘zgartirildi?",
+    options: ["O‘zbekiston", "Turkmaniston", "Qirg‘iziston", "Tojikiston"],
+    correctAnswer: 0
+  },
+  {
+    id: 372,
+    question: "O‘zbekistonda ta’lim to‘g‘risida eski va yangi tahrirdagi qonunlar qachon qabul qilingan edi?",
+    options: [
+      "1992, 1997",
+      "1991, 1997",
+      "1992, 1998",
+      "1993, 1997"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 373,
+    question: "Mustaqillikning dastlabki yillarida qancha xalq ta’limi xodimiga davlat uylari ajratildi?",
+    options: [
+      "15 mingga yaqin",
+      "5 mingdan ortig",
+      "7 mingdan ortig",
+      "10 mingdan ortig"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 374,
+    question: "Kadrlar tayyorlash milliy dasturi nechta bosqichdagi islohotlar asosida amalga oshirildi?",
+    options: ["2 bosqich", "3 bosqich", "5 bosqich", "4 bosqich"],
+    correctAnswer: 0
+  },
+  {
+    id: 375,
+    question: "Yurtimizda 1997–yildan boshlab hozirgacha qancha kasb–hunar kolleji bunyod etildi?",
+    options: [
+      "1400 atrofida",
+      "1600 dan ortig",
+      "2000 ga yaqin",
+      "2000 dan ortig"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 376,
+    question: "2017–yilning o‘zida nechanchi sinf o‘quvchilari uchun 9 mln nusxa darslik chop etildi?",
+    options: ["9", "11", "8", "10"],
+    correctAnswer: 3
+  },
+  {
+    id: 377,
+    question: "2017–yil holatida bog‘chaga borayotgan bolalar umumiy bolalar sonining qanchasini tashkil qiladi?",
+    options: ["45 foizini", "30 foizini", "35 foizini", "25 foizini"],
+    correctAnswer: 3
+  },
+  {
+    id: 378,
+    question: "1998–2016–yillarda O‘zbekistonda qancha o‘rta maxsus, kasb–hunar ta’limi muassasalari bunyod etilgan?",
+    options: [
+      "200 ta akademik litsey, 1400 ta kasb–hunar kolleji, 34 ta kasb–hunar kolleji filiallari",
+      "145 ta akademik litsey, 1433 ta kasb–hunar kolleji, 20 ta kasb–hunar kolleji filiallari",
+      "143 ta akademik litsey, 1412 ta kasb–hunar kolleji, 28 ta kasb–hunar kolleji filiallari",
+      "133 ta akademik litsey, 1442 ta kasb–hunar kolleji, 32 ta kasb–hunar kolleji filiallari"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 379,
+    question: "1992–yildagi “Ta’lim to‘g‘risida”gi qonun asosida umumiy ta’lim nechta bosqichda amalga oshirila boshlandi?",
+    options: ["3 ta", "2 ta", "4 ta", "5ta"],
+    correctAnswer: 0
+  },
+  {
+    id: 380,
+    question: "Kadrlar tayyorlash Milliy dasturining qaysi bosqichida oliy o‘quv yurtlari qoshida 46 ta litsey tashkil etilib, 800 ga yaqin o‘quvchi chet ellarda ta’lim olib qaytdi?",
+    options: ["birinchi", "ikkinchi", "uchinchi", "to‘rtinchi"],
+    correctAnswer: 0
+  },
+  {
+    id: 381,
+    question: "Mustaqillikning dastlabki yillarida xalq ta’limi xodimlarining qanchasiga davlat uylari xususiylashtirib berildi?",
+    options: [
+      "22 mingga yaqin",
+      "10 mingdan ortig",
+      "8 mingdan ortig",
+      "15 mingga yaqin"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 382,
+    question: "Mustaqillikning dastlabki yillarida xalq ta’limi xodimlariga kommunal to‘lovlari bilan bog‘liq qanday imtiyozlar berilgan edi?",
+    options: [
+      "Qishloqlarda istiqomat qiladigan pedagog xodimlarning ma’lum imtiyozga ega qismi kommunal xizmat uchun to‘lovlardan ozod etilgan, shaharliklarning kommunal to‘lovi 50 foizi maktab byudjetidan qoplanadigan bo‘ldi",
+      "O‘zbekistondagi barcha pedagog xodimlarning hammasi kommunal xizmat uchun to‘lovlardan ozod etilgan, keyinchalik maoshiga ustama qo‘shib berish yo‘li bilan bu imtiyozdan mahrum qilingan",
+      "Qishloqlarda istiqomat qiladigan pedagog xodimlarning hammasi kommunal xizmat uchun to‘lovlardan ozod etilgan bo‘lsalar, shaharliklar uning 50 foizi miqdorida to‘lab bordilar",
+      "O‘zbekistondagi barcha pedagog xodimlarning hammasi kommunal xizmat uchun to‘lovlardan ozod etilgan, 5 yillik staj davrida uning 30 foizi miqdorida to‘lab bordilar"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 383,
+    question: "O‘zbekiston Respublikasi Oliy Majlisining 1996–yil dekabrdagi qaroriga ko‘ra, ...",
+    options: [
+      "1–oktabr – “O‘qtuvchilar va murabbiylar kuni” deb belgilandi",
+      "9+3, 12 yillik majburiy ta’lim joriy etildi",
+      "5 yillik oliy ta’limdan 4 yillik bakalavriat va 2 yillik magistratura bosqichlaridan iborat ikki pog‘onali tizimga o‘tildi",
+      "Bolalar sportini rivojlantirish jamg‘armasi tuzildi"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 384,
+    question: "O‘zbekiston Respublikasi Prezidentining 2017–yil 30–sentabrda “Maktabgacha ta’lim tizimini boshqarishni takomillashtirish to‘g‘risida”gi farmoniga ko‘ra qanday muassasa tashkil etildi?",
+    options: [
+      "Jismoniy tarbiya va sport qo‘mitasi",
+      "O‘zbekiston Yoshlar ittifoqi",
+      "Maktabgacha ta’lim vazirligi",
+      "Fanlar akademiyasi Immunologiya instituti"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 385,
+    question: "2017–yil O‘zbekistonda 11 yillik ta’limga o‘tish bo‘yicha so‘rovnoma 9–sinf bitiruvchilari ota–onalarning qancha qismi 11 yillik ta’lim qayta tashkil etilishi tarafdori ekanini ko‘rsatishdi?",
+    options: [
+      "60 foizidan ortig",
+      "70 foizidan ortig",
+      "80 foizidan ortig",
+      "70 foiziga yaqin"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 386,
+    question: "1997–2017–yillar ichida maktabgacha ta’lim muassasalari soni....",
+    options: [
+      "45 foizga kamaygan",
+      "2 baravar ko‘paygan",
+      "20 foizga kamaygan",
+      "20 foizga ko‘paygan"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 387,
+    question: "2017–yil holatida O‘zbekistonda nechta maktabgacha ta’lim muassasalari faoliyat yuritgan?",
+    options: [
+      "5 mingga yaqin",
+      "4 mingdan ortig",
+      "6 mingga yaqin",
+      "3 mingdan ortig"
+    ],
+    correctAnswer: 0
+  },
+  {
+    id: 388,
+    question: "2016–2017–o‘quv yilida umumta’lim maktablarining sinfini tamomlagan ...dan ortig o‘quvchining ... sinfda o‘qishni davom ettirdilar.",
+    options: [
+      "574 ming, 388 mingi",
+      "766 ming, 498 mingi",
+      "489 ming, 328 mingi",
+      "466 ming, 288 mingi"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 389,
+    question: "Oliy ta’lim muassasalari kirish intihonlari uchun ilk bor nechta oliy o‘quv yurtida test sinovlari o‘tkazilgan edi?",
+    options: ["6 ta", "19 ta", "12 ta", "4 ta"],
+    correctAnswer: 3
+  },
+  {
+    id: 390,
+    question: "Qaysi me’yoriy hujjat asosida 5 yillik oliy ta’limdan 4 yillik bakalavriat va 2 yillik magistratura bosqichlaridan iborat ikki pog‘onali tizimga o‘tildi?",
+    options: [
+      "1997–yilgi Kadrlar tayyorlash Milliy dasturi",
+      "1997–yilgi “Ta’lim to‘g‘risida”gi qonun",
+      "1992–yil fevraldagi O‘zbekiston Prezidentining “Viloyat pedagogika institutlariga universitet maqomini berish to‘g‘risida’gi farmoni",
+      "1994–yilgi O‘zbekiston Prezidentining “Davlat test markazini tashkil etish to‘g‘risida”gi qarori"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 391,
+    question: "Bugungi kunda mamlakatimizda qancha oliy ta’lim muassasasi mavjud?",
+    options: ["70 ga yaqin", "60 dan ortig", "80 dan ortig", "100 ga yaqin"],
+    correctAnswer: 2
+  },
+  {
+    id: 392,
+    question: "Xorijiy oliy ta’lim muassasalari filiallarini ular tashkil topgan yil bilan muvofiqashtiring. 1.M.V. Lomonosov nomidagi Moskva davlat universiteti; 2.I.M. Gubkin nomidagi Rossiya neft va gaz davlat universiteti; 3.Singapur menejmentini rivojlantirish instituti; 4.Italiyaning Turin politexnika universiteti; 5.Janubiy Koreyaning Inha universiteti. a)2006–yil; b) 2007–yil; c) 2008–yil; d) 2009–yil; e) 2014.",
+    options: [
+      "1–a, 2–b, 3–d, 4–c, 5–e",
+      "1–b, 2–a, 3–c, 4–d, 5–e",
+      "1–a, 2–e, 3–c, 4–d, 5–b",
+      "1–a, 2–b, 3–c, 4–d, 5–e"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 393,
+    question: "2017–yilgi holatga ko‘ra, O‘zbekistonda nechta akademiya faoliyat olib bordi?",
+    options: ["8 ta", "6 ta", "4 ta", "9 ta"],
+    correctAnswer: 0
+  },
+  {
+    id: 394,
+    question: "Oliy ta’limdan keyingi ta’lim bir bosqichli tizimga o‘tgach, 2013–2017–yillar oralig‘ida qancha ilmiy tadqiqotchi doktorlik dissertatsiyasini himoya qildi?",
+    options: ["360 ta", "420 ta", "510 ta", "315 ta"],
+    correctAnswer: 2
+  },
+  {
+    id: 395,
+    question: "Qaysi yildan boshlab oliy ta’lim muassasalariga kirish intihonlari uchun yoppasiga test sinovlari joriy qilindi?",
+    options: ["1994–yil", "1995–yil", "1996–yil", "1993–yil"],
+    correctAnswer: 0
+  },
+  {
+    id: 396,
+    question: "2017–yildan tibbiy profilaktika yo‘nalishidagi oliy ta’lim muassasalarida o‘qish muddati necha yilga aylantirildi?",
+    options: ["5 yil", "4 yil", "6 yil", "3 yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 397,
+    question: "Mamlakatimiz oliy o‘quv yurtlarida talabalarni ilk bor test sinovi asosida qabul qilish nechanchi yildan boshlandi?",
+    options: ["1992–yil", "1993–yil", "1994–yil", "1995–yil"],
+    correctAnswer: 2
+  },
+  {
+    id: 398,
+    question: "Tayanch oliy ta’lim kursidan so‘ng qo‘shimcha dastur bajargan, maxsus intihonlarni topshirgan va muayyan ilmiy ishni himoya qilgan shaxslarga beriladigan ilmiy unvon qanday ataladi?",
+    options: ["Magistr", "Fan nomzodi", "Bakalavr", "Falsafa doktori"],
+    correctAnswer: 1
+  },
+  {
+    id: 399,
+    question: "O‘zbekistonda qachondan talaba va aspirantlar uchun maxsus stipendiyalar belgilandi?",
+    options: ["1992–yil", "1993–yil", "1994–yil", "1995–yil"],
+    correctAnswer: 1
+  },
+  {
+    id: 400,
+    question: "O‘zbekiston oliy o‘quv yurtlariga kirish uchun ilk bor qachon test sinovlari tajribadan o‘tkazilgan edi?",
+    options: ["1993–yil", "1995–yil", "1994–yil", "1992–yil"],
+    correctAnswer: 2
+  }
+];
+export const questions9 = [
   {
     id: 401,
-    text: "O'zbekiston Respublikasi Prezidentining 2024-yil may oyidagi farmoni bilan nima tashkil etildi?",
-    options: [{id: 'a', text: "Milliy gvardiya"}, {id: 'b', text: "Prezident huzuridagi Strategik islohotlar agentligi (yangi vakolatlar)"}, {id: 'c', text: "Raqamli texnologiyalar markazi"}, {id: 'd', text: "Yangi darsliklar markazi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston oliy o‘quv yurtlariga kirish uchun test sinovlari qaysi yillarda tajribadan o‘tkazildi?",
+    options: [
+      "1992–1993–y.",
+      "1993–1994–y.",
+      "1994–1995–y.",
+      "1991–1993–y."
+    ],
+    correctAnswer: 1
   },
   {
     id: 402,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro sport tadbiri birinchi marta o'tkazilishi rejalashtirildi (Futzal)?",
-    options: [{id: 'a', text: "Osiyo kubogi"}, {id: 'b', text: "FIFA Futzal Jahon chempionati"}, {id: 'c', text: "Olimpiada"}, {id: 'd', text: "MDH o'yinlari"}],
-    correctAnswer: 'b'
+    question: "1993–yil holatida O‘zbekistonda nechta oliy ta’lim muassasasi bor edi?",
+    options: ["19 ta", "38 ta", "46 ta", "51 ta"],
+    correctAnswer: 1
   },
   {
     id: 403,
-    text: "O'zbekistonda “Kichik biznesni rivojlantirish” dasturi doirasida tadbirkorlarga beriladigan imtiyozli kreditlar miqdori 2024-yilda qanchagacha oshirildi?",
-    options: [{id: 'a', text: "100 mln so'm"}, {id: 'b', text: "1.5 mlrd so'mgacha (ma'lum shartlar bilan)"}, {id: 'c', text: "500 mln so'm"}, {id: 'd', text: "10 mlrd so'm"}],
-    correctAnswer: 'b'
+    question: "Davlat test markazi tashkil etilgan sanani toping.",
+    options: ["1993–yil", "1995–yil", "1994–yil", "1992–yil"],
+    correctAnswer: 2
   },
   {
     id: 404,
-    text: "O'zbekistonning 2024-yilgi iqtisodiy siyosatida “Inflyatsiyani jilovlash” maqsadi qancha foiz etib belgilangan?",
-    options: [{id: 'a', text: "2%"}, {id: 'b', text: "9% dan past (maqsad 5%)"}, {id: 'c', text: "15%"}, {id: 'd', text: "20%"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston oliy ta’lim muassasalarida ta’lim olishda kontrakt–shartnoma to‘lovi asosida o‘qish qachon joriy etildi?",
+    options: ["1997–yil", "1996–yil", "1994–yil", "1995–yil"],
+    correctAnswer: 3
   },
   {
     id: 405,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon hunarmandlar shahri” unvonini olish uchun nomzod qilib ko'rsatildi?",
-    options: [{id: 'a', text: "Marg'ilon"}, {id: 'b', text: "Shahrisabz"}, {id: 'c', text: "Termiz"}, {id: 'd', text: "Rishton"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 2017–yildagi holatga ko‘ra, nechta universitet faoliyat olib bordi?",
+    options: ["19 ta", "38 ta", "46 ta", "31 ta"],
+    correctAnswer: 3
   },
   {
     id: 406,
-    text: "O'zbekistonda “Temir yo'llar” tizimida 2024-yildan boshlab qaysi yo'nalishda chiptalar narxi bozor tamoyillariga o'tkazildi?",
-    options: [{id: 'a', text: "Faqat yuk poyezdlari"}, {id: 'b', text: "Yuqori tezlikda harakatlanuvchi ('Afrosiyob') poyezdlar"}, {id: 'c', text: "Shahar atrofi poyezdlari"}, {id: 'd', text: "Barcha yo'nalishlar"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 2017–yildagi holatga ko‘ra, nechta mahalliy OTMLar filiallari faoliyat olib bordi?",
+    options: ["9 ta", "13 ta", "6 ta", "7 ta"],
+    correctAnswer: 2
   },
   {
     id: 407,
-    text: "O'zbekistonning qaysi viloyatida 2024-yilda Germaniya bilan hamkorlikda “Tibbiyot akademiyasi” filiali ochilishi kelishildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Toshkent"}, {id: 'c', text: "Farg'ona"}, {id: 'd', text: "Namangan"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 2017–yildagi holatga ko‘ra, nechta xorijiy OTMLar filiallari faoliyat olib bordi?",
+    options: ["9 ta", "11 ta", "6 ta", "7 ta"],
+    correctAnswer: 1
   },
   {
     id: 408,
-    text: "O'zbekistonda “Yashil bog'lar” barpo etishda 2024-yilda qaysi yangi usuldan keng foydalanilmoqda?",
-    options: [{id: 'a', text: "Faqat qo'lda ekish"}, {id: 'b', text: "Dronlar yordamida urug' sepish (Orol bo'yi)"}, {id: 'c', text: "Chet eldan daraxt sotib olish"}, {id: 'd', text: "Ekishni to'xtatish"}],
-    correctAnswer: 'b'
+    question: "Toshkentdagi Xalqaro Vestminster universiteti qaysi davlat bilan hamkorlikda tashkil etilgan?",
+    options: ["AQSh", "Buyuk Britaniya", "Italiya", "Singapur"],
+    correctAnswer: 1
   },
   {
     id: 409,
-    text: "O'zbekistonning 2024-yildagi “Davlat budjeti” taqchilligi YaIMga nisbatan qancha bo'lishi kutilmoqda?",
-    options: [{id: 'a', text: "10%"}, {id: 'b', text: "4% gacha (chegaralangan)"}, {id: 'c', text: "1%"}, {id: 'd', text: "0%"}],
-    correctAnswer: 'b'
+    question: "2017–2018–yillar davomida O‘zbekistonda ta’lim tizimini takomillashtirishga oid Respublika Prezidenti va Vazirlar Mahkamasining qancha farmon, qaror va farmoyishlari qabul qilindi?",
+    options: [
+      "o‘ttizdan ortig",
+      "yetmishga yaqin",
+      "qirqqa yaqin",
+      "ellikka yaqin"
+    ],
+    correctAnswer: 1
   },
   {
     id: 410,
-    text: "O'zbekistonda “Raqamli sog'liqni saqlash” tizimi doirasida 2024-yilda qanday yangilik joriy etildi?",
-    options: [{id: 'a', text: "Faqat onlayn navbat"}, {id: 'b', text: "Elektron retsept va bemorning raqamli pasporti"}, {id: 'c', text: "Robot operatsiyalar (hamma joyda)"}, {id: 'd', text: "Qog'oz daftarlarni qaytarish"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 10 yillik tanaffusdan keyin oliy ta’lim tizimida sirtqi ta’lim qachon qayta tiklandi?",
+    options: ["2017–yil", "2016–yil", "2018–yil", "2019–yil"],
+    correctAnswer: 0
   },
   {
     id: 411,
-    text: "O'zbekiston qachon BMTning “Suv resurslari bo'yicha global konvensiyasi”ga a'zo bo'lgan?",
-    options: [{id: 'a', text: "2010-yil"}, {id: 'b', text: "2020-yil"}, {id: 'c', text: "2023-yil"}, {id: 'd', text: "2007-yil (Qayta ko'rib chiqilgan)"}],
-    correctAnswer: 'c'
+    question: "Qachondan boshlab san’at, amaliy ta’lim, alohida iqtidor talab etiladigan madaniyat, dizayn, tasviriy va san’at, musiqiy san’at, sport va jismoniy tarbiya sohasidagi oliy ta’lim yo‘nalishlariga kirish intihonlariga test sinovlari o‘tkazilmaydigan bo‘ldi?",
+    options: ["2019–yil", "2016–yil", "2018–yil", "2017–yil"],
+    correctAnswer: 2
   },
   {
     id: 412,
-    text: "O'zbekiston Respublikasi Prezidentining 2024-yildagi tashabbusi bilan qaysi davlatda “O'zbek tili va madaniyati” markazi ochildi?",
-    options: [{id: 'a', text: "Fransiya"}, {id: 'b', text: "Xitoy (Pekin xalqaro tadqiqotlar universiteti)"}, {id: 'c', text: "AQSH"}, {id: 'd', text: "Hindiston"}],
-    correctAnswer: 'b'
+    question: "2018–yildan O‘zbekistonda tibbiyot sohasida bakalavriat ta’lim yo‘nalishlarida o‘qish muddati 7 yildan ... yil va tibbiy profilaktika yo‘nalishida 6 yildan ... yilga keltirildi.",
+    options: ["5, 4", "4, 4", "6, 4", "6, 5"],
+    correctAnswer: 0
   },
   {
     id: 413,
-    text: "O'zbekistonda “Kambag'allikni qisqartirish” bo'yicha qaysi xalqaro tashkilot bilan 2024-yilda yangi strategiya imzolandi?",
-    options: [{id: 'a', text: "BMT taraqqiyot dasturi (UNDP)"}, {id: 'b', text: "Jahon banki"}, {id: 'c', text: "Xalqaro mehnat tashkiloti"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "O‘zbekistonda oliy ta’limdan keyingi ta’lim qaysi yillarda bir bosqichli doktoranturadan iborat holda faoliyat ko‘rsatdi?",
+    options: [
+      "2011–2016–yillar",
+      "2010–2017–yillar",
+      "2012–2017–yillar",
+      "2012–2018–yillar"
+    ],
+    correctAnswer: 2
   },
   {
     id: 414,
-    text: "O'zbekistonda 2024-yildan boshlab “Pedagogika yo'nalishidagi” talabalarga qanday qo'shimcha imtiyoz berildi?",
-    options: [{id: 'a', text: "Faqat bepul tushlik"}, {id: 'b', text: "Prezident stipendiyasi kvotasi oshirildi va amaliyot haqi to'lanadigan bo'ldi"}, {id: 'c', text: "Diplom berilmaydigan bo'ldi"}, {id: 'd', text: "Kontrakt narxi oshirildi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda oliy ta’limdan keyingi ta’limda bir bosqichli doktorantura faoliyat ko‘rsatgan yillarda nechta tadqiqotchi doktorlik dissertatsiyasini himoya qilishga muvaffaq bo‘ldi?",
+    options: ["300 ga yaqin", "360 ga yaqin", "250 dan ortig", "410 dan ortig"],
+    correctAnswer: 1
   },
   {
     id: 415,
-    text: "O'zbekistonning 2024-yildagi “Inson huquqlari bo'yicha” milliy ma'ruzasi qaysi mavzuda bo'ldi?",
-    options: [{id: 'a', text: "Faqat migratsiya"}, {id: 'b', text: "Ijtimoiy himoya va huquqiy kafolatlar (Yangi Konstitutsiya ijrosi)"}, {id: 'c', text: "Harbiy xizmat"}, {id: 'd', text: "Diniy oqimlar"}],
-    correctAnswer: 'b'
+    question: "Oliy attestatsiya komissiyasi tuzilganidan qancha vaqt o‘tib, oliy o‘quv yurtidan keyingi ta’limning bir bosqichli tizimini joriy etish haqida farmon e’lon qilindi?",
+    options: ["20 yil", "25 yil", "18 yil", "16 yil"],
+    correctAnswer: 1
   },
   {
     id: 416,
-    text: "O'zbekistonda 2024-yilda qaysi turdagi energiya manbalari uchun aholiga subsidiyalar berish boshlandi?",
-    options: [{id: 'a', text: "Ko'mir"}, {id: 'b', text: "Quyosh panellari va quyosh suv isitkichlari"}, {id: 'c', text: "Tabiiy gaz"}, {id: 'd', text: "O'tin"}],
-    correctAnswer: 'b'
+    question: "2017–yilgi holatda O‘zbekistonda akademiklar soni qancha edi?",
+    options: ["44 ta", "32 ta", "63 ta", "95 ta"],
+    correctAnswer: 3
   },
   {
     id: 417,
-    text: "O'zbekistonning 2024-yilgi eksportida “Elektrotexnika” mahsulotlari hajmi qanchaga yetishi kutilmoqda?",
-    options: [{id: 'a', text: "100 mln dollar"}, {id: 'b', text: "1 mlrd dollardan ortiq"}, {id: 'c', text: "500 mln dollar"}, {id: 'd', text: "10 mlrd dollar"}],
-    correctAnswer: 'b'
+    question: "Bugungi kunda ilmiy tadqiqot bilan shug‘ullanadigan qancha muassasa faoliyat olib bormoqda?",
+    options: ["334 ta", "500 ta", "400 ta", "280 ta"],
+    correctAnswer: 0
   },
   {
     id: 418,
-    text: "O'zbekistonda “Mahalla” tizimini boshqarish uchun 2024-yilda qanday yangi vazirlik (qo'mita) vakolatlari kengaytirildi?",
-    options: [{id: 'a', text: "Iqtisodiyot vazirligi"}, {id: 'b', text: "O'zbekiston mahallalari uyushmasi (Yangi tuzilma)"}, {id: 'c', text: "Bandlik vazirligi"}, {id: 'd', text: "Ichki ishlar vazirligi"}],
-    correctAnswer: 'b'
+    question: "2017–yilga qadar oxirgi akademik saylovi nechanchi yilda bo‘lgan edi?",
+    options: ["1998–yil", "2000–yil", "1995–yil", "1996–yil"],
+    correctAnswer: 0
   },
   {
     id: 419,
-    text: "O'zbekiston Respublikasi Prezidentining 2024-yildagi Qatarga tashrifi natijasida qaysi sohada yirik kelishuvlar imzolandi?",
-    options: [{id: 'a', text: "Energetika"}, {id: 'b', text: "Logistika va transport"}, {id: 'c', text: "Investitsiyalar"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "Qachondan boshlab xalqaro ilm–fan standartlariga mos keluvchi, falsafa doktori va fan doktori darajalarini beruvchi ikki bosqichli tizimga o‘tildi?",
+    options: ["2016–yil", "2012–yil", "2018–yil", "2017–yil"],
+    correctAnswer: 1
   },
   {
     id: 420,
-    text: "O'zbekistonda “Sanoat zonalarini boshqarish” bo'yicha 2024-yilda qanday yangi tizim joriy etildi?",
-    options: [{id: 'a', text: "Yagona direksiya"}, {id: 'b', text: "Xususiy operatorlarga berish (autsorsing)"}, {id: 'c', text: "Hokimliklar nazoratidan chiqarish"}, {id: 'd', text: "Zonalarni yopish"}],
-    correctAnswer: 'b'
+    question: "Qachondan “O‘zbekiston Arxeologiyasi” ilmiy jurnali chop etila boshlandi?",
+    options: ["2010–yil", "2012–yil", "2009–yil", "2008–yil"],
+    correctAnswer: 2
   },
   {
     id: 421,
-    text: "O'zbekistonda 2024-yilda qaysi allomaning 680 yilligi keng nishonlanishi belgilandi?",
-    options: [{id: 'a', text: "Amir Temur"}, {id: 'b', text: "Xoja Bahouddin Naqshband"}, {id: 'c', text: "Abu Rayhon Beruniy"}, {id: 'd', text: "Zahiriddin Muhammad Bobur"}],
-    correctAnswer: 'b'
+    question: "2018–yilgi ma’lumotga ko‘ra, O‘zbekistonda akademiklar soni qanchani tashkil etadi?",
+    options: ["90 dan ortig", "100 dan ortig", "80 ga yaqin", "120 ga yaqin"],
+    correctAnswer: 1
   },
   {
     id: 422,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro ochiqlik” siyosatida qaysi davlatlar bilan vizasiz rejim yangilandi?",
-    options: [{id: 'a', text: "Birlashgan Arab Amirliklari (to'liq vizasiz)"}, {id: 'b', text: "Xitoy"}, {id: 'c', text: "Qatar"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "Qachon Fanlar akademiyasi Sharqshunoslik institutining qo‘lyozmalar fondi YUNESKOning madaniy merosi ro‘yxatiga kiritildi?",
+    options: ["1998–yil", "2000–yil", "2002–yil", "2004–yil"],
+    correctAnswer: 0
   },
   {
     id: 423,
-    text: "O'zbekistonda “Sun'iy intellekt” texnologiyalarini rivojlantirish bo'yicha 2024-yilda qaysi xalqaro kompaniya bilan hamkorlik boshlandi?",
-    options: [{id: 'a', text: "Microsoft"}, {id: 'b', text: "Google (Cloud xizmatlari bo'yicha)"}, {id: 'c', text: "Nvidia"}, {id: 'd', text: "Faqat mahalliy kompaniyalar"}],
-    correctAnswer: 'b'
+    question: "Bugungi kunda tarix fani bo‘yicha akademik darajasiga ega bo‘lgan shaxslar to‘g‘ri ko‘rsatilgan qatorni toping. 1.Rustam Sulaymonov; 2.Ahmadali Asqarov; 3.Abdulahad Muhammadjonov; 4.Edvard Riveladze; 5.Anatoliy Sagdullayev; 6.Yuriy Buryakov; 7.Dilorom Yusupova; 8. O‘tkir Islomov.",
+    options: [
+      "1, 3, 5, 7",
+      "2, 4, 5, 7",
+      "2, 4, 6, 8",
+      "1, 2, 4, 5"
+    ],
+    correctAnswer: 1
   },
   {
     id: 424,
-    text: "O'zbekistonda 2024-yildan boshlab “Imtiyozli toifadagi” shaxslar uchun tibbiy xizmat qanday ko'rsatiladi?",
-    options: [{id: 'a', text: "Faqat davlat shifoxonalarida"}, {id: 'b', text: "Davlat va xususiy klinikalarda (yo'llanma asosida bepul)"}, {id: 'c', text: "Faqat pullik"}, {id: 'd', text: "Chet elda"}],
-    correctAnswer: 'b'
+    question: "“Innovatsiya” so‘zining ma’nosi nima?",
+    options: [
+      "tiklash, to‘ldirish",
+      "ta’limot, yo‘nalish",
+      "kiritilgan yangilik, ixtiro",
+      "qo‘shilish, tarkib topish"
+    ],
+    correctAnswer: 2
   },
   {
     id: 425,
-    text: "O'zbekistonning 2024-yilgi iqtisodiy forumida qaysi mintaqa bilan hamkorlik “Muloqot strategiyasi” deb nomlandi?",
-    options: [{id: 'a', text: "Yevropa Ittifoqi"}, {id: 'b', text: "Ko'rfaz arab davlatlari"}, {id: 'c', text: "Janubiy Osiyo"}, {id: 'd', text: "Afrika"}],
-    correctAnswer: 'b'
+    question: "Quyidagi qaysi atama Yunonchada “tushuncha”, “ta’limot” ma’nolarini anglatadi?",
+    options: ["immunologiya", "innovatsiya", "integratsiya", "rotatsiya"],
+    correctAnswer: 2
   },
   {
     id: 426,
-    text: "O'zbekistonda 2024-yilda qaysi daryoda yirik gidroinshoot (GES) qurilishi jadallashdi?",
-    options: [{id: 'a', text: "Sirdaryo"}, {id: 'b', text: "Narin (Norin GESlar kaskadi)"}, {id: 'c', text: "Zarafshon"}, {id: 'd', text: "Amudaryo"}],
-    correctAnswer: 'b'
+    question: "2012–yil “Biotibbiyot” ilmiy–ta’lim innovatsion markazi qaysi tashkilot huzurida tuzilgan?",
+    options: [
+      "Noorganik kimyo instituti",
+      "Immunologiya instituti",
+      "Innovatsion rivojlanish vazirligi",
+      "Fan va texnologiyalarni rivojlantirish qo‘mitasi"
+    ],
+    correctAnswer: 1
   },
   {
     id: 427,
-    text: "O'zbekistonda “Kreativ iqtisodiyot” tushunchasi 2024-yilda qaysi yangi sohaga tatbiq etildi?",
-    options: [{id: 'a', text: "Faqat hunarmandchilik"}, {id: 'b', text: "IT va dizayn, Media va San'at birlashmasi"}, {id: 'c', text: "Qurilish"}, {id: 'd', text: "Soliq tizimi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda qachondan olimlarni xorijiy mamlakatlarga tajriba orttirishga yuborilishi yo‘lga qo‘yildi?",
+    options: ["1993–yil", "1994–yil", "1995–yil", "1992–yil"],
+    correctAnswer: 1
   },
   {
     id: 428,
-    text: "O'zbekistonda 2024-yildan boshlab “Oliy ta'lim” grantlari qanday taqsimlanadigan bo'ldi?",
-    options: [{id: 'a', text: "Faqat universitetga qarab"}, {id: 'b', text: "Talabaning balliga qarab (Oliy ta'lim granti talabaga tegishli bo'ladi)"}, {id: 'c', text: "Hokimlik tavsiyasi bilan"}, {id: 'd', text: "Faqat kontrakt asosida"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda ilmiy kadrlar tayyorlanishini tashkil etuvchi vakolatli organ – Oliy attestatsiya komissiyasi qachon tashkil etildi?",
+    options: ["1993–yil", "1994–yil", "1995–yil", "1992–yil"],
+    correctAnswer: 3
   },
   {
     id: 429,
-    text: "O'zbekistonning 2024-yildagi “Aholi bandligi” dasturida asosiy e'tibor nimalarga qaratilgan?",
-    options: [{id: 'a', text: "Faqat davlat ishiga joylash"}, {id: 'b', text: "O'zini-o'zi band qilish va kichik tadbirkorlikka o'rgatish"}, {id: 'c', text: "Migratsiyani taqiqlash"}, {id: 'd', text: "Faqat qurilishga jalb etish"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda Fan va texnologiyalarni rivojlantirishni muvofiqlashtirish qo‘mitasi qachon tashkil etildi?",
+    options: ["2006–yil", "2004–yil", "2003–yil", "2008–yil"],
+    correctAnswer: 0
   },
   {
     id: 430,
-    text: "O'zbekistonda 2024-yilda qaysi universitet negizida “Xitoy tili va madaniyati” fakulteti kengaytirildi?",
-    options: [{id: 'a', text: "JIDU"}, {id: 'b', text: "Toshkent davlat sharqshunoslik universiteti"}, {id: 'c', text: "O'zMU"}, {id: 'd', text: "SamDU"}],
-    correctAnswer: 'b'
+    question: "Toshkentda qachondan boshlab innovatsion g‘oyalar, texnologiyalar va loyihalar yarmarkasi o‘tkazib kelinmoqda?",
+    options: ["2006–yil", "2004–yil", "2003–yil", "2008–yil"],
+    correctAnswer: 0
   },
   {
     id: 431,
-    text: "O'zbekistonning 2024-yildagi “Saylov qonunchiligi”dagi yangilik qaysi organ saylovlariga tegishli?",
-    options: [{id: 'a', text: "Prezident"}, {id: 'b', text: "Oliy Majlis va mahalliy Kengashlar (Aralash saylov tizimi)"}, {id: 'c', text: "Referendum"}, {id: 'd', text: "Mahalla raisi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev qachon ilk bor mamlakatimizning yetakchi ilm–fan namoyandalari, akademiklar bilan uchrashdi?",
+    options: [
+      "2016–yil 30–dekabrda",
+      "2017–yil 8–yanvarda",
+      "2017–yil 30–fevralda",
+      "2018–yil 8–yanvarda"
+    ],
+    correctAnswer: 0
   },
   {
     id: 432,
-    text: "O'zbekistonda “Yashil mahalla” tanlovi 2024-yilda qanday mukofotni nazarda tutadi?",
-    options: [{id: 'a', text: "Faqat diplom"}, {id: 'b', text: "Pul mukofoti va obodonlashtirish uchun qo'shimcha mablag'"}, {id: 'c', text: "Soliq imtiyozi"}, {id: 'd', text: "Chet elga sayohat"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston Respublikasining innovatsion rivojlanish vazirligi qachon tashkil etildi?",
+    options: ["2017–yil", "2018–yil", "2019–yil", "2016–yil"],
+    correctAnswer: 0
   },
   {
     id: 433,
-    text: "O'zbekistonning 2024-yildagi “Ijtimoiy himoya” siyosatida nogironligi bor shaxslar uchun qanday yangi markazlar ochildi?",
-    options: [{id: 'a', text: "Faqat sihatgohlar"}, {id: 'b', text: "Inklyuziv ta'lim va kasbga o'rgatish markazlari"}, {id: 'c', text: "Yopiq muassasalar"}, {id: 'd', text: "Hali ochilmadi"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 22 yillik tanaffusdan keyin ilk bor o‘tkazilgan akademik saylovida Fanlar akademiyasining nechta haqiqiy a’zosi saylandi?",
+    options: ["22 ta", "37 ta", "32 ta", "28 ta"],
+    correctAnswer: 1
   },
   {
     id: 434,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro tashkilotning “Giyohvandlikka qarshi kurash” mintaqaviy ofisi bilan yangi loyiha boshlandi?",
-    options: [{id: 'a', text: "Interpol"}, {id: 'b', text: "BMTning Giyohvand moddalar va jinoyatchilik bo'yicha boshqarmasi (UNODC)"}, {id: 'c', text: "NATO"}, {id: 'd', text: "SHHT"}],
-    correctAnswer: 'b'
+    question: "O‘zbekistonda 2017–yil holatida ... fan doktori va ... fan nomzodi faoliyat olib bormoqda?",
+    options: [
+      "2 mingdan ortig, 9 mingdan ortig",
+      "3 mingga yaqin, 8 mingdan ortig",
+      "3 mingdan ortig, 11 mingdan ortig",
+      "2 mingga yaqin, 9 mingga yaqin"
+    ],
+    correctAnswer: 0
   },
   {
     id: 435,
-    text: "O'zbekistonning 2024-yildagi “Suv tejash” strategiyasida qaysi viloyat “Suv tejash namunaviy hududi” deb tanlandi?",
-    options: [{id: 'a', text: "Toshkent"}, {id: 'b', text: "Qashqadaryo"}, {id: 'c', text: "Farg'ona"}, {id: 'd', text: "Xorazm"}],
-    correctAnswer: 'b'
+    question: "“Integratsiya” so‘zining ma’nosi nima?",
+    options: [
+      "tiklash, to‘ldirish",
+      "ta’limot, yo‘nalish",
+      "kiritilgan yangilik, ixtiro",
+      "qo‘shilish, tarkib topish"
+    ],
+    correctAnswer: 3
   },
   {
     id: 436,
-    text: "O'zbekistonda 2024-yildan boshlab “Maktab bitiruvchilari”ga beriladigan yangi hujjat nima?",
-    options: [{id: 'a', text: "Faqat attestat"}, {id: 'b', text: "Attestat va kamida ikkita chet tili hamda bitta kasb egallaganlik haqida sertifikat"}, {id: 'c', text: "Mehnat daftarchasi"}, {id: 'd', text: "Harbiy guvohnoma"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston Davlat jismoniy tarbiya instituti qaysi shaharda joylashgan?",
+    options: ["Toshkent", "Angren", "Chirchiq", "Qo‘qon"],
+    correctAnswer: 0
   },
   {
     id: 437,
-    text: "O'zbekistonning 2024-yildagi “Turizm salohiyati”ni oshirishda qaysi yangi yo'nalish ommalashdi?",
-    options: [{id: 'a', text: "Kosmik turizm"}, {id: 'b', text: "Ziyorat turizmi va Tibbiy turizm"}, {id: 'c', text: "Faqat tog' turizmi"}, {id: 'd', text: "Hali o'zgarish yo'q"}],
-    correctAnswer: 'b'
+    question: "1996–yil Olimpiya shon–shuhrati muzeyi qaysi shaharda ochilgan?",
+    options: ["Toshkent", "Andijon", "Namangan", "Samarqand"],
+    correctAnswer: 0
   },
   {
     id: 438,
-    text: "O'zbekistonda 2024-yilda qaysi nufuzli nashr O'zbekiston islohotlarini “Mintaqaviy namuna” deb atadi?",
-    options: [{id: 'a', text: "The Economist"}, {id: 'b', text: "The Wall Street Journal"}, {id: 'c', text: "Forbes"}, {id: 'd', text: "Barcha javoblar to'g'ri (turli maqolalarda)"}],
-    correctAnswer: 'd'
+    question: "O‘zbekiston Respublikasi Jismoniy tarbiya va sport davlat qo‘mitasi qachon tashkil etilgan?",
+    options: ["2017–yil", "2016–yil", "2018–yil", "2019–yil"],
+    correctAnswer: 2
   },
   {
     id: 439,
-    text: "O'zbekistonning 2024-yildagi “Energetika islohoti”da asosiy o'zgarish nima?",
-    options: [{id: 'a', text: "Narxlarni tushirish"}, {id: 'b', text: "Energiya bozorini liberallashtirish va tabaqalashtirilgan tariflar joriy etish"}, {id: 'c', text: "Faqat ko'mirga o'tish"}, {id: 'd', text: "Barcha stansiyalarni yopish"}],
-    correctAnswer: 'b'
+    question: "2016–yil Rio–de–Janeyroda o‘tgan Olimpiadada nechta bokschimiz medal bilan qaytgan?",
+    options: ["14 ta", "7 ta", "9 ta", "5 ta"],
+    correctAnswer: 0
   },
   {
     id: 440,
-    text: "O'zbekistonda 2024-yilda o'tkazilgan “Navro'z” bayrami qaysi yangi bog'da bosh tantana sifatida o'tkazildi?",
-    options: [{id: 'a', text: "Milliy bog'"}, {id: 'b', text: "“Yangi O'zbekiston” bog'i"}, {id: 'c', text: "Bobur bog'i"}, {id: 'd', text: "Faqat viloyatlarda"}],
-    correctAnswer: 'b'
+    question: "O‘zbekiston futbolchilari (turli yoshda) Osiyoda birinchilikni qo‘lga kiritgan uchta yilni ko‘rsating.",
+    options: [
+      "1994–, 2010–, 2018–yillar",
+      "1994–, 2014–, 2018–yillar",
+      "1993–, 2012–, 2016–yillar",
+      "1994–, 2012–, 2017–yillar"
+    ],
+    correctAnswer: 0
   },
   {
     id: 441,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro reytinglar”dagi maqsadi qaysi indeksda yuqorilash?",
-    options: [{id: 'a', text: "Korrupsiyani qabul qilish indeksi"}, {id: 'b', text: "Inson taraqqiyoti indeksi"}, {id: 'c', text: "Matbuot erkinligi"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
+    question: "Xalqaro FIFA hakami Ravshan Ermatov qaysi yillarda besh marotaba Osiyoning eng yaxshi hakami deb e’tirof etildi?",
+    options: [
+      "2008, 2009, 2012, 2014 va 2016–yillarda",
+      "2008, 2010, 2011, 2013 va 2015–yillarda",
+      "2008, 2009, 2010, 2011 va 2014–yillarda",
+      "2009, 2010, 2011, 2012 va 2013–yillarda"
+    ],
+    correctAnswer: 0
   },
   {
     id: 442,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon shaxmat poytaxti” sifatida xalqaro turnirga mezbonlik qildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Toshkent"}, {id: 'c', text: "Xiva"}, {id: 'd', text: "Buxoro"}],
-    correctAnswer: 'b'
+    question: "2018–yil O‘zbekiston yoshlari g‘oliblikni qo‘lga kiritgan 23 yoshgacha bo‘lgan futbolchilar o‘rtasida Osiyo chempionati qayerda bo‘lgan edi?",
+    options: ["Qatarda", "Yaponiyada", "Xitoyda", "Vetnamda"],
+    correctAnswer: 2
   },
   {
     id: 443,
-    text: "O'zbekistonning 2024-yildagi “Qishloq xo'jaligi” islohotida qaysi yangi ekin turiga e'tibor oshdi?",
-    options: [{id: 'a', text: "Faqat paxta"}, {id: 'b', text: "Yuqori daromadli eksportbop meva-sabzavotlar va dukkaklilar"}, {id: 'c', text: "Tamaki"}, {id: 'd', text: "Sholi (cheklangan)"}],
-    correctAnswer: 'b'
+    question: "Mamlakatimizda 2000–yil qanday nomlangan edi?",
+    options: [
+      "“Sog‘lom avlod yili”",
+      "“Onalar va bolalar yili”",
+      "“Yoshlar yili”",
+      "“Barkamol avlod yili”"
+    ],
+    correctAnswer: 3
   },
   {
     id: 444,
-    text: "O'zbekistonda 2024-yilda tashkil etilgan “Prezident maktablari” o'quvchilari uchun qanday yangi xalqaro imtihon joriy etildi?",
-    options: [{id: 'a', text: "SAT"}, {id: 'b', text: "Cambridge Assessment (Kengaytirilgan)"}, {id: 'c', text: "IELTS (Majburiy)"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'b'
+    question: "2017–yilda tashkil etilgan axborot – kommunikatsiya texnologiyalari yo‘nalishiga oid fanlarni chuqurlashtirib o‘qitishga ixtisoslashtirilgan maktab qaysi bobokalonimiz nomi bilan ataldi?",
+    options: [
+      "Mirzo Ulug‘bek",
+      "Al–Farg‘oniy",
+      "Al–Xorazmiy",
+      "Ali Qushchi"
+    ],
+    correctAnswer: 2
   },
   {
     id: 445,
-    text: "O'zbekistonning 2024-yildagi “Ekologik nazorat” tizimida qanday yangi texnologiya qo'llanilmoqda?",
-    options: [{id: 'a', text: "Faqat ko'z bilan ko'rish"}, {id: 'b', text: "Sputnik orqali monitoring va sensorli datchiklar"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Faqat jarimalar"}],
-    correctAnswer: 'b'
+    question: "Shavkat Mirziyoyevning BMT Bosh Assambleyasining 72–sessiyasida yoshlar bo‘yicha qanday tashabbus bilan chiqqan edi?",
+    options: [
+      "BMTning Yoshlar bilan ishlash komissiyasini tuzish",
+      "BMTning Yoshlar salomatligi xalqaro konvensiyasini ishlab chiqish",
+      "BMTning “Yoshlar kelajagimiz” loyihasini hayotga tatbiq etish",
+      "BMTning Yoshlar huquqlari to‘g‘risidagi xalqaro konvensiyasini ishlab chiqish"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 446,
+    question: "“Zulfiya” nomidagi davlat mukofotining yosh chegarasi qaysi qatorda to‘g‘ri ko‘rsatilgan?",
+    options: [
+      "14–22 yosh",
+      "16–25 yosh",
+      "16–30 yosh",
+      "14–30 yosh"
+    ],
+    correctAnswer: 3
   },
   {
     id: 447,
-    text: "O'zbekistonning 2024-yildagi “Raqamli davlat xizmatlari” ulushi qanchaga yetdi?",
-    options: [{id: 'a', text: "10%"}, {id: 'b', text: "70% dan ortiq (My.gov.uz)"}, {id: 'c', text: "50%"}, {id: 'd', text: "100%"}],
-    correctAnswer: 'b'
+    question: "“O‘zbekiston yoshlar ittifogi” qachon tashkil etilgan?",
+    options: [
+      "2016–yil 30–iyun",
+      "2018–yil 19–may",
+      "2017–yil 30–iyun",
+      "2017–yil 29–may"
+    ],
+    correctAnswer: 2
   },
   {
     id: 448,
-    text: "O'zbekistonda 2024-yilda qaysi viloyatda “Yirik quyosh energetikasi parki” ishga tushirildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Surxondaryo (Sherobod)"}, {id: 'c', text: "Namangan"}, {id: 'd', text: "Andijon"}],
-    correctAnswer: 'b'
+    question: "2017–yil yurtimizdagi barcha harbiy akademik litseylarga qanday nom berildi?",
+    options: [
+      "Mard o‘g‘lonlar maktabi",
+      "Temuriylar maktabi",
+      "Kutuzov nomli maktab",
+      "Temurbeklar maktabi"
+    ],
+    correctAnswer: 3
   },
   {
     id: 449,
-    text: "O'zbekistonning 2024-yilgi “Yozgi Paralimpiada” o'yinlaridagi ishtiroki qanday natija bilan yakunlandi (kutilma)?",
-    options: [{id: 'a', text: "Faqat 1 ta medal"}, {id: 'b', text: "Tarixiy eng yaxshi natijalardan biri (Top-20 da)"}, {id: 'c', text: "Qatnashmadi"}, {id: 'd', text: "Hali boshlanmadi"}],
-    correctAnswer: 'b'
+    question: "“Yoshlarga oid davlat siyosati to‘g‘risida”gi O‘zbekiston Respublikasi qonuni qachon qabul qilingan?",
+    options: ["2018–yil", "2017–yil", "2016–yil", "2015–yil"],
+    correctAnswer: 0
   },
   {
     id: 450,
-    text: "O'zbekistonning eng yangi tarixi fani qaysi davrni qamrab oladi (eng so'nggi ma'lumotlarga ko'ra)?",
-    options: [{id: 'a', text: "1991-yildan hozirgacha"}, {id: 'b', text: "1917-yildan hozirgacha"}, {id: 'c', text: "1989-yildan hozirgacha"}, {id: 'd', text: "2016-yildan hozirgacha"}],
-    correctAnswer: 'a'
+    question: "“Yoshlarga oid davlat siyosati to‘g‘risida”gi O‘zbekiston Respublikasi qonuniga ko‘ra necha yoshgacha bo‘lgan fuqarolar yoshlar deb ataladigan bo‘ldi?",
+    options: ["28 yosh", "35 yosh", "40 yosh", "30 yosh"],
+    correctAnswer: 3
   }
 ];
 
-// 10-blok: 451-500 gacha bo'lgan savollar (O'zbekiston - 2030 va Kelajak Maqsadlari)
-const BLOCK_10: Question[] = [
-  {
-    id: 451,
-    text: "“O'zbekiston – 2030” strategiyasida iqtisodiyotni necha barobar oshirish maqsadi qo'yilgan?",
-    options: [{id: 'a', text: "1.5 barobar"}, {id: 'b', text: "2 barobar (YaIMni 160 mlrd dollarga yetkazish)"}, {id: 'c', text: "3 barobar"}, {id: 'd', text: "O'zgarishsiz qoladi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 452,
-    text: "Strategiyaga ko'ra, 2030-yilga borib aholi jon boshiga YaIM miqdorini qanchaga yetkazish rejalashtirilgan?",
-    options: [{id: 'a', text: "2000 dollar"}, {id: 'b', text: "4000 dollardan oshirish"}, {id: 'c', text: "1000 dollar"}, {id: 'd', text: "10000 dollar"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 453,
-    text: "O'zbekistonda 2030-yilgacha bo'lgan davrda qayta tiklanuvchi energiya ulushini necha foizga yetkazish maqsad qilingan?",
-    options: [{id: 'a', text: "10%"}, {id: 'b', text: "40% (quyosh, shamol va h.k.)"}, {id: 'c', text: "20%"}, {id: 'd', text: "100%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 454,
-    text: "“O'zbekiston – 2030” strategiyasida maktab bitiruvchilarining kamida necha foizini oliy ta'lim bilan qamrab olish ko'zda tutilgan?",
-    options: [{id: 'a', text: "30%"}, {id: 'b', text: "50%"}, {id: 'c', text: "100%"}, {id: 'd', text: "25%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 455,
-    text: "2030-yilga borib O'zbekistonda avtomobil yo'llarining necha foizini xalqaro standartlarga muvofiq qilish rejalashtirilgan?",
-    options: [{id: 'a', text: "50%"}, {id: 'b', text: "100%"}, {id: 'c', text: "80%"}, {id: 'd', text: "20%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 456,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro moliya markazi bilan “Raqamli moliya” yo'nalishida hamkorlik kengaytirildi?",
-    options: [{id: 'a', text: "Astana Financial Centre"}, {id: 'b', text: "Abu Dhabi Global Market (ADGM)"}, {id: 'c', text: "London Stock Exchange"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 457,
-    text: "O'zbekistonda “Ishsizlik darajasi”ni 2030-yilga borib necha foizga tushirish maqsad qilingan?",
-    options: [{id: 'a', text: "2%"}, {id: 'b', text: "5-6% (tabiiy darajagacha)"}, {id: 'c', text: "10%"}, {id: 'd', text: "0%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 458,
-    text: "O'zbekiston 2024-yilda qaysi xalqaro konvetsiyaga asosan “Xususiy mulk daxlsizligi” kafolatlarini kuchaytirdi?",
-    options: [{id: 'a', text: "BMT Inson huquqlari deklaratsiyasi"}, {id: 'b', text: "Vena konvetsiyasi"}, {id: 'c', text: "Investitsiyalar bo'yicha xalqaro shartnomalar"}, {id: 'd', text: "Barchasi (Yangi Konstitutsiya doirasida)"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 459,
-    text: "O'zbekistonda 2024-yilda “Eksportni qo'llab-quvvatlash” agentligi qaysi yangi vazifani oldi?",
-    options: [{id: 'a', text: "Faqat litsenziya berish"}, {id: 'b', text: "Eksportchilarga to'liq zanjirli xizmat ko'rsatish (logistikadan sotuvgacha)"}, {id: 'c', text: "Bojxona nazorati"}, {id: 'd', text: "Soliq yig'ish"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 460,
-    text: "O'zbekistonning 2024-yilgi “Milliy qadriyatlar” festivali qaysi mavzu ostida o'tkazildi?",
-    options: [{id: 'a', text: "Eski shahar"}, {id: 'b', text: "Yangi O'zbekistonning boy madaniyati"}, {id: 'c', text: "Mustaqillik farzandlari"}, {id: 'd', text: "Vatan - muqaddas"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 461,
-    text: "O'zbekistonda 2024-yilda qaysi yangi turdagi “Sanoat klasterlari” tashkil etildi?",
-    options: [{id: 'a', text: "Faqat to'qimachilik"}, {id: 'b', text: "Yuqori texnologiyali mis va litiy klasterlari"}, {id: 'c', text: "G'isht zavodlari"}, {id: 'd', text: "Non zavodlari"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 462,
-    text: "O'zbekistonning 2024-yildagi “Mintaqaviy xavfsizlik” siyosatida qaysi davlat bilan chegaralarni delimitatsiya qilish yakunlandi?",
-    options: [{id: 'a', text: "Qirg'iziston (Kempir-Obod va boshqalar bo'yicha to'liq kelishuv)"}, {id: 'b', text: "Tojikiston"}, {id: 'c', text: "Afg'oniston"}, {id: 'd', text: "Qozog'iston"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 463,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Elektron davlat xizmati” eng ko'p foydalanildi?",
-    options: [{id: 'a', text: "Nikohni qayd etish"}, {id: 'b', text: "Ko'chmas mulkka bo'lgan huquqlarni ro'yxatdan o'tkazish (Elektron reyestr)"}, {id: 'c', text: "Pasport olish"}, {id: 'd', text: "Maktabga ariza"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 464,
-    text: "O'zbekistonning 2024-yilgi “Yashil moliya” hisobotida qaysi soha eng ko'p investitsiya oldi?",
-    options: [{id: 'a', text: "Qishloq xo'jaligi"}, {id: 'b', text: "Qayta tiklanuvchi energetika"}, {id: 'c', text: "Transport"}, {id: 'd', text: "Oziq-ovqat"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 465,
-    text: "O'zbekistonda 2024-yilda qaysi universitetda “Kosmik tadqiqotlar” laboratoriyasi ochildi?",
-    options: [{id: 'a', text: "O'zMU"}, {id: 'b', text: "Toshkent shahridagi Turin politexnika universiteti"}, {id: 'c', text: "JIDU"}, {id: 'd', text: "TATU"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 466,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro imiji” qaysi ko'rsatkich bo'yicha barqaror deb topildi?",
-    options: [{id: 'a', text: "Suveren kredit reytingi (BB- darajasi)"}, {id: 'b', text: "Harbiy qudrat"}, {id: 'c', text: "Aholi soni"}, {id: 'd', text: "Tog'lar balandligi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 467,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Ijtimoiy yordam” turi joriy etildi?",
-    options: [{id: 'a', text: "Faqat pul berish"}, {id: 'b', text: "O'zini o'zi band qilganlarga asbob-uskunalar olish uchun grantlar"}, {id: 'c', text: "Bepul kiyim"}, {id: 'd', text: "Bepul sayohat"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 468,
-    text: "O'zbekistonning 2024-yildagi “Diplomatik yutug'i” nima deb hisoblanadi?",
-    options: [{id: 'a', text: "Yevropa Ittifoqi bilan hamkorlik bitimini kengaytirish"}, {id: 'b', text: "G7 sammitida ishtirok etish (taklif asosida)"}, {id: 'c', text: "SHHT raisligini muvaffaqiyatli topshirish"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 469,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Markaziy Osiyoning madaniy poytaxti” maqomiga loyiq ko'rildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Termiz"}, {id: 'c', text: "Xiva"}, {id: 'd', text: "Buxoro"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 470,
-    text: "O'zbekistonning 2024-yildagi “Sog'liqni saqlash” islohotida qaysi yangi tizim to'liq ishga tushdi?",
-    options: [{id: 'a', text: "Tibbiy sug'urta tizimi (Sirdaryo va Toshkent tajribasi asosida)"}, {id: 'b', text: "Faqat xususiy klinika"}, {id: 'c', text: "Chet elda davolash"}, {id: 'd', text: "Hali hech narsa"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 471,
-    text: "O'zbekistonda 2024-yilda “Xotin-qizlar” tadbirkorligini qo'llab-quvvatlash uchun qaysi xalqaro bank yirik kredit liniyasini ochdi?",
-    options: [{id: 'a', text: "YeTTB (EBRD)"}, {id: 'b', text: "Osiyo taraqqiyot banki"}, {id: 'c', text: "Islom taraqqiyot banki"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 472,
-    text: "O'zbekistonning 2024-yildagi “Ta'lim sifati”ni baholashda qaysi xalqaro dastur natijalari tahlil qilindi?",
-    options: [{id: 'a', text: "PISA (2022-yil natijalari asosida yangi strategiya)"}, {id: 'b', text: "TOEFL"}, {id: 'c', text: "GRE"}, {id: 'd', text: "SAT"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 473,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Madaniy meros” obyekti qayta tiklandi?",
-    options: [{id: 'a', text: "Bibixonim masjidi (Katta restavratsiya)"}, {id: 'b', text: "Ark qal'asi"}, {id: 'c', text: "Ichan qal'a devorlari"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 474,
-    text: "O'zbekistonning 2024-yildagi “Aholini uy-joy bilan ta'minlash” dastura doirasida nechta xonadon qurilishi belgilangan?",
-    options: [{id: 'a', text: "10 ming"}, {id: 'b', text: "80 mingdan ortiq"}, {id: 'c', text: "50 ming"}, {id: 'd', text: "100 ta"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 475,
-    text: "O'zbekistonda 2024-yilda “Korrupsiyaga qarshi kurashish” bo'yicha qaysi yangi reyting joriy etildi?",
-    options: [{id: 'a', text: "Faqat jarimalar"}, {id: 'b', text: "Davlat organlarining ochiqligi va korrupsiyaga qarshi kurashish samaradorligi reytingi"}, {id: 'c', text: "Qora ro'yxat"}, {id: 'd', text: "Soliq reytingi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 476,
-    text: "O'zbekistonning 2024-yildagi “Raqamli iqtisodiyot” rivojida qaysi yangi to'lov tizimi ommalashdi?",
-    options: [{id: 'a', text: "Faqat naqd pul"}, {id: 'b', text: "QR-kod orqali to'lovlar va milliy raqamli valyuta testlari"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Faqat dollar"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 477,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro tashkilotning “Mintaqaviy logistika markazi” tashkil etildi?",
-    options: [{id: 'a', text: "Butunjahon pochta ittifoqi"}, {id: 'b', text: "Turkiy davlatlar tashkiloti (Transport va logistika bo'yicha)"}, {id: 'c', text: "NATO"}, {id: 'd', text: "BMT"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 478,
-    text: "O'zbekistonning 2024-yildagi “Soliq islohoti”da asosiy maqsad nima?",
-    options: [{id: 'a', text: "Soliqlarni oshirish"}, {id: 'b', text: "Yashirin iqtisodiyotni qisqartirish va soliq bazasini kengaytirish"}, {id: 'c', text: "Soliqni bekor qilish"}, {id: 'd', text: "Hech narsa"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 479,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Arxeologik kashfiyot” jahon e'tirofiga sazovor bo'ldi?",
-    options: [{id: 'a', text: "Kofirqal'a yodgorligi"}, {id: 'b', text: "Axshikent yangi topilmalari"}, {id: 'c', text: "Poykend qoldiqlari"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 480,
-    text: "O'zbekistonning 2024-yildagi “Yoshlar siyosati”da asosiy e'tibor qaysi yo'nalishga qaratildi?",
-    options: [{id: 'a', text: "Faqat sport"}, {id: 'b', text: "Yoshlar bandligi va zamonaviy kasblarga o'rgatish ('Kelajak kasblari')"}, {id: 'c', text: "Armiya"}, {id: 'd', text: "Soliqlar"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 481,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Dunyo bo'ylab eng yaxshi sayyohlik manzillari” (Best Tourism Villages) ro'yxatiga kiritildi?",
-    options: [{id: 'a', text: "Konigil (Samarqand)"}, {id: 'b', text: "Sentob (Navoiy)"}, {id: 'c', text: "Sangardak (Surxondaryo)"}, {id: 'd', text: "Barchasi (turli yillarda kiritilgan)"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 482,
-    text: "O'zbekistonning 2024-yildagi “Global tinchlik” indeksidagi o'rni qanday o'zgardi?",
-    options: [{id: 'a', text: "Yomonlashdi"}, {id: 'b', text: "Barqarorlashdi va ijobiy tomonga siljish kuzatildi"}, {id: 'c', text: "O'zgarishsiz qoldi"}, {id: 'd', text: "Eng oxirgi o'ringa tushdi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 483,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Milliy bayram” yangicha ruhda nishonlandi?",
-    options: [{id: 'a', text: "1-iyun Bolalar kuni"}, {id: 'b', text: "O'zbek tili bayrami (21-oktabr)"}, {id: 'c', text: "Konstitutsiya kuni (8-dekabr - yangi tahrir asosida)"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 484,
-    text: "O'zbekistonning 2024-yildagi “Eksport salohiyati”da “To'qimachilik” mahsulotlari hajmi necha mlrd dollardan oshishi kutilmoqda?",
-    options: [{id: 'a', text: "1 mlrd"}, {id: 'b', text: "5 mlrd"}, {id: 'c', text: "3 mlrd"}, {id: 'd', text: "10 mlrd"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 485,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro tashkilotning “Ta'lim bo'yicha” mintaqaviy konferensiyasi Toshkentda o'tkazildi?",
-    options: [{id: 'a', text: "UNESCO"}, {id: 'b', text: "UNICEF"}, {id: 'c', text: "ISESCO"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 486,
-    text: "O'zbekistonning 2024-yildagi “Suv tanqisligi”ga qarshi kurashida qaysi yangi texnologiya majburiy etib belgilandi?",
-    options: [{id: 'a', text: "Faqat ariqdan sug'orish"}, {id: 'b', text: "Tomchilatib va yomg'irlatib sug'orish (yirik maydonlarda)"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Faqat kechasi sug'orish"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 487,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Xalqaro avtobus yo'nalishi” ishga tushirildi?",
-    options: [{id: 'a', text: "Toshkent - Ostona"}, {id: 'b', text: "Toshkent - Bishkek"}, {id: 'c', text: "Toshkent - Dushanbe"}, {id: 'd', text: "Barchasi (doimiy qatnovlar)"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 488,
-    text: "O'zbekistonning 2024-yildagi “Investitsiya muhiti”da qaysi davlat eng yirik sarmoyador bo'lib qolmoqda?",
-    options: [{id: 'a', text: "Xitoy"}, {id: 'b', text: "Rossiya"}, {id: 'c', text: "Germaniya"}, {id: 'd', text: "A va B javoblar"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 489,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Markaziy Osiyo turizm poytaxti” deb e'lon qilindi?",
-    options: [{id: 'a', text: "Xiva"}, {id: 'b', text: "Shahrisabz"}, {id: 'c', text: "Samarqand"}, {id: 'd', text: "Buxoro"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 490,
-    text: "O'zbekistonning 2024-yildagi “Ijtimoiy davlat” tamoyili qanday namoyon bo'lmoqda?",
-    options: [{id: 'a', text: "Soliq yig'ish"}, {id: 'b', text: "Ta'lim va tibbiyotga ajratmalar YaIMning 50%idan oshishi"}, {id: 'c', text: "Bepul internet"}, {id: 'd', text: "Hamma narsa bepul"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 491,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Ilmiy markaz” tashkil etildi?",
-    options: [{id: 'a', text: "Genomika va bioinformatika markazi (yangi bino)"}, {id: 'b', text: "Sun'iy intellekt markazi"}, {id: 'c', text: "Yadro fizikasi laboratoriyasi"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 492,
-    text: "O'zbekistonning 2024-yildagi “Elektron hukumat” reytingidagi maqsadi nima?",
-    options: [{id: 'a', text: "Top-10 ga kirish"}, {id: 'b', text: "Top-30 talikka kirish (UN E-Government Survey)"}, {id: 'c', text: "Hozirgi o'rinda qolish"}, {id: 'd', text: "Reytingdan chiqish"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 493,
-    text: "O'zbekistonda 2024-yilda qaysi tarixiy hududda “Xalqaro ziyorat turizmi” forumi o'tkazildi?",
-    options: [{id: 'a', text: "Termiz (Imom Termiziy majmuasi)"}, {id: 'b', text: "Samarqand"}, {id: 'c', text: "Buxoro"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 494,
-    text: "O'zbekistonning 2024-yildagi “Sport” sohasidagi eng katta yutug'i nima deb kutilmoqda?",
-    options: [{id: 'a', text: "Futbol bo'yicha Olimpiadaga chiqish (tarixda birinchi marta)"}, {id: 'b', text: "Boksda birinchi o'rin"}, {id: 'c', text: "Shaxmatda oltin"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 495,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Litsenziya turi” bekor qilindi?",
-    options: [{id: 'a', text: "Tadbirkorlikka oid ko'plab ruxsatnomalar (byurokratiyani qisqartirish doirasida)"}, {id: 'b', text: "Haydovchilik guvohnomasi"}, {id: 'c', text: "O'qitish litsenziyasi"}, {id: 'd', text: "Hech narsa"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 496,
-    text: "O'zbekistonning 2024-yildagi “Suv resurslari”ni boshqarishda qaysi davlat bilan qo'shma komissiya tuzildi?",
-    options: [{id: 'a', text: "Qozog'iston"}, {id: 'b', text: "Turkmaniston"}, {id: 'c', text: "Tojikiston"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 497,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Sanoat ko'rgazmasi” o'tkazildi?",
-    options: [{id: 'a', text: "Innoprom (Rossiya bilan)"}, {id: 'b', text: "Uzbekistan Global Health"}, {id: 'c', text: "Tashkent Build"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 498,
-    text: "O'zbekistonning 2024-yildagi “Ta'lim islohoti”da qaysi yangi fan o'qitilishi boshlandi?",
-    options: [{id: 'a', text: "Sun'iy intellekt asoslari"}, {id: 'b', text: "Moliyaviy savodxonlik (kengaytirilgan)"}, {id: 'c', text: "Kreativ fikrlash"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 499,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Markaziy Osiyoning yashil shahri” unvoniga nomzod bo'ldi?",
-    options: [{id: 'a', text: "Toshkent"}, {id: 'b', text: "Namangan"}, {id: 'c', text: "Samarqand"}, {id: 'd', text: "Xiva"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 500,
-    text: "O'zbekistonning eng yangi tarixi fani nima uchun muhim?",
-    options: [{id: 'a', text: "Faqat diplom uchun"}, {id: 'b', text: "Vatanparvarlik ruhini yuksaltirish va o'zlikni anglash uchun"}, {id: 'c', text: "Sanalarni yodlash uchun"}, {id: 'd', text: "Hech qanday ahamiyati yo'q"}],
-    correctAnswer: 'b'
-  }
-];
+    
 
-// 11-blok: 501-550 gacha bo'lgan savollar (So'nggi yangilanishlar va Global hamkorlik)
-const BLOCK_11: Question[] = [
-  {
-    id: 501,
-    text: "O'zbekiston 2024-yilda qaysi nufuzli xalqaro moliya tashkiloti bilan “Inson kapitalini rivojlantirish” uchun 100 mln dollarlik yangi loyiha boshladi?",
-    options: [{id: 'a', text: "Jahon banki"}, {id: 'b', text: "Osiyo taraqqiyot banki"}, {id: 'c', text: "Islom taraqqiyot banki"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 502,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Logistika markazi” Markaziy Osiyodagi eng yirigi sifatida ish boshladi?",
-    options: [{id: 'a', text: "Toshkent Dry Port (O'rta Osiyo darvozasi)"}, {id: 'b', text: "Termiz xalqaro savdo markazi"}, {id: 'c', text: "Navoiy xab"}, {id: 'd', text: "Andijon logistika zonasi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 503,
-    text: "O'zbekistonning 2024-yildagi “Raqamli taraqqiyot” ko'rsatkichida “Internet tezligi” bo'yicha jahonda nechanchi o'rinni egalladi?",
-    options: [{id: 'a', text: "Top-10 da"}, {id: 'b', text: "20 pog'onadan ko'proq yuqoriladi"}, {id: 'c', text: "Oxirgi o'rinda"}, {id: 'd', text: "Hali o'rganilmagan"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 504,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro tashkilotning “Diniy bag'rikenglik” bo'yicha forumi bo'lib o'tdi?",
-    options: [{id: 'a', text: "BMT"}, {id: 'b', text: "YEXHT"}, {id: 'c', text: "Islom hamkorlik tashkiloti"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 505,
-    text: "O'zbekistonning 2024-yilgi “Yashil makon” hisobotida qaysi viloyat eng ko'p daraxt ekkan hudud deb topildi?",
-    options: [{id: 'a', text: "Toshkent"}, {id: 'b', text: "Namangan"}, {id: 'c', text: "Farg'ona"}, {id: 'd', text: "Samarqand"}],
-    correctAnswer: 'c'
-  },
-  {
-    id: 506,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Universitet filiali” texnologiya sohasida ochildi?",
-    options: [{id: 'a', text: "Webster"}, {id: 'b', text: "Akfa universiteti (yangi kampus)"}, {id: 'c', text: "Janubiy Koreya texnika universiteti (yangi yo'nalish)"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 507,
-    text: "O'zbekistonning 2024-yildagi “Suverenitet va xavfsizlik” strategiyasida qaysi yangi mudofaa texnologiyasi joriy etildi?",
-    options: [{id: 'a', text: "Faqat tanklar"}, {id: 'b', text: "Zamonaviy havo hujumidan mudofaa tizimlari va milliy dronlar"}, {id: 'c', text: "Hech narsa"}, {id: 'd', text: "Sotib olish to'xtatildi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 508,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon tibbiy turizm markazi”ga aylanmoqda?",
-    options: [{id: 'a', text: "Termiz"}, {id: 'b', text: "Toshkent (Katta tibbiyot klasteri)"}, {id: 'c', text: "Andijon"}, {id: 'd', text: "Xiva"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 509,
-    text: "O'zbekistonning 2024-yildagi “Diplomatik faolligi”da qaysi mintaqa bilan “Vizani soddalashtirish” kelishuvi imzolandi?",
-    options: [{id: 'a', text: "Schengen davlatlari (ma'lum toifalar uchun)"}, {id: 'b', text: "Lotin Amerikasi"}, {id: 'c', text: "Janubiy Afrika"}, {id: 'd', text: "Hali yo'q"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 510,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Infratuzilma loyihasi” xalqaro ahamiyatga ega deb topildi?",
-    options: [{id: 'a', text: "Toshkent - Samarqand pullik yo'li loyihasi"}, {id: 'b', text: "Yangi temir yo'l ko'prigi"}, {id: 'c', text: "Yangi GES"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 511,
-    text: "O'zbekiston 2030-yilgacha bo'lgan davrda “Yashil vodorod” ishlab chiqarish bo'yicha qaysi xalqaro kompaniya bilan hamkorlik qiladi?",
-    options: [{id: 'a', text: "ACWA Power"}, {id: 'b', text: "Masdar"}, {id: 'c', text: "Linde"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 512,
-    text: "O'zbekistonda 2024-yilda qaysi qadimiy obida UNESCOning maxsus himoyasiga kiritildi?",
-    options: [{id: 'a', text: "Zarafshon-Qoraqum ipak yo'li koridori (yangi qismlari)"}, {id: 'b', text: "Ark qal'asi"}, {id: 'c', text: "Registon"}, {id: 'd', text: "Hali hech narsa"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 513,
-    text: "O'zbekistonning 2024-yildagi “Raqamli savodxonlik” dasturi kimlar uchun bepul etib belgilandi?",
-    options: [{id: 'a', text: "Faqat talabalar"}, {id: 'b', text: "Aholining ijtimoiy hindoyaga muhtoj qatlami va yoshlar"}, {id: 'c', text: "Hech kimga"}, {id: 'd', text: "Faqat amaldorlar"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 514,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Fan yo'nalishi” uchun davlat granti ko'paytirildi?",
-    options: [{id: 'a', text: "Biotexnologiya"}, {id: 'b', text: "Sun'iy intellekt"}, {id: 'c', text: "Nanotexnologiya"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 515,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro iqtisodiy hamkorlik” markazida qaysi yangi port bilan kelishuv bor?",
-    options: [{id: 'a', text: "Chabahar (Eron)"}, {id: 'b', text: "Gvadar (Pokiston)"}, {id: 'c', text: "Bandar-Abbos"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 516,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon kitob poytaxti” unvoniga da'vogarlik qildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Toshkent"}, {id: 'c', text: "Buxoro"}, {id: 'd', text: "Xiva"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 517,
-    text: "O'zbekistonning 2024-yildagi “Investitsiya jozibadorligi”da qaysi soha eng katta foiz bilan o'sdi?",
-    options: [{id: 'a', text: "To'qimachilik"}, {id: 'b', text: "Raqamli texnologiyalar va IT"}, {id: 'c', text: "Qishloq xo'jaligi"}, {id: 'd', text: "Qurilish"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 518,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Ijtimoiy reyestr” to'liq raqamlashtirildi?",
-    options: [{id: 'a', text: "Pensiya jamg'armasi"}, {id: 'b', text: "Yagona ijtimoiy himoya reyestri"}, {id: 'c', text: "Soliq reyestri"}, {id: 'd', text: "Mehnat reyestri"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 519,
-    text: "O'zbekistonning 2024-yildagi “Diplomatik korpusi” qaysi yangi davlatlarda elchixonalar ochdi?",
-    options: [{id: 'a', text: "Qatar"}, {id: 'b', text: "Vengriya"}, {id: 'c', text: "Yangi Zelandiya"}, {id: 'd', text: "A va B javoblar"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 520,
-    text: "O'zbekistonda 2024-yilda qaysi daryo bo'yida “Yashil dam olish zonasi” barpo etildi?",
-    options: [{id: 'a', text: "Chirchiq (Toshkentda 'Yangi Toshkent' doirasida)"}, {id: 'b', text: "Amudaryo"}, {id: 'c', text: "Sirdaryo"}, {id: 'd', text: "Zarafshon"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 521,
-    text: "O'zbekiston 2024-yilda qaysi xalqaro reytingda dunyoning “Eng ochiq mamlakatlari” qatoriga kirdi?",
-    options: [{id: 'a', text: "Open Data Inventory (ODIN)"}, {id: 'b', text: "Doing Business"}, {id: 'c', text: "Democracy Index"}, {id: 'd', text: "Human Development Index"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 522,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Madaniyat markazi” Germaniya bilan hamkorlikda ochildi?",
-    options: [{id: 'a', text: "Gyote instituti yangi filiali"}, {id: 'b', text: "Tibbiyot markazi"}, {id: 'c', text: "Gumanitar markaz"}, {id: 'd', text: "Teatr"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 523,
-    text: "O'zbekistonning 2024-yildagi “Raqamli soliq” tizimida qaysi yangilik joriy etildi?",
-    options: [{id: 'a', text: "E-tijorat uchun maxsus soliq rejimi"}, {id: 'b', text: "Faqat naqd pul"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Soliqlar bekor qilindi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 524,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Ekologik qonun” kuchga kirdi?",
-    options: [{id: 'a', text: "Atrof-muhitni muhofaza qilish to'g'risidagi kodeks loyihasi"}, {id: 'b', text: "Suv kodeksi yangi tahriri"}, {id: 'c', text: "Yer kodeksi"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 525,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro ta'lim” markazida qaysi davlat bilan “Talabalar almashinuvi” ko'paydi?",
-    options: [{id: 'a', text: "Xitoy"}, {id: 'b', text: "Rossiya"}, {id: 'c', text: "Turkiya"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 526,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon hunarmandchilik markazi” sertifikatini oldi?",
-    options: [{id: 'a', text: "Qo'qon (qayta tasdiqladi)"}, {id: 'b', text: "Marg'ilon"}, {id: 'c', text: "Rishton"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 527,
-    text: "O'zbekistonning 2024-yildagi “Iqtisodiy barqarorlik” ko'rsatkichida qaysi omil asosiy rol o'ynadi?",
-    options: [{id: 'a', text: "Eksport diversifikatsiyasi"}, {id: 'b', text: "Xorijiy investitsiyalar oqimi"}, {id: 'c', text: "Ichki iste'mol o'sishi"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 528,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “IT-yo'nalish” bo'yicha bepul kurslar ochildi?",
-    options: [{id: 'a', text: "Sun'iy intellekt"}, {id: 'b', text: "Kiberxavfsizlik"}, {id: 'c', text: "Ma'lumotlar tahlili"}, {id: 'd', text: "Barchasi ('Bir million dasturchi' davomi)"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 529,
-    text: "O'zbekistonning 2024-yildagi “Diplomatik g'alabasi” qaysi xalqaro tashkilotda namoyon bo'ldi?",
-    options: [{id: 'a', text: "BMT"}, {id: 'b', text: "Turkiy davlatlar tashkiloti"}, {id: 'c', text: "SHHT"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 530,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Markaziy Osiyo yoshlar poytaxti” deb e'lon qilindi?",
-    options: [{id: 'a', text: "Toshkent"}, {id: 'b', text: "Termiz"}, {id: 'c', text: "Samarqand"}, {id: 'd', text: "Xiva"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 531,
-    text: "O'zbekiston 2024-yilda qaysi xalqaro konvetsiyaga qo'shilish jarayonini yakunlamoqda?",
-    options: [{id: 'a', text: "JST (Jahon Savdo Tashkiloti)"}, {id: 'b', text: "NATO"}, {id: 'c', text: "APEC"}, {id: 'd', text: "Hali vaqt bor"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 532,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Milliy avtomobil” modeli ishlab chiqarish boshlandi?",
-    options: [{id: 'a', text: "Elektromobillar (BYD Uz)"}, {id: 'b', text: "Nexia-4"}, {id: 'c', text: "Spark"}, {id: 'd', text: "Tico"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 533,
-    text: "O'zbekistonning 2024-yildagi “Raqamli iqtisodiyot” hajmi YaIMning necha foizini tashkil etishi kutilmoqda?",
-    options: [{id: 'a', text: "10%"}, {id: 'b', text: "20% gacha"}, {id: 'c', text: "5%"}, {id: 'd', text: "50%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 534,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Soliq imtiyozi” tadbirkorlar uchun joriy etildi?",
-    options: [{id: 'a', text: "Eksport qiluvchilar uchun QQSni tezkor qaytarish"}, {id: 'b', text: "Faqat yangi korxonalar"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Barcha soliqlar bekor qilindi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 535,
-    text: "O'zbekistonning 2024-yildagi “Global innovatsiya” indeksidagi o'rni qaysi soha hisobiga yaxshilandi?",
-    options: [{id: 'a', text: "Ta'lim xarajatlari"}, {id: 'b', text: "IT xizmatlari eksporti"}, {id: 'c', text: "Patentlar soni"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 536,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon turizm poytaxti” sifatida nufuzli sessiyani o'tkazdi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Xiva"}, {id: 'c', text: "Buxoro"}, {id: 'd', text: "Toshkent"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 537,
-    text: "O'zbekistonning 2024-yildagi “Xalqaro reytinglar”dagi yutug'i nima?",
-    options: [{id: 'a', text: "Ochiq ma'lumotlar bo'yicha Top-30 ga kirdi"}, {id: 'b', text: "Harbiy qudratda 1-o'rin"}, {id: 'c', text: "Aholi sonida 1-o'rin"}, {id: 'd', text: "Hali natija yo'q"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 538,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “O'quv darsliklari” tizimi joriy etildi?",
-    options: [{id: 'a', text: "Xalqaro standartlar asosidagi yangi avlod darsliklari"}, {id: 'b', text: "Eski darsliklar"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Faqat onlayn kitoblar"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 539,
-    text: "O'zbekistonning 2024-yildagi “Ijtimoiy davlat” siyosatida pensiya miqdori necha marta oshirildi?",
-    options: [{id: 'a', text: "1 marta"}, {id: 'b', text: "2 marta (inflyatsiya darajasidan yuqori)"}, {id: 'c', text: "Oshirilmadi"}, {id: 'd', text: "10 marta"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 540,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Sanoat markazi” Xitoy bilan hamkorlikda ochildi?",
-    options: [{id: 'a', text: "Jizzax avtomobil zavodi (yangi bosqich)"}, {id: 'b', text: "Sirdaryo klasteri"}, {id: 'c', text: "Andijon IT zonasi"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 541,
-    text: "O'zbekiston 2024-yilda qaysi mintaqaviy tashkilot raisligini qabul qildi?",
-    options: [{id: 'a', text: "MDH"}, {id: 'b', text: "Turkiy davlatlar tashkiloti (kelgusi davr uchun)"}, {id: 'c', text: "SHHT"}, {id: 'd', text: "IHT"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 542,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Metropoliten bekati” ishga tushirildi?",
-    options: [{id: 'a', text: "Yer usti yo'nalishining davomi"}, {id: 'b', text: "Markaziy bekat"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Faqat bitta"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 543,
-    text: "O'zbekistonning 2024-yildagi “Raqamli hukumati” necha turdagi xizmatni onlayn shaklga o'tkazdi?",
-    options: [{id: 'a', text: "100 ta"}, {id: 'b', text: "500 dan ortiq"}, {id: 'c', text: "10 ta"}, {id: 'd', text: "Hamma xizmatlarni"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 544,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Sport inshooti” xalqaro standartda ochildi?",
-    options: [{id: 'a', text: "Olimpiya shaharchasi (Toshkent)"}, {id: 'b', text: "Bitta stadion"}, {id: 'c', text: "Maktab sport zali"}, {id: 'd', text: "Suzish havzasi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 545,
-    text: "O'zbekistonning 2024-yildagi “Xorijiy sarmoyadorlar” ro'yxatida qaysi davlatlar yuqori o'rinda?",
-    options: [{id: 'a', text: "Xitoy, Rossiya, Turkiya, BAA"}, {id: 'b', text: "AQSH, Kanada"}, {id: 'c', text: "Avstraliya"}, {id: 'd', text: "Hali yo'q"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 546,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Ta'lim granti” joriy etildi?",
-    options: [{id: 'a', text: "Xorijiy oliygohlar filiali uchun maxsus grantlar"}, {id: 'b', text: "Faqat bitta universitetda"}, {id: 'c', text: "Hech qanday"}, {id: 'd', text: "Pullik ta'lim"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 547,
-    text: "O'zbekistonning 2024-yildagi “Ekologik holati” qaysi loyiha bilan yaxshilandi?",
-    options: [{id: 'a', text: "Yashil makon"}, {id: 'b', text: "Orolni qutqarish"}, {id: 'c', text: "Suv tejash"}, {id: 'd', text: "Barcha javoblar to'g'ri"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 548,
-    text: "O'zbekistonda 2024-yilda qaysi shahar “Jahon madaniy merosi” konferensiyasiga mezbonlik qildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Termiz"}, {id: 'c', text: "Xiva"}, {id: 'd', text: "Buxoro"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 549,
-    text: "O'zbekistonning 2024-yildagi “Milliy iqtisodiyoti” qancha foizga o'sishi kutilmoqda?",
-    options: [{id: 'a', text: "3%"}, {id: 'b', text: "5.5-6% (Markaziy bank prognozi)"}, {id: 'c', text: "1%"}, {id: 'd', text: "10%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 550,
-    text: "Yangi O'zbekistonning asosiy maqsadi nima?",
-    options: [{id: 'a', text: "Inson qadri ustuvor bo'lgan xalqchil davlat qurish"}, {id: 'b', text: "Faqat sanoatni rivojlantirish"}, {id: 'c', text: "Chet elliklar uchun sharoit yaratish"}, {id: 'd', text: "Boshqa davlatlardan ustun bo'lish"}],
-    correctAnswer: 'a'
-  }
-];
 
-// 12-blok: 551-580 gacha bo'lgan savollar (So'nggi 2024 voqealari va xulosa)
-const BLOCK_12: Question[] = [
-  {
-    id: 551,
-    text: "O'zbekiston 2024-yilgi Parij Olimpiadasida jami nechta medal qo'lga kiritdi?",
-    options: [{id: 'a', text: "10 ta"}, {id: 'b', text: "13 ta (8 ta oltin, 2 ta kumush, 3 ta bronza)"}, {id: 'c', text: "5 ta"}, {id: 'd', text: "21 ta"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 552,
-    text: "Parij-2024 Olimpiadasida O'zbekiston delegatsiyasi umumjamoa hisobida nechanchi o'rinni egalladi?",
-    options: [{id: 'a', text: "25-o'rin"}, {id: 'b', text: "13-o'rin (Markaziy Osiyo va MDHda 1-o'rin)"}, {id: 'c', text: "10-o'rin"}, {id: 'd', text: "40-o'rin"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 553,
-    text: "O'zbekistonda 2024-yilda qaysi sport turi bo'yicha ayollar jamoasi tarixda ilk bor Olimpiadaga yo'llanma oldi?",
-    options: [{id: 'a', text: "Voleybol"}, {id: 'b', text: "Qilichbozlik va badiiy gimnastika (jamoaviy)"}, {id: 'c', text: "Futbol"}, {id: 'd', text: "Basketbol"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 554,
-    text: "O'zbekiston Respublikasi Prezidentining 2024-yildagi qarori bilan qaysi yangi davlat mukofoti ta'sis etildi?",
-    options: [{id: 'a', text: "“O'zbekiston Respublikasida xizmat ko'rsatgan tadbirkor”"}, {id: 'b', text: "“Eng yaxshi o'qituvchi”"}, {id: 'c', text: "“IT ustasi”"}, {id: 'd', text: "“Yashil tabiat”"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 555,
-    text: "2024-yilda O'zbekistonning tashqi savdo aylanmasida qaysi davlat asosiy hamkorlikni saqlab qoldi?",
-    options: [{id: 'a', text: "Xitoy (1-o'rin)"}, {id: 'b', text: "Rossiya"}, {id: 'c', text: "Qozog'iston"}, {id: 'd', text: "Turkiya"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 556,
-    text: "O'zbekistonda 2024-yildan boshlab “Pedagoglar sertifikatsiyasi” qanday o'zgarishga uchradi?",
-    options: [{id: 'a', text: "Majburiy bo'ldi"}, {id: 'b', text: "Milliy sertifikatga ega o'qituvchilarga 20-50% ustama to'lanishi tizimi kuchaytirildi"}, {id: 'c', text: "Bekor qilindi"}, {id: 'd', text: "Faqat onlayn bo'ldi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 557,
-    text: "2024-yilda O'zbekistonning qaysi banki xalqaro IPO (aksiyalarni ommaviy joylashtirish) jarayoniga tayyorgarlikni boshladi?",
-    options: [{id: 'a', text: "Milliy bank (NBU)"}, {id: 'b', text: "Asakabank va O'zsanoatqurilishbank"}, {id: 'c', text: "Xalq banki"}, {id: 'd', text: "Markaziy bank"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 558,
-    text: "O'zbekistonda 2024-yilda qaysi hududda yirik “Yadro tibbiyoti markazi” ish boshladi?",
-    options: [{id: 'a', text: "Toshkent"}, {id: 'b', text: "Samarqand"}, {id: 'c', text: "Andijon"}, {id: 'd', text: "Xorazm"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 559,
-    text: "2024-yilda O'zbekiston Respublikasi va qaysi davlat o'rtasida “Ittifoqchilik munosabatlari” to'g'risida shartnoma imzolandi?",
-    options: [{id: 'a', text: "Qozog'iston (munosabatlar ittifoqchilik darajasiga ko'tarildi)"}, {id: 'b', text: "Tojikiston"}, {id: 'c', text: "Rossiya"}, {id: 'd', text: "Barcha qo'shni davlatlar bilan (bosqichma-bosqich)"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 560,
-    text: "O'zbekistonda 2024-yildan boshlab “Mahalla ettiligi” tarkibiga kimlar kirdi?",
-    options: [{id: 'a', text: "Rais, hokim yordamchisi, yoshlar yetakchisi, xotin-qizlar faoli, profilaktika inspektori, soliqchi va ijtimoiy xodim"}, {id: 'b', text: "Faqat oqsoqollar"}, {id: 'c', text: "Maktab direktorlari"}, {id: 'd', text: "Hokimlar"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 561,
-    text: "2024-yil avgust oyida O'zbekiston Prezidentining qaysi davlatga tashrifi iqtisodiy hamkorlikda yangi sahifa ochdi?",
-    options: [{id: 'a', text: "AQSH"}, {id: 'b', text: "Xitoy (davlat tashrifi va strategik sheriklik)"}, {id: 'c', text: "Singapur"}, {id: 'd', text: "Fransiya"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 562,
-    text: "O'zbekistonda 2024-yilda qaysi yangi qonun bilan “Oiladagi zo'ravonlikka qarshi kurash” choralari yanada qat'iylashtirildi?",
-    options: [{id: 'a', text: "Jinoyat kodeksiga kiritilgan o'zgartirishlar (zo'ravonlik uchun jazo muqarrarligi)"}, {id: 'b', text: "Ma'muriy kodeks"}, {id: 'c', text: "Faqat jarimalar"}, {id: 'd', text: "Hali qonun chiqmagan"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 563,
-    text: "2024-yilda O'zbekistonda “Yashil energiya” ishlab chiqarish hajmi jami energiyaning necha foiziga yaqinlashdi?",
-    options: [{id: 'a', text: "5%"}, {id: 'b', text: "12-15% (maqsad 2030-yilda 40%)"}, {id: 'c', text: "1%"}, {id: 'd', text: "50%"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 564,
-    text: "O'zbekistonda 2024-yilda o'tkazilgan “Yangi avlod darsliklari” taqdimotida asosiy urg'u nimaga berildi?",
-    options: [{id: 'a', text: "Faqat yodlash"}, {id: 'b', text: "Tanqidiy fikrlash va amaliy ko'nikmalarni rivojlantirish (4K tamoyili)"}, {id: 'c', text: "Kitoblarni kamaytirish"}, {id: 'd', text: "Faqat onlayn ta'lim"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 565,
-    text: "2024-yilda O'zbekiston qaysi xalqaro transport koridorini rivojlantirishda faol ishtirok etmoqda?",
-    options: [{id: 'a', text: "Xitoy - Qirg'iziston - O'zbekiston temir yo'li"}, {id: 'b', text: "Trans-Afg'on yo'lagi"}, {id: 'c', text: "O'rta koridor (Lapis-Lazuli)"}, {id: 'd', text: "Barchasi"}],
-    correctAnswer: 'd'
-  },
-  {
-    id: 566,
-    text: "O'zbekistonda 2024-yilda qaysi yirik allomaning 930 yilligi nishonlanishi rejalashtirildi?",
-    options: [{id: 'a', text: "Mahmud az-Zamaxshariy"}, {id: 'b', text: "Burhoniddin al-Marg'inoniy"}, {id: 'c', text: "Abul Barakot an-Nasafiy"}, {id: 'd', text: "Ahmad al-Farg'oniy"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 567,
-    text: "2024-yilda O'zbekistonning IT-xizmatlari eksporti hajmi qancha bo'lishi kutilmoqda?",
-    options: [{id: 'a', text: "100 mln dollar"}, {id: 'b', text: "500 mln dollardan oshishi (maqsad 1 mlrd dollarga yaqinlashish)"}, {id: 'c', text: "10 mln dollar"}, {id: 'd', text: "10 mlrd dollar"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 568,
-    text: "O'zbekistonda 2024-yildan boshlab “Imtiyozli uy-joy” berish tizimi qanday o'zgardi?",
-    options: [{id: 'a', text: "Faqat bepul berish"}, {id: 'b', text: "Subsidiya berishning yangi, shaffof tartibi (ijaraga olish va keyinchalik sotib olish)"}, {id: 'c', text: "To'xtatildi"}, {id: 'd', text: "Faqat boylarga beriladi"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 569,
-    text: "2024-yilda O'zbekistonning qaysi shahri “Turkiy dunyoning moliya markazi” deb e'tirof etildi?",
-    options: [{id: 'a', text: "Samarqand"}, {id: 'b', text: "Toshkent"}, {id: 'c', text: "Buxoro"}, {id: 'd', text: "Xiva"}],
-    correctAnswer: 'b'
-  },
-  {
-    id: 570,
-    text: "O'zbekistonda 2024-yilda “Ona va bola salomatligini muhofaza qilish” bo'yicha qaysi yangi muassasa tashkil etildi?",
-    options: [{id: 'a', text: "Respublika ixtisoslashtirilgan ona va bola salomatligi ilmiy-amaliy markazi"}, {id: 'b', text: "Bitta poliklinika"}, {id: 'c', text: "Maktab shifoxonasi"}, {id: 'd', text: "Hali yo'q"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 571,
-    text: "2024-yilgi iqtisodiy islohotlarning asosiy maqsadi nima?",
-    options: [{id: 'a', text: "Davlat korxonalarini xususiylashtirish va erkin raqobatni kuchaytirish"}, {id: 'b', text: "Narxlarni nazorat qilish"}, {id: 'c', text: "Soliqlarni oshirish"}, {id: 'd', text: "Eksportni to'xtatish"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 572,
-    text: "O'zbekistonda 2024-yilda qaysi xalqaro tashkilotning “G'o'za yetishtirish bo'yicha” eng yaxshi tajribasi o'rganildi?",
-    options: [{id: 'a', text: "Better Cotton Initiative (BCI) - majburiy mehnatga barham berilganligi sababli"}, {id: 'b', text: "FAO"}, {id: 'c', text: "WTO"}, {id: 'd', text: "UNESCO"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 573,
-    text: "2024-yilda O'zbekistonning “Xalqaro ochiqlik” reytingidagi o'rni qaysi sohada yuqori baholandi?",
-    options: [{id: 'a', text: "Budjet ma'lumotlarining ochiqligi (Open Budget)"}, {id: 'b', text: "Harbiy sirlar"}, {id: 'c', text: "Aholi yashash joyi"}, {id: 'd', text: "Viza narxi"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 574,
-    text: "O'zbekistonda 2024-yilda qaysi yangi “Elektron platforma” yoshlar uchun ishga tushirildi?",
-    options: [{id: 'a', text: "Yoshlar portali (barcha imtiyozlar jamlangan)"}, {id: 'b', text: "Faqat o'yinlar"}, {id: 'c', text: "Feysbuk"}, {id: 'd', text: "Hali yo'q"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 575,
-    text: "2024-yilda O'zbekistonning “Ijtimoiy himoya” tizimi qaysi agentlik nazoratiga o'tdi?",
-    options: [{id: 'a', text: "Ijtimoiy himoya milliy agentligi (Prezident huzuridagi)"}, {id: 'b', text: "Moliya vazirligi"}, {id: 'c', text: "Sog'liqni saqlash vazirligi"}, {id: 'd', text: "Hokimliklar"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 576,
-    text: "O'zbekistonning eng yangi tarixi fanini o'rganishdan asosiy maqsad nima?",
-    options: [{id: 'a', text: "Mustaqillik yutuqlarini anglash va vatanparvarlik ruhida tarbiyalanish"}, {id: 'b', text: "Faqat sanalarni bilish"}, {id: 'c', text: "Imtihondan o'tish"}, {id: 'd', text: "Kitob o'qishni mashq qilish"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 577,
-    text: "2024-yilda O'zbekistonning qaysi nufuzli nashr islohotlarini “Osiyo yo'lbarsi”ga qiyosladi?",
-    options: [{id: 'a', text: "Turli xalqaro tahliliy nashrlar (Bloomberg, Forbes kabi)"}, {id: 'b', text: "Faqat mahalliy gazeta"}, {id: 'c', text: "Bolalar jurnali"}, {id: 'd', text: "Hech kim"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 578,
-    text: "O'zbekistonda 2024-yilda qaysi sohada “Raqamli transformatsiya” eng yuqori natija berdi?",
-    options: [{id: 'a', text: "Davlat xizmatlari va moliya-bank tizimi"}, {id: 'b', text: "Faqat dehqonchilik"}, {id: 'c', text: "Chop etish xizmati"}, {id: 'd', text: "Harbiy tayyorgarlik"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 579,
-    text: "Yangi O'zbekistonning 2030-yilgacha bo'lgan asosiy shiori nima?",
-    options: [{id: 'a', text: "“O'zbekiston - 2030: Inson qadri uchun!”"}, {id: 'b', text: "“Faqat olg'a!”"}, {id: 'c', text: "“Boya iqtisodiyot”"}, {id: 'd', text: "“Yangi yo'l”"}],
-    correctAnswer: 'a'
-  },
-  {
-    id: 580,
-    text: "O'zbekiston kelajagi kimlarning qo'lida?",
-    options: [{id: 'a', text: "Bilimli, vatanparvar va fidoyi yoshlarning qo'lida"}, {id: 'b', text: "Faqat rahbarlarning"}, {id: 'c', text: "Chet elliklarning"}, {id: 'd', text: "Hech kimning"}],
-    correctAnswer: 'a'
-  }
-];
 
-// Qolgan savollar (101-400) uchun generator
-const generatePlaceholderQuestions = (start: number, end: number): Question[] => {
-  const questions: Question[] = [];
-  for (let i = start; i <= end; i++) {
-    questions.push({
-      id: i,
-      text: `${i}-savol: O'zbekistonning eng yangi tarixi fanidan navbatdagi test savoli (Kelajakdagi yangilanishlarda to'ldiriladi).`,
-      options: [
-        { id: 'a', text: "Variant A" },
-        { id: 'b', text: "Variant B" },
-        { id: 'c', text: "Variant C (To'g'ri)" },
-        { id: 'd', text: "Variant D" }
-      ],
-      correctAnswer: 'c'
-    });
-  }
-  return questions;
-};
 
-// To'liq 580 ta savol eksporti
-export const QUESTIONS: Question[] = [
-  ...BLOCK_1,
-  ...BLOCK_2,
-  ...BLOCK_9, // 401-450
-  ...BLOCK_10, // 451-500
-  ...BLOCK_11, // 501-550
-  ...BLOCK_12, // 551-580
-  ...generatePlaceholderQuestions(101, 400), // Middle placeholders
-].sort((a, b) => a.id - b.id);
